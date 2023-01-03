@@ -1,0 +1,308 @@
+[03-Jan-2023 13:42:30 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function router() in /Users/mia/Sites/messageBoard/partials/nav.php:16
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 16
+[03-Jan-2023 13:47:22 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function router() in /Users/mia/Sites/messageBoard/partials/nav.php:21
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 21
+[03-Jan-2023 13:48:10 Asia/Taipei] PHP Warning:  Undefined variable $value in /Users/mia/Sites/messageBoard/functions.php on line 4
+[03-Jan-2023 13:48:10 Asia/Taipei] PHP Warning:  Undefined variable $routes in /Users/mia/Sites/messageBoard/functions.php on line 4
+[03-Jan-2023 13:48:10 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in /Users/mia/Sites/messageBoard/functions.php:4
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/partials/nav.php(19): router('#')
+#1 /Users/mia/Sites/messageBoard/index.php(3): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 4
+[03-Jan-2023 13:51:38 Asia/Taipei] PHP Warning:  Undefined variable $routes in /Users/mia/Sites/messageBoard/functions.php on line 11
+[03-Jan-2023 13:51:38 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in /Users/mia/Sites/messageBoard/functions.php:11
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/partials/nav.php(19): router('#')
+#1 /Users/mia/Sites/messageBoard/index.php(3): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 11
+[03-Jan-2023 13:51:39 Asia/Taipei] PHP Warning:  Undefined variable $routes in /Users/mia/Sites/messageBoard/functions.php on line 11
+[03-Jan-2023 13:51:39 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in /Users/mia/Sites/messageBoard/functions.php:11
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/partials/nav.php(19): router('#')
+#1 /Users/mia/Sites/messageBoard/index.php(3): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 11
+[03-Jan-2023 13:51:40 Asia/Taipei] PHP Warning:  Undefined variable $routes in /Users/mia/Sites/messageBoard/functions.php on line 11
+[03-Jan-2023 13:51:40 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in /Users/mia/Sites/messageBoard/functions.php:11
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/partials/nav.php(19): router('#')
+#1 /Users/mia/Sites/messageBoard/index.php(3): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 11
+[03-Jan-2023 14:15:55 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, int given in /Users/mia/Sites/messageBoard/functions.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/partials/nav.php(22): router('/latest')
+#1 /Users/mia/Sites/messageBoard/index.php(3): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 10
+[03-Jan-2023 14:15:58 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, int given in /Users/mia/Sites/messageBoard/functions.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/partials/nav.php(22): router('/latest')
+#1 /Users/mia/Sites/messageBoard/index.php(3): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 10
+[03-Jan-2023 14:16:12 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, int given in /Users/mia/Sites/messageBoard/functions.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/partials/nav.php(22): router('/latest')
+#1 /Users/mia/Sites/messageBoard/index.php(3): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 10
+[03-Jan-2023 14:16:36 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, int given in /Users/mia/Sites/messageBoard/functions.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/partials/nav.php(22): router('/latest')
+#1 /Users/mia/Sites/messageBoard/index.php(3): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 10
+[03-Jan-2023 14:16:37 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, int given in /Users/mia/Sites/messageBoard/functions.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/partials/nav.php(22): router('/latest')
+#1 /Users/mia/Sites/messageBoard/index.php(3): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 10
+[03-Jan-2023 14:18:43 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, int given in /Users/mia/Sites/messageBoard/functions.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/partials/nav.php(22): router('/latest')
+#1 /Users/mia/Sites/messageBoard/index.php(3): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 10
+[03-Jan-2023 14:21:01 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, int given in /Users/mia/Sites/messageBoard/functions.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/partials/nav.php(22): router('/latest')
+#1 /Users/mia/Sites/messageBoard/index.php(3): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 10
+[03-Jan-2023 14:21:02 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, int given in /Users/mia/Sites/messageBoard/functions.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/partials/nav.php(22): router('/latest')
+#1 /Users/mia/Sites/messageBoard/index.php(3): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 10
+[03-Jan-2023 14:24:09 Asia/Taipei] PHP Warning:  Undefined variable $heading in /Users/mia/Sites/messageBoard/partials/banner.php on line 3
+[03-Jan-2023 15:11:21 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function dumpAndDie() in /Users/mia/Sites/messageBoard/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 2
+[03-Jan-2023 15:19:27 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 15:20:18 Asia/Taipei] PHP Warning:  require(bg-gray-900 text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:20:18 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'bg-gray-900 text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:20:19 Asia/Taipei] PHP Warning:  require(bg-gray-900 text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:20:19 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'bg-gray-900 text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:20:20 Asia/Taipei] PHP Warning:  require(bg-gray-900 text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:20:20 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'bg-gray-900 text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:20:21 Asia/Taipei] PHP Warning:  require(bg-gray-900 text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:20:21 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'bg-gray-900 text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:20:21 Asia/Taipei] PHP Warning:  require(bg-gray-900 text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:20:21 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'bg-gray-900 text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:20:36 Asia/Taipei] PHP Warning:  require(text-gray-300 hover:bg-gray-700 hover:text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:36 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'text-gray-300 hover:bg-gray-700 hover:text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:37 Asia/Taipei] PHP Warning:  require(text-gray-300 hover:bg-gray-700 hover:text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:37 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'text-gray-300 hover:bg-gray-700 hover:text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:38 Asia/Taipei] PHP Warning:  require(text-gray-300 hover:bg-gray-700 hover:text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:38 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'text-gray-300 hover:bg-gray-700 hover:text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:38 Asia/Taipei] PHP Warning:  require(text-gray-300 hover:bg-gray-700 hover:text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:38 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'text-gray-300 hover:bg-gray-700 hover:text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:38 Asia/Taipei] PHP Warning:  require(text-gray-300 hover:bg-gray-700 hover:text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:38 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'text-gray-300 hover:bg-gray-700 hover:text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:38 Asia/Taipei] PHP Warning:  require(text-gray-300 hover:bg-gray-700 hover:text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:38 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'text-gray-300 hover:bg-gray-700 hover:text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:38 Asia/Taipei] PHP Warning:  require(text-gray-300 hover:bg-gray-700 hover:text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:38 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'text-gray-300 hover:bg-gray-700 hover:text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:39 Asia/Taipei] PHP Warning:  require(text-gray-300 hover:bg-gray-700 hover:text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:20:39 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'text-gray-300 hover:bg-gray-700 hover:text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 25
+[03-Jan-2023 15:21:04 Asia/Taipei] PHP Warning:  require(bg-gray-900 text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:21:04 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'bg-gray-900 text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:21:05 Asia/Taipei] PHP Warning:  require(bg-gray-900 text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:21:05 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'bg-gray-900 text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:21:08 Asia/Taipei] PHP Warning:  require(bg-gray-900 text-white): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:21:08 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'bg-gray-900 text-white' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(8): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 23
+[03-Jan-2023 15:22:08 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "if" in /Users/mia/Sites/messageBoard/partials/nav.php on line 22
+[03-Jan-2023 15:59:08 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function dumpAndDie() in /Users/mia/Sites/messageBoard/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 5
+[03-Jan-2023 16:37:13 Asia/Taipei] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function router(), 1 passed in /Users/mia/Sites/messageBoard/index.php on line 13 and exactly 2 expected in /Users/mia/Sites/messageBoard/routes.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): router('/fdsjogjiso')
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/routes.php on line 10
+[03-Jan-2023 16:43:35 Asia/Taipei] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function router(), 1 passed in /Users/mia/Sites/messageBoard/index.php on line 13 and exactly 2 expected in /Users/mia/Sites/messageBoard/routes.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): router('/fdsjogjiso')
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/routes.php on line 10
+[03-Jan-2023 16:45:59 Asia/Taipei] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function router(), 1 passed in /Users/mia/Sites/messageBoard/index.php on line 13 and exactly 2 expected in /Users/mia/Sites/messageBoard/routes.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): router('/fdsjogjiso')
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/routes.php on line 10
+[03-Jan-2023 17:05:51 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 17:06:34 Asia/Taipei] PHP Warning:  Undefined variable $uri in /Users/mia/Sites/messageBoard/index.php on line 15
+[03-Jan-2023 17:06:34 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function abort() in /Users/mia/Sites/messageBoard/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 18
+[03-Jan-2023 17:21:30 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, int given in /Users/mia/Sites/messageBoard/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 18
+[03-Jan-2023 17:22:27 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, string given in /Users/mia/Sites/messageBoard/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 18
+[03-Jan-2023 17:23:27 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, int given in /Users/mia/Sites/messageBoard/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 18
+[03-Jan-2023 17:23:29 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, int given in /Users/mia/Sites/messageBoard/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 18
+[03-Jan-2023 17:23:30 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, int given in /Users/mia/Sites/messageBoard/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 18
+[03-Jan-2023 17:24:35 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function dumpAndDie() in /Users/mia/Sites/messageBoard/routes.php:9
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/partials/nav.php(2): require()
+#1 /Users/mia/Sites/messageBoard/index.php(8): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/routes.php on line 9
+[03-Jan-2023 17:25:32 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function abort() in /Users/mia/Sites/messageBoard/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 22
+[03-Jan-2023 17:30:02 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function isUrl() in /Users/mia/Sites/messageBoard/partials/nav.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 13
+[03-Jan-2023 17:30:03 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function isUrl() in /Users/mia/Sites/messageBoard/partials/nav.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 13
+[03-Jan-2023 17:30:04 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function isUrl() in /Users/mia/Sites/messageBoard/partials/nav.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 13
+[03-Jan-2023 17:30:04 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function isUrl() in /Users/mia/Sites/messageBoard/partials/nav.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 13
+[03-Jan-2023 17:30:05 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function isUrl() in /Users/mia/Sites/messageBoard/partials/nav.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 13
+[03-Jan-2023 17:30:06 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function isUrl() in /Users/mia/Sites/messageBoard/partials/nav.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 13
+[03-Jan-2023 17:30:07 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function isUrl() in /Users/mia/Sites/messageBoard/partials/nav.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 13
+[03-Jan-2023 17:30:07 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function isUrl() in /Users/mia/Sites/messageBoard/partials/nav.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 13
+[03-Jan-2023 17:30:07 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function isUrl() in /Users/mia/Sites/messageBoard/partials/nav.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 13
+[03-Jan-2023 17:30:51 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function abort() in /Users/mia/Sites/messageBoard/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 13
+[03-Jan-2023 17:30:58 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 17:43:09 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 17:44:35 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 17:44:47 Asia/Taipei] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes) in /Users/mia/Sites/messageBoard/index.php on line 11
+[03-Jan-2023 17:44:47 Asia/Taipei] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /Users/mia/Sites/messageBoard/index.php on line 4
+[03-Jan-2023 17:44:47 Asia/Taipei] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /Users/mia/Sites/messageBoard/index.php on line 4
+[03-Jan-2023 17:44:47 Asia/Taipei] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /Users/mia/Sites/messageBoard/index.php on line 4
+[03-Jan-2023 17:45:01 Asia/Taipei] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /Users/mia/Sites/messageBoard/index.php on line 4
+[03-Jan-2023 17:45:23 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 17:49:50 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 17:49:51 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 17:49:53 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 17:50:03 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 17:50:03 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2

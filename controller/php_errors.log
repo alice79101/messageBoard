@@ -1,0 +1,52 @@
+[03-Jan-2023 14:02:25 Asia/Taipei] PHP Warning:  require(partials/head.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/view/lastestMessage.view.php on line 2
+[03-Jan-2023 14:02:25 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'partials/head.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/view/lastestMessage.view.php:2
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/latestMessage.php(2): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/view/lastestMessage.view.php on line 2
+[03-Jan-2023 14:37:02 Asia/Taipei] PHP Warning:  require(partials/head.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 2
+[03-Jan-2023 14:37:02 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'partials/head.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/controller/latestMessage.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 2
+[03-Jan-2023 14:38:05 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/controllerpartials/head.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 2
+[03-Jan-2023 14:38:05 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/controllerpartials/head.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/controller/latestMessage.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 2
+[03-Jan-2023 14:39:26 Asia/Taipei] PHP Warning:  require(routes.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 2
+[03-Jan-2023 14:39:26 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'routes.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:2
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/latestMessage.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 2
+[03-Jan-2023 14:40:48 Asia/Taipei] PHP Warning:  require(routes.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 2
+[03-Jan-2023 14:40:48 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'routes.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:2
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/latestMessage.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 2
+[03-Jan-2023 14:40:51 Asia/Taipei] PHP Warning:  require(routes.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/partials/nav.php on line 2
+[03-Jan-2023 14:40:51 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'routes.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/partials/nav.php:2
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/latestMessage.php(3): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 2
+[03-Jan-2023 14:42:05 Asia/Taipei] PHP Warning:  require(partials/head.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 2
+[03-Jan-2023 14:42:05 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'partials/head.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/view/latestMessage.view.php:2
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/latestMessage.php(7): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 2
+[03-Jan-2023 14:42:51 Asia/Taipei] PHP Fatal error:  Cannot redeclare dd() (previously declared in /Users/mia/Sites/messageBoard/functions.php:3) in /Users/mia/Sites/messageBoard/functions.php on line 3
+[03-Jan-2023 14:43:24 Asia/Taipei] PHP Fatal error:  Cannot redeclare dd() (previously declared in /Users/mia/Sites/messageBoard/functions.php:3) in /Users/mia/Sites/messageBoard/functions.php on line 3
+[03-Jan-2023 14:43:50 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:3) in /Users/mia/Sites/messageBoard/functions.php on line 3
+[03-Jan-2023 14:43:52 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:3) in /Users/mia/Sites/messageBoard/functions.php on line 3
+[03-Jan-2023 14:44:35 Asia/Taipei] PHP Fatal error:  Cannot redeclare router() (previously declared in /Users/mia/Sites/messageBoard/functions.php:7) in /Users/mia/Sites/messageBoard/functions.php on line 7
+[03-Jan-2023 14:44:36 Asia/Taipei] PHP Fatal error:  Cannot redeclare router() (previously declared in /Users/mia/Sites/messageBoard/functions.php:7) in /Users/mia/Sites/messageBoard/functions.php on line 7
+[03-Jan-2023 14:44:37 Asia/Taipei] PHP Fatal error:  Cannot redeclare router() (previously declared in /Users/mia/Sites/messageBoard/functions.php:7) in /Users/mia/Sites/messageBoard/functions.php on line 7
+[03-Jan-2023 14:44:39 Asia/Taipei] PHP Fatal error:  Cannot redeclare router() (previously declared in /Users/mia/Sites/messageBoard/functions.php:7) in /Users/mia/Sites/messageBoard/functions.php on line 7
+[03-Jan-2023 14:44:41 Asia/Taipei] PHP Fatal error:  Cannot redeclare router() (previously declared in /Users/mia/Sites/messageBoard/functions.php:7) in /Users/mia/Sites/messageBoard/functions.php on line 7
+[03-Jan-2023 14:45:13 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 14:45:15 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 15:07:27 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "if" in /Users/mia/Sites/messageBoard/partials/nav.php on line 22

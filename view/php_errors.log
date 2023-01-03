@@ -1,0 +1,15 @@
+[03-Jan-2023 16:42:08 Asia/Taipei] PHP Warning:  require(partials/head.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/view/404.php on line 2
+[03-Jan-2023 16:42:08 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'partials/head.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/view/404.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/view/404.php on line 2
+[03-Jan-2023 16:42:42 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/viewpartials/head.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/view/404.php on line 2
+[03-Jan-2023 16:42:42 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/viewpartials/head.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/view/404.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/view/404.php on line 2
+[03-Jan-2023 16:42:56 Asia/Taipei] PHP Warning:  require(partials/nav.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/view/404.php on line 3
+[03-Jan-2023 16:42:56 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'partials/nav.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/view/404.php:3
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/view/404.php on line 3
