@@ -6,7 +6,7 @@
         </div>
         <!-- /End replace -->
         <p>
-          Here are latest messages.
+         Welcome!
         </p>
     </div>
 </main>

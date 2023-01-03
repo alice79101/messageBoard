@@ -12,14 +12,10 @@
                         $thisPage = "bg-gray-900 text-white";
                         $thatPage = "text-gray-300 hover:bg-gray-700 hover:text-white";
                         ?>
-                        <a href="/"
-                           class="<?= isUrl("/") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="/latestMessage"
-                           class="<?= isUrl("/latestMessage") ? $thisPage : $thatPage ; ?>px-3 py-2 rounded-md text-sm font-medium">What's new</a>
-                        <a href="/myMessage"
-                           class="<?= isUrl("/myMessage") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">My Message</a>
-                        <a href="/Signout"
-                           class="<?= isUrl("/Signout") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">Signout</a>
+                        <a href="/" class="<?= isUrl("/") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="/latest" class="<?= isUrl("/latest") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">What's new</a>
+                        <a href="/myMessage" class="<?= isUrl("/myMessage") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">My Message</a>
+                        <a href="/Signout" class="<?= isUrl("/Signout") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">Signout</a>
 
                     </div>
                 </div>

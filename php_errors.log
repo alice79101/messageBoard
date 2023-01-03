@@ -306,3 +306,67 @@ Stack trace:
 [03-Jan-2023 17:49:53 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
 [03-Jan-2023 17:50:03 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
 [03-Jan-2023 17:50:03 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 17:56:31 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 17:56:33 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 17:58:33 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 17:59:47 Asia/Taipei] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes) in /Users/mia/Sites/messageBoard/index.php on line 11
+[03-Jan-2023 17:59:47 Asia/Taipei] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /Users/mia/Sites/messageBoard/index.php on line 4
+[03-Jan-2023 17:59:47 Asia/Taipei] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /Users/mia/Sites/messageBoard/index.php on line 4
+[03-Jan-2023 17:59:48 Asia/Taipei] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /Users/mia/Sites/messageBoard/index.php on line 4
+[03-Jan-2023 18:00:00 Asia/Taipei] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /Users/mia/Sites/messageBoard/index.php on line 4
+[03-Jan-2023 18:02:02 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function abort() in /Users/mia/Sites/messageBoard/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 9
+[03-Jan-2023 18:02:08 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 18:02:13 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 18:02:16 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function abort() in /Users/mia/Sites/messageBoard/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 9
+[03-Jan-2023 18:02:23 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function abort() in /Users/mia/Sites/messageBoard/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 9
+[03-Jan-2023 18:05:18 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function abort() in /Users/mia/Sites/messageBoard/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 9
+[03-Jan-2023 18:05:19 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function abort() in /Users/mia/Sites/messageBoard/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 9
+[03-Jan-2023 18:05:25 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function abort() in /Users/mia/Sites/messageBoard/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 9
+[03-Jan-2023 18:05:30 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function abort() in /Users/mia/Sites/messageBoard/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 9
+[03-Jan-2023 18:05:33 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function abort() in /Users/mia/Sites/messageBoard/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 9
+[03-Jan-2023 18:05:34 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function abort() in /Users/mia/Sites/messageBoard/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 9
+[03-Jan-2023 18:06:25 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 18:07:00 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 18:07:10 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/functions.php:2) in /Users/mia/Sites/messageBoard/functions.php on line 2
+[03-Jan-2023 18:07:49 Asia/Taipei] PHP Warning:  require(/): Failed to open stream: Invalid argument in /Users/mia/Sites/messageBoard/index.php on line 8
+[03-Jan-2023 18:07:49 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 8
+[03-Jan-2023 18:08:29 Asia/Taipei] PHP Warning:  require(/controller/index.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/index.php on line 8
+[03-Jan-2023 18:08:29 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/controller/index.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 8
+[03-Jan-2023 18:10:34 Asia/Taipei] PHP Warning:  require(/controller/index.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/index.php on line 8
+[03-Jan-2023 18:10:34 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/controller/index.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 8
