@@ -14,7 +14,7 @@ require __DIR__ . "/../partials/banner.php";
             <p class="mt-4">Oops! you have wrong link.</p>
         </div>
 
-        <a href="/messageBoard/index.php" class="text-blue-500 hover:underline">Go back home...</a>
+        <a href="/" class="text-blue-500 hover:underline">Go back home...</a>
         <!-- /End replace -->
 
     </div>
