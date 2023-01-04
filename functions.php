@@ -1,4 +1,5 @@
 <?php
+
 function dumpAndDie($value) {
     // 網站建構過程中各種檢驗使用
     echo "<pre>";

@@ -2,6 +2,7 @@
 require "functions.php";
 require "router.php";
 
+
 $routes = require "routes.php";
     // routes 是自己創建的網站地圖
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];

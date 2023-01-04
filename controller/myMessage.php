@@ -1,4 +1,7 @@
 <?php
+
+//namespace messageBoard\controller;
+
 require __DIR__ . "/../partials/head.php";
 require __DIR__ . "/../partials/nav.php";
 $heading = "My Message";
