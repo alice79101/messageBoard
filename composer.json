@@ -4,8 +4,7 @@
     },
     "autoload": {
         "psr-4": {
-            "messageBoard\\controller\\": "messageBoard/controller",
-            "messageBoard\\partials\\": "messageBoard/partials"
+            "controller\\": "controller/"
         }
     }
 }

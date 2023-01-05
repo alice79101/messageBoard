@@ -548,3 +548,412 @@ Stack trace:
 #1 /Users/mia/Sites/messageBoard/index.php(14): require('/Users/mia/Site...')
 #2 {main}
   thrown in /Users/mia/Sites/messageBoard/partials/nav.php on line 15
+[04-Jan-2023 15:26:28 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 15:26:30 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 15:28:36 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 15:28:37 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 15:33:24 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 15:33:27 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:12:24 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:12:26 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:12:26 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:13:25 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:13:46 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:14:02 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:14:12 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:14:50 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:14:51 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:15:27 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:17:31 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:17:32 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:17:35 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[04-Jan-2023 16:18:54 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:27
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(27): PDO->__construct('msql:host=local...', 'mia', '', Array)
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 27
+[04-Jan-2023 16:20:30 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:27
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(27): PDO->__construct('msql:host=local...', 'mia', '', Array)
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 27
+[04-Jan-2023 16:20:32 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:27
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(27): PDO->__construct('msql:host=local...', 'mia', '', Array)
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 27
+[04-Jan-2023 16:22:50 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:26
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(26): PDO->__construct('msql:host=local...', 'mia', '')
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 26
+[04-Jan-2023 16:22:51 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:26
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(26): PDO->__construct('msql:host=local...', 'mia', '')
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 26
+[04-Jan-2023 16:24:04 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:28
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(28): PDO->__construct('msql:host=local...', 'mia', '', Array)
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 28
+[04-Jan-2023 16:24:20 Asia/Taipei] PHP Warning:  Undefined variable $dbuser in /Users/mia/Sites/messageBoard/core/Dbh.php on line 27
+[04-Jan-2023 16:24:20 Asia/Taipei] PHP Warning:  Undefined variable $dbpwd in /Users/mia/Sites/messageBoard/core/Dbh.php on line 27
+[04-Jan-2023 16:24:20 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:28
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(28): PDO->__construct('msql:host=local...', NULL, NULL, Array)
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 28
+[04-Jan-2023 16:24:46 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:28
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(28): PDO->__construct('msql:host=local...', 'mia', '', Array)
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 28
+[04-Jan-2023 16:38:39 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 22
+[04-Jan-2023 16:38:40 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 22
+[04-Jan-2023 16:38:41 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 22
+[04-Jan-2023 16:38:42 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 22
+[04-Jan-2023 16:38:47 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 22
+[04-Jan-2023 16:38:48 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 22
+[04-Jan-2023 16:38:49 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 22
+[04-Jan-2023 16:38:49 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 22
+[04-Jan-2023 16:38:49 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 22
+[04-Jan-2023 16:38:50 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 22
+[04-Jan-2023 16:38:50 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 22
+[04-Jan-2023 16:39:42 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:7
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 7
+[04-Jan-2023 16:40:06 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:21
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 21
+[04-Jan-2023 16:40:07 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:21
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 21
+[04-Jan-2023 16:40:08 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:21
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 21
+[04-Jan-2023 16:40:09 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/index.php:21
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/index.php on line 21
+[04-Jan-2023 16:40:37 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/controller/index.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 10
+[04-Jan-2023 16:41:07 Asia/Taipei] PHP Parse error:  syntax error, unexpected variable "$notes" in /Users/mia/Sites/messageBoard/controller/index.php on line 11
+[04-Jan-2023 16:41:22 Asia/Taipei] PHP Parse error:  syntax error, unexpected variable "$notes" in /Users/mia/Sites/messageBoard/controller/index.php on line 11
+[04-Jan-2023 16:41:23 Asia/Taipei] PHP Parse error:  syntax error, unexpected variable "$notes" in /Users/mia/Sites/messageBoard/controller/index.php on line 11
+[04-Jan-2023 16:41:24 Asia/Taipei] PHP Parse error:  syntax error, unexpected variable "$notes" in /Users/mia/Sites/messageBoard/controller/index.php on line 11
+[04-Jan-2023 16:41:24 Asia/Taipei] PHP Parse error:  syntax error, unexpected variable "$notes" in /Users/mia/Sites/messageBoard/controller/index.php on line 11
+[04-Jan-2023 16:41:24 Asia/Taipei] PHP Parse error:  syntax error, unexpected variable "$notes" in /Users/mia/Sites/messageBoard/controller/index.php on line 11
+[04-Jan-2023 16:41:24 Asia/Taipei] PHP Parse error:  syntax error, unexpected variable "$notes" in /Users/mia/Sites/messageBoard/controller/index.php on line 11
+[04-Jan-2023 16:41:25 Asia/Taipei] PHP Parse error:  syntax error, unexpected variable "$notes" in /Users/mia/Sites/messageBoard/controller/index.php on line 11
+[04-Jan-2023 16:42:22 Asia/Taipei] PHP Parse error:  syntax error, unexpected variable "$notes" in /Users/mia/Sites/messageBoard/controller/index.php on line 13
+[04-Jan-2023 16:42:23 Asia/Taipei] PHP Parse error:  syntax error, unexpected variable "$notes" in /Users/mia/Sites/messageBoard/controller/index.php on line 13
+[04-Jan-2023 16:42:30 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/controller/index.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 13
+[04-Jan-2023 16:42:48 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on bool in /Users/mia/Sites/messageBoard/controller/index.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 13
+[04-Jan-2023 16:44:32 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/controller/index.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 13
+[04-Jan-2023 16:47:35 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method PDOStatement::prepare() in /Users/mia/Sites/messageBoard/controller/index.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 12
+[04-Jan-2023 16:47:37 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method PDOStatement::prepare() in /Users/mia/Sites/messageBoard/controller/index.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 12
+[04-Jan-2023 16:53:15 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1698] Access denied for user ''@'localhost' in /Users/mia/Sites/messageBoard/controller/index.php:11
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/index.php(11): PDO->__construct('mysql:host=loca...')
+#1 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 11
+[04-Jan-2023 16:55:26 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchALL() on bool in /Users/mia/Sites/messageBoard/controller/index.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 12
+[04-Jan-2023 16:56:26 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/controller/index.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 13
+[04-Jan-2023 16:56:28 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/controller/index.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 13
+[04-Jan-2023 16:56:29 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/controller/index.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 13
+[04-Jan-2023 16:56:29 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/controller/index.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 13
+[04-Jan-2023 16:56:29 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/controller/index.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 13
+[04-Jan-2023 16:56:56 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/controller/index.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 13
+[04-Jan-2023 16:56:57 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /Users/mia/Sites/messageBoard/controller/index.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 13
+[04-Jan-2023 17:01:10 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:28
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(28): PDO->__construct('msql:host=local...', 'mia', '', Array)
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 28
+[04-Jan-2023 17:02:01 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:28
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(28): PDO->__construct('msql:host=local...', 'mia', '', Array)
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 28
+[04-Jan-2023 17:02:36 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:28
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(28): PDO->__construct('msql:host=local...', 'mia', '', Array)
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 28
+[04-Jan-2023 17:04:58 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:30
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(30): PDO->__construct('msql:host=local...', 'mia', '')
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 30
+[04-Jan-2023 17:05:50 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:30
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(30): PDO->__construct('msql:host=local...', 'mia')
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 30
+[04-Jan-2023 17:05:52 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: could not find driver in /Users/mia/Sites/messageBoard/core/Dbh.php:30
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(30): PDO->__construct('msql:host=local...', 'mia')
+#1 /Users/mia/Sites/messageBoard/controller/latestMessage.php(12): Dbh->__construct()
+#2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 30
+[04-Jan-2023 17:28:54 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "messageBoard\controller\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:14
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 14
+[04-Jan-2023 17:31:09 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:11
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 11
+[04-Jan-2023 17:32:09 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 10
+[04-Jan-2023 17:32:44 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 10
+[04-Jan-2023 17:32:46 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 10
+[04-Jan-2023 17:54:10 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "endforeach", expecting end of file in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 15
+[04-Jan-2023 17:55:19 Asia/Taipei] PHP Warning:  Undefined variable $msgs in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 14
+[04-Jan-2023 17:55:19 Asia/Taipei] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 14
+[04-Jan-2023 17:57:36 Asia/Taipei] PHP Warning:  Undefined variable $msgs in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 14
+[04-Jan-2023 17:57:36 Asia/Taipei] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 14
+[04-Jan-2023 17:57:38 Asia/Taipei] PHP Warning:  Undefined variable $msgs in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 14
+[04-Jan-2023 17:57:38 Asia/Taipei] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 14
+[04-Jan-2023 17:58:14 Asia/Taipei] PHP Warning:  Undefined variable $msgs in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 14
+[04-Jan-2023 17:58:14 Asia/Taipei] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 14
+[04-Jan-2023 17:58:57 Asia/Taipei] PHP Warning:  Undefined variable $msgs in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 17
+[04-Jan-2023 17:58:59 Asia/Taipei] PHP Warning:  Undefined variable $msgs in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 17
+[04-Jan-2023 18:02:37 Asia/Taipei] PHP Warning:  Undefined variable $msgs in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 15
+[04-Jan-2023 18:02:40 Asia/Taipei] PHP Warning:  Undefined variable $msgs in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 15
+[04-Jan-2023 18:04:20 Asia/Taipei] PHP Warning:  Array to string conversion in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 15
+[04-Jan-2023 18:04:20 Asia/Taipei] PHP Warning:  Array to string conversion in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 15
+[04-Jan-2023 18:04:20 Asia/Taipei] PHP Warning:  Array to string conversion in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 15
+[04-Jan-2023 18:06:04 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "endforeach", expecting end of file in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 15
+[04-Jan-2023 18:06:44 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "endforeach", expecting end of file in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 15
+[04-Jan-2023 18:06:46 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "endforeach", expecting end of file in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 15
+[04-Jan-2023 18:10:19 Asia/Taipei] PHP Warning:  Undefined variable $notes in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 19
+[04-Jan-2023 18:10:19 Asia/Taipei] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 19
+[04-Jan-2023 18:20:33 Asia/Taipei] PHP Warning:  Undefined array key "time" in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 14
+[04-Jan-2023 18:20:33 Asia/Taipei] PHP Warning:  Undefined array key "time" in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 14
+[04-Jan-2023 18:20:33 Asia/Taipei] PHP Warning:  Undefined array key "time" in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 14
+[05-Jan-2023 11:04:14 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "]", expecting "-" or identifier or variable or number in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 23
+[05-Jan-2023 11:04:17 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "]", expecting "-" or identifier or variable or number in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 23
+[05-Jan-2023 11:34:07 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/myMessage.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/myMessage.php on line 10
+[05-Jan-2023 11:34:08 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/myMessage.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/index.php(13): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/myMessage.php on line 10
+[05-Jan-2023 11:44:09 Asia/Taipei] PHP Warning:  Undefined variable $latestMsg in /Users/mia/Sites/messageBoard/view/myMessage.view.php on line 6
+[05-Jan-2023 11:44:09 Asia/Taipei] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/mia/Sites/messageBoard/view/myMessage.view.php on line 6
+[05-Jan-2023 11:48:41 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "<" in /Users/mia/Sites/messageBoard/view/myMessage.view.php on line 20
