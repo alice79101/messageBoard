@@ -11,7 +11,7 @@
                     <div class="h-20 rounded-lg border-2 border-dashed border-gray-200">
                     <li class="mt-4">
 <!--                        --><?php //var_dump($value); ?>
-                        <li class="text-gray-500 hover:underline"><?php
+                        <li class="ml-4 text-gray-500 hover:underline"><?php
                             if (strlen($value['msgTitle']) <= 100 ) {
                                 $result = $value['msgTitle'];
                             } else {
@@ -19,7 +19,7 @@
                             }
                             echo $result; ?>
                         </li>
-                        <li align="right">
+                        <li align="right" class="mr-4">
                            <?= "｜ 發佈於：" . substr($value["msgTime"], 0, 10); ?>
                         </li>
                         <br>

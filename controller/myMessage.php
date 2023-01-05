@@ -9,8 +9,19 @@ require __DIR__ . "/../partials/banner.php";
 require __DIR__ . "/../core/Dbh.php";
 
 $db = new Dbh();
-$myMsg = $db->myMsgs(1);
-//dumpAndDie($latestMsg);
+
+// 驗證使用者身份，只能看到自己的訊息
+$memberID =1;
+$myMsg = $db->prepareSQL("SELECT * FROM msgList WHERE memberID =:memberID", [
+    'memberID' => $memberID
+])->getMsgs();
+//dumpAndDie($myMsg);
+//$myMsg = $db->prepareSQL("SELECT * FROM msgList WHERE memberID =1");
+
+
+
+
+
 
 
 
