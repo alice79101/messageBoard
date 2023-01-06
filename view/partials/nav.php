@@ -15,7 +15,7 @@
                         <a href="/" class="<?= isUrl("/") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">Home</a>
                         <a href="/latest" class="<?= isUrl("/latest") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">What's new</a>
                         <a href="/myMessage" class="<?= isUrl("/myMessage") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">My Message</a>
-                        <a href="/Signout" class="<?= isUrl("/Signout") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">Signout</a>
+                        <a href="/createMessage" class="<?= isUrl("/createMessage") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">Create Message</a>
 
                     </div>
                 </div>

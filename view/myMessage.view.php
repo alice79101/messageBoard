@@ -8,10 +8,13 @@
             <ul>
                 <?php foreach ($myMsg as $k=>$value) : ?>
                 <div>
-                    <a href="/msg?msgIndex=<?=$value['msgIndex'] ?>" class="text-gray-500 hover:underline"">
-                        <?= htmlspecialchars($value['msgTitle'])?>
+                    <a href="/msg?msgIndex=<?=$value['msgIndex'] ?>" class="text-gray-500 hover:underline">
+                        <?= htmlspecialchars($value['msgTitle']) //顯示的文字為訊息標題?>
                     </a>
                     <?php endforeach; ?>
+                </div>
+                <div class="px-4 py-6 sm:px-0">
+                    <a href="/createMessage" class="text-blue-500 hover:underline">Leave a Message...</a>
                 </div>
             </ul>
         </div>

@@ -56,7 +56,7 @@ class Dbh
     }
 
     //原本使用上面的 vieMsg() 和 myMsg()，但既然有不同情境會更改 $sql ，何不把這個 function 變得更通用？
-    public function prepareSQL($sql, $conditions =[])
+    public function query($sql, $conditions=[])
     {
         $this->statement = $this->connection->prepare($sql);
         $this->statement->execute($conditions);
@@ -65,14 +65,11 @@ class Dbh
 
     }
 
+
     public function getMsgs()
     {
         return $this->statement->fetchAll();
     }
 
-    public function createMsg()
-    {
-
-    }
 
 }
