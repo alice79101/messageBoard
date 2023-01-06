@@ -18,8 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     }
 
     // 內容過多驗證
-    if (strlen($_POST["Title"]) >= 30 || strlen($_POST["content"]) >= 1000) {
-        $errMsg = "留言失敗：訊息主旨至多30字元、內容至多1,000字元";
+    if (strlen($_POST["Title"]) >= 100 || strlen($_POST["content"]) >= 1000) {
+        $errMsg = "留言失敗：訊息主旨至多100字元、內容至多1,000字元";
     }
 
 //    dumpAndDie($_POST); // 驗證表單傳出來的內容是什麼

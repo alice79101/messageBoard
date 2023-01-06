@@ -1,8 +1,8 @@
 <?php
-require __DIR__ . "/../partials/head.php";
-require __DIR__ . "/../partials/nav.php";
+require __DIR__ . "/../view/partials/head.php";
+require __DIR__ . "/../view/partials/nav.php";
 $heading = "404 Not found!";
-require __DIR__ . "/../partials/banner.php";
+require __DIR__ . "/../view/partials/banner.php";
 
 ?>
 
@@ -20,4 +20,4 @@ require __DIR__ . "/../partials/banner.php";
     </div>
 </main>
 <?php
-require __DIR__ . "/../partials/footer.php";
+require __DIR__ . "/../view/partials/footer.php";

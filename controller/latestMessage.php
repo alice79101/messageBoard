@@ -9,7 +9,14 @@ require __DIR__ . "/../core/Dbh.php";
 
 $db = new Dbh();
 
-$latestMsg = $db->query("SELECT * FROM msgList")->getMsgs();
+$msgs = $db->query("SELECT * FROM msgList ORDER BY msgTime DESC")->getMsgs();
+if (count($msgs) > 10 ) {
+    $latestMsg = array_slice($msgs, 0, 10);
+} else {
+    $latestMsg = $msgs;
+}
+
+
 //dumpAndDie($latestMsg);
 
 // 要可以看到自己跟朋友的訊息 >>>>還沒寫，先拿到所有人的留言

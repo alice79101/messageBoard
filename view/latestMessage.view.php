@@ -17,7 +17,7 @@
                             } else {
                                 $result = substr($value['msgTitle'], 0, 30) . "...";
                             }
-                            echo $result; ?>
+                            echo htmlspecialchars($result); ?>
                         </li>
                         <li align="right" class="mr-4">
                            <?= "｜ 發佈於：" . substr($value["msgTime"], 0, 10); ?>

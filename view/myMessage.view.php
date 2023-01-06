@@ -9,7 +9,9 @@
                 <?php foreach ($myMsg as $k=>$value) : ?>
                 <div>
                     <a href="/msg?msgIndex=<?=$value['msgIndex'] ?>" class="text-gray-500 hover:underline">
-                        <?= htmlspecialchars($value['msgTitle']) //顯示的文字為訊息標題?>
+                        <?= htmlspecialchars($value['msgTitle']) //顯示的文字為訊息標題
+                        // 透過 htmlspecialchars() 將使用者輸入的訊息轉譯，不會讓他造成對網站的危害
+                        ?>
                     </a>
                     <?php endforeach; ?>
                 </div>

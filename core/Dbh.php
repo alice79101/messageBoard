@@ -47,7 +47,7 @@ class Dbh
 
     public function myMsgs($memberID = NULL)
     {
-        $sql = "SELECT * FROM msgList WHERE memberID = ? ORDER BY msgTime";
+        $sql = "SELECT * FROM msgList WHERE memberID = ? ORDER BY msgTime DESC";
         $statement = $this->connection->prepare($sql);
         $statement->execute([$memberID]);
         $msgs = $statement->fetchAll();
@@ -71,5 +71,9 @@ class Dbh
         return $this->statement->fetchAll();
     }
 
+    public function findMsg()
+    {
+        return $this->statement->fetch();
+    }
 
 }
