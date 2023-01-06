@@ -6,27 +6,33 @@
             <p>
                 Here are latest messages.
             </p>
-                <ul>
-                    <?php foreach ($latestMsg as $k=>$value) : ?>
-                    <div class="h-20 rounded-lg border-2 border-dashed border-gray-200">
+            <ul>
+                <?php foreach ($latestMsg
+
+                as $k => $value) : ?>
+                <div class="h-20 rounded-lg border-2 border-dashed border-gray-200">
                     <li class="mt-4">
-<!--                        --><?php //var_dump($value); ?>
-                        <li class="ml-4 text-gray-500 hover:underline"><?php
-                            if (strlen($value['msgTitle']) <= 100 ) {
-                                $result = $value['msgTitle'];
-                            } else {
-                                $result = substr($value['msgTitle'], 0, 30) . "...";
-                            }
-                            echo htmlspecialchars($result); ?>
-                        </li>
-                        <li align="right" class="mr-4">
-                           <?= "｜ 發佈於：" . substr($value["msgTime"], 0, 10); ?>
-                        </li>
-                        <br>
-                        <?php endforeach; ?>
+                        <!--                        --><?php //var_dump($value); ?>
+                    <li class="ml-4 text-gray-500 hover:underline"><?php
+                        if (strlen($value['msgTitle']) <= 100) {
+                            $result = $value['msgTitle'];
+                        } else {
+                            $result = substr($value['msgTitle'], 0, 30) . "...";
+                        } ?>
+                        <a href="/msg?msgIndex=<?= $value['msgIndex'] ?>" class="text-gray-500 hover:underline">
+                            <?= htmlspecialchars($value['msgTitle']) //顯示的文字為訊息標題
+                            // 透過 htmlspecialchars() 將使用者輸入的訊息轉譯，不會讓他造成對網站的危害
+                            ?>
+                        </a>
                     </li>
-                    </div>
-                </ul>
+                    <li align="right" class="mr-4">
+                        <?= "｜ 發佈於：" . substr($value["msgTime"], 0, 10); ?>
+                    </li>
+                    <br>
+                    <?php endforeach; ?>
+                    </li>
+                </div>
+            </ul>
         </div>
         <!-- /End replace -->
 
