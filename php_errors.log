@@ -1388,3 +1388,28 @@ Stack trace:
 #2 /Users/mia/Sites/messageBoard/index.php(13): require('/Users/mia/Site...')
 #3 {main}
   thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 77
+[06-Jan-2023 13:57:34 Asia/Taipei] PHP Warning:  Undefined array key 0 in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 13:58:19 Asia/Taipei] PHP Warning:  Undefined array key 0 in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 13:58:23 Asia/Taipei] PHP Warning:  Undefined array key 0 in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 13:59:47 Asia/Taipei] PHP Warning:  Array to string conversion in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 23
+[06-Jan-2023 14:00:07 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:00:09 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:00:11 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:00:31 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:00:33 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:00:46 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:00:48 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:00:49 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:00:56 Asia/Taipei] PHP Warning:  Undefined array key 0 in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 23
+[06-Jan-2023 14:01:40 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:02:07 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:02:08 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:04:04 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:04:05 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:04:06 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:04:06 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:04:10 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:04:13 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:04:54 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:05:05 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[06-Jan-2023 14:05:25 Asia/Taipei] PHP Warning:  Undefined variable $err in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
