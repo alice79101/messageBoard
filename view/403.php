@@ -2,8 +2,9 @@
 view_path("partials/head.php");
 view_path("partials/nav.php");
 view_path("partials/banner.php", [
-    'heading' => '404 NOT FOUND'
+        'heading' => '403 FORBIDDEN'
 ]);
+
 ?>
 
 <main>
@@ -11,7 +12,7 @@ view_path("partials/banner.php", [
         <!-- Replace with your content -->
         <div class="px-4 py-6 sm:px-0">
 
-            <p class="mt-4">Oops! you have wrong link.</p>
+            <p class="mt-4">You are forbidden.</p>
         </div>
 
         <a href="/" class="text-blue-500 hover:underline">Go back home...</a>

@@ -1,8 +1,7 @@
 <?php
+use core\Dbh;
 view_path("partials/head.php");
 view_path("partials/nav.php");
-require base_path("core/Dbh.php");
-
 
 // 這個頁面是用來顯示每個訊息的內容
 

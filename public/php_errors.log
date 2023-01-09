@@ -399,3 +399,178 @@ Stack trace:
 [09-Jan-2023 15:57:39 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
 [09-Jan-2023 15:57:39 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
 [09-Jan-2023 15:57:39 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
+[09-Jan-2023 16:16:47 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Response" not found in /Users/mia/Sites/messageBoard/view/404.php:5
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/functions.php(24): require()
+#1 /Users/mia/Sites/messageBoard/core/router.php(6): view_path('404.php')
+#2 /Users/mia/Sites/messageBoard/public/index.php(17): abort(404)
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/view/404.php on line 5
+[09-Jan-2023 16:18:19 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(17): abort(404)
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[09-Jan-2023 16:53:16 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/createMessage.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 13
+[10-Jan-2023 00:38:19 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/createMessage.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 13
+[10-Jan-2023 00:42:47 Asia/Taipei] PHP Parse error:  syntax error, unexpected token ")", expecting "{" in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 11
+[10-Jan-2023 00:43:00 Asia/Taipei] PHP Parse error:  syntax error, unexpected token ")", expecting "{" in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 11
+[10-Jan-2023 00:43:01 Asia/Taipei] PHP Parse error:  syntax error, unexpected token ")", expecting "{" in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 11
+[10-Jan-2023 00:43:04 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/createMessage.php:14
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 14
+[10-Jan-2023 00:43:06 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/createMessage.php:14
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 14
+[10-Jan-2023 00:43:43 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/createMessage.php:14
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 14
+[10-Jan-2023 00:43:44 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/createMessage.php:14
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 14
+[10-Jan-2023 00:44:13 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/createMessage.php:14
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 14
+[10-Jan-2023 00:44:14 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/createMessage.php:14
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 14
+[10-Jan-2023 00:44:15 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/createMessage.php:14
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 14
+[10-Jan-2023 00:46:40 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/createMessage.php:14
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 14
+[10-Jan-2023 00:46:42 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/createMessage.php:14
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 14
+[10-Jan-2023 00:46:48 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[10-Jan-2023 00:47:10 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[10-Jan-2023 00:47:12 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[10-Jan-2023 00:47:28 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[10-Jan-2023 00:47:50 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[10-Jan-2023 00:47:51 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[10-Jan-2023 00:50:39 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 2
+[10-Jan-2023 00:50:40 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 2
+[10-Jan-2023 00:50:56 Asia/Taipei] PHP Warning:  The use statement with non-compound name 'core' has no effect in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 2
+[10-Jan-2023 00:50:56 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 12
+[10-Jan-2023 00:51:52 Asia/Taipei] PHP Warning:  The use statement with non-compound name 'core' has no effect in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 2
+[10-Jan-2023 00:51:52 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 13
+[10-Jan-2023 00:52:06 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 13
+[10-Jan-2023 00:52:08 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/latestMessage.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 13
+[10-Jan-2023 00:52:33 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\PDO" not found in /Users/mia/Sites/messageBoard/core/Dbh.php:30
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/latestMessage.php(13): core\Dbh->__construct()
+#1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 30
+[10-Jan-2023 00:52:35 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\PDO" not found in /Users/mia/Sites/messageBoard/core/Dbh.php:30
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/latestMessage.php(13): core\Dbh->__construct()
+#1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 30
+[10-Jan-2023 00:53:03 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\PDO" not found in /Users/mia/Sites/messageBoard/core/Dbh.php:30
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/latestMessage.php(14): core\Dbh->__construct()
+#1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 30
+[10-Jan-2023 00:53:04 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\PDO" not found in /Users/mia/Sites/messageBoard/core/Dbh.php:30
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/latestMessage.php(14): core\Dbh->__construct()
+#1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 30
+[10-Jan-2023 00:53:04 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "core\PDO" not found in /Users/mia/Sites/messageBoard/core/Dbh.php:30
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/latestMessage.php(14): core\Dbh->__construct()
+#1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 30
+[10-Jan-2023 00:55:14 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/myMessage.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/myMessage.php on line 13
+[10-Jan-2023 00:55:17 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/myMessage.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/myMessage.php on line 13
+[10-Jan-2023 00:55:31 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "Dbh" not found in /Users/mia/Sites/messageBoard/controller/myMessage.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/myMessage.php on line 13
