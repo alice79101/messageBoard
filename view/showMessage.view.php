@@ -8,6 +8,8 @@
                     <?= htmlspecialchars($msg["msgContent"]); ?>
                 </p>
             </ul>
+
+
         </div>
         <!-- /End replace -->
 
