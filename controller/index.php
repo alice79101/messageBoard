@@ -1,15 +1,14 @@
 <?php
-//namespace messageBoard\controller;
+view_path("partials/head.php");
+view_path("partials/nav.php");
 
-require __DIR__ . "/../view/partials/head.php";
-require __DIR__ . "/../view/partials/nav.php";
-$heading = "Home";
-require __DIR__ . "/../view/partials/banner.php";
-
-
+view_path("partials/banner.php", [
+    'heading' => "Home"
+]);
 
 
 
 
-require __DIR__ . "/../view/index.view.php";
-require __DIR__ . "/../view/partials/footer.php";
+
+view_path("index.view.php");
+view_path("partials/footer.php");

@@ -1,10 +1,12 @@
 <?php
 
-require __DIR__ . "/../view/partials/head.php";
-require __DIR__ . "/../view/partials/nav.php";
-$heading = "What's New?";
-require __DIR__ . "/../view/partials/banner.php";
-require __DIR__ . "/../core/Dbh.php";
+view_path("partials/head.php");
+view_path("partials/nav.php");
+view_path("partials/banner.php", [
+    'heading' => "What's New?"
+]);
+
+require base_path("core/Dbh.php");
 
 
 $db = new Dbh();
@@ -21,5 +23,8 @@ if (count($msgs) > 10 ) {
 
 // 要可以看到自己跟朋友的訊息 >>>>還沒寫，先拿到所有人的留言
 
-require __DIR__ . "/../view/latestMessage.view.php";
-require __DIR__ . "/../view/partials/footer.php";
+
+view_path("latestMessage.view.php", [
+    'latestMsg' => $latestMsg
+]);
+view_path("partials/footer.php");

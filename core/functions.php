@@ -14,3 +14,13 @@ function isUrl($value) {
         return $_SERVER["REQUEST_URI"];
     }
 }
+
+function base_path($rootToPath){
+    return BASE_PATH . $rootToPath;
+}
+
+function view_path($path, $attributes = []){
+    extract($attributes);
+    require BASE_PATH . "view/" . $path;
+
+}

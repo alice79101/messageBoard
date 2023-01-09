@@ -1,0 +1,401 @@
+[09-Jan-2023 10:31:07 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 6
+[09-Jan-2023 10:31:12 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 6
+[09-Jan-2023 10:31:18 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 6
+[09-Jan-2023 10:32:25 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 6
+[09-Jan-2023 10:32:25 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 6
+[09-Jan-2023 10:33:02 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 5
+[09-Jan-2023 10:33:03 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 5
+[09-Jan-2023 10:33:03 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 5
+[09-Jan-2023 10:33:03 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 5
+[09-Jan-2023 10:46:08 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 11
+[09-Jan-2023 10:46:09 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 11
+[09-Jan-2023 10:46:32 Asia/Taipei] PHP Warning:  require(controller/index.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/public/index.php on line 22
+[09-Jan-2023 10:46:32 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'controller/index.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 22
+[09-Jan-2023 10:54:01 Asia/Taipei] PHP Warning:  require(controller/index.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/public/index.php on line 22
+[09-Jan-2023 10:54:01 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'controller/index.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 22
+[09-Jan-2023 11:06:35 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../view/core/Dbh.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 7
+[09-Jan-2023 11:06:35 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../view/core/Dbh.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/controller/createMessage.php:7
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/createMessage', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 7
+[09-Jan-2023 11:09:04 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../view/view/partials/footer.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 40
+[09-Jan-2023 11:09:04 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../view/view/partials/footer.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/controller/createMessage.php:40
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/createMessage', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 40
+[09-Jan-2023 11:20:20 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:5
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 5
+[09-Jan-2023 11:20:34 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 6
+[09-Jan-2023 11:20:35 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 6
+[09-Jan-2023 11:20:37 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 6
+[09-Jan-2023 11:20:37 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 6
+[09-Jan-2023 11:20:37 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 6
+[09-Jan-2023 11:20:38 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 6
+[09-Jan-2023 11:24:27 Asia/Taipei] PHP Warning:  Undefined variable $heading in /Users/mia/Sites/messageBoard/controller/index.php on line 7
+[09-Jan-2023 11:24:27 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:7
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 7
+[09-Jan-2023 11:24:28 Asia/Taipei] PHP Warning:  Undefined variable $heading in /Users/mia/Sites/messageBoard/controller/index.php on line 7
+[09-Jan-2023 11:24:28 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:7
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 7
+[09-Jan-2023 11:24:30 Asia/Taipei] PHP Warning:  Undefined variable $heading in /Users/mia/Sites/messageBoard/controller/index.php on line 7
+[09-Jan-2023 11:24:30 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:7
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 7
+[09-Jan-2023 11:27:16 Asia/Taipei] PHP Warning:  Undefined variable $heading in /Users/mia/Sites/messageBoard/controller/index.php on line 7
+[09-Jan-2023 11:27:16 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:7
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 7
+[09-Jan-2023 11:27:55 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:8
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 8
+[09-Jan-2023 11:27:56 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:8
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 8
+[09-Jan-2023 11:29:48 Asia/Taipei] PHP Warning:  Undefined variable $heading in /Users/mia/Sites/messageBoard/view/partials/banner.php on line 3
+[09-Jan-2023 11:29:48 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../view/php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:29:48 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../view/php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/functions.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/index.php(17): view_path('php')
+#1 /Users/mia/Sites/messageBoard/router.php(5): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:29:52 Asia/Taipei] PHP Warning:  Undefined variable $heading in /Users/mia/Sites/messageBoard/view/partials/banner.php on line 3
+[09-Jan-2023 11:29:52 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../view/php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:29:52 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../view/php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/functions.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/index.php(17): view_path('php')
+#1 /Users/mia/Sites/messageBoard/router.php(5): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:21 Asia/Taipei] PHP Warning:  Undefined variable $heading in /Users/mia/Sites/messageBoard/view/partials/banner.php on line 3
+[09-Jan-2023 11:30:21 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../view/php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:21 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../view/php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/functions.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/index.php(17): view_path('php')
+#1 /Users/mia/Sites/messageBoard/router.php(5): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:23 Asia/Taipei] PHP Warning:  Undefined variable $heading in /Users/mia/Sites/messageBoard/view/partials/banner.php on line 3
+[09-Jan-2023 11:30:23 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../view/php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:23 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../view/php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/functions.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/index.php(17): view_path('php')
+#1 /Users/mia/Sites/messageBoard/router.php(5): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:24 Asia/Taipei] PHP Warning:  Undefined variable $heading in /Users/mia/Sites/messageBoard/view/partials/banner.php on line 3
+[09-Jan-2023 11:30:24 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../view/php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:24 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../view/php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/functions.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/index.php(17): view_path('php')
+#1 /Users/mia/Sites/messageBoard/router.php(5): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:24 Asia/Taipei] PHP Warning:  Undefined variable $heading in /Users/mia/Sites/messageBoard/view/partials/banner.php on line 3
+[09-Jan-2023 11:30:24 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../view/php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:24 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../view/php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/functions.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/index.php(17): view_path('php')
+#1 /Users/mia/Sites/messageBoard/router.php(5): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:24 Asia/Taipei] PHP Warning:  Undefined variable $heading in /Users/mia/Sites/messageBoard/view/partials/banner.php on line 3
+[09-Jan-2023 11:30:24 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../view/php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:24 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../view/php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/functions.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/index.php(17): view_path('php')
+#1 /Users/mia/Sites/messageBoard/router.php(5): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:51 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../view/php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:51 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../view/php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/functions.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/index.php(17): view_path('php')
+#1 /Users/mia/Sites/messageBoard/router.php(5): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:53 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../view/php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:30:53 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../view/php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/functions.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/index.php(17): view_path('php')
+#1 /Users/mia/Sites/messageBoard/router.php(5): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/', Array)
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/functions.php on line 25
+[09-Jan-2023 11:32:39 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/latestMessage.php:3
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/latest', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 3
+[09-Jan-2023 11:34:32 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/latestMessage.php:3
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/latest', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 3
+[09-Jan-2023 11:34:33 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/latestMessage.php:3
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/latest', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 3
+[09-Jan-2023 11:34:33 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/latestMessage.php:3
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/latest', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 3
+[09-Jan-2023 11:36:07 Asia/Taipei] PHP Warning:  Undefined variable $createStatus in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[09-Jan-2023 11:36:07 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[09-Jan-2023 11:36:07 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/createMessage.php:43
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/createMessage', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 43
+[09-Jan-2023 11:36:33 Asia/Taipei] PHP Warning:  Undefined variable $createStatus in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[09-Jan-2023 11:36:33 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[09-Jan-2023 11:36:33 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/createMessage.php:43
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/createMessage', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 43
+[09-Jan-2023 11:36:34 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/myMessage.php:5
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/myMessage', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/myMessage.php on line 5
+[09-Jan-2023 11:36:37 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/latestMessage.php:3
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/latest', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/latestMessage.php on line 3
+[09-Jan-2023 11:36:42 Asia/Taipei] PHP Warning:  Undefined variable $createStatus in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[09-Jan-2023 11:36:42 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[09-Jan-2023 11:36:42 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/createMessage.php:43
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/createMessage', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 43
+[09-Jan-2023 11:37:15 Asia/Taipei] PHP Warning:  Undefined variable $createStatus in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[09-Jan-2023 11:37:15 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[09-Jan-2023 11:37:15 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/createMessage.php:43
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/createMessage', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 43
+[09-Jan-2023 11:37:17 Asia/Taipei] PHP Warning:  Undefined variable $createStatus in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[09-Jan-2023 11:37:17 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[09-Jan-2023 11:37:17 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/createMessage.php:43
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/router.php(5): require()
+#1 /Users/mia/Sites/messageBoard/public/index.php(19): routerController('/createMessage', Array)
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 43
+[09-Jan-2023 11:58:50 Asia/Taipei] PHP Warning:  require(functions.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/public/index.php on line 2
+[09-Jan-2023 11:58:50 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'functions.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/public/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 2
+[09-Jan-2023 11:58:55 Asia/Taipei] PHP Warning:  require(functions.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/public/index.php on line 2
+[09-Jan-2023 11:58:55 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'functions.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/public/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 2
+[09-Jan-2023 12:03:07 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 4
+[09-Jan-2023 12:03:10 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function base_path() in /Users/mia/Sites/messageBoard/public/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 4
+[09-Jan-2023 12:03:41 Asia/Taipei] PHP Parse error:  Unmatched ')' in /Users/mia/Sites/messageBoard/public/index.php on line 4
+[09-Jan-2023 12:03:54 Asia/Taipei] PHP Warning:  require(routes.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/public/index.php on line 8
+[09-Jan-2023 12:03:54 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'routes.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/public/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 8
+[09-Jan-2023 12:04:59 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../routes.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/public/index.php on line 8
+[09-Jan-2023 12:04:59 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../routes.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/public/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 8
+[09-Jan-2023 12:05:01 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../routes.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/public/index.php on line 8
+[09-Jan-2023 12:05:01 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../routes.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/public/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 8
+[09-Jan-2023 12:05:19 Asia/Taipei] PHP Warning:  require(controller/index.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/public/index.php on line 15
+[09-Jan-2023 12:05:19 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'controller/index.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/public/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 15
+[09-Jan-2023 12:07:28 Asia/Taipei] PHP Warning:  require(controller/index.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/public/index.php on line 15
+[09-Jan-2023 12:07:28 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'controller/index.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/public/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 15
+[09-Jan-2023 12:08:18 Asia/Taipei] PHP Warning:  require(controller/index.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/public/index.php on line 15
+[09-Jan-2023 12:08:18 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'controller/index.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/public/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 15
+[09-Jan-2023 15:29:15 Asia/Taipei] PHP Warning:  require(controller/index.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/public/index.php on line 15
+[09-Jan-2023 15:29:15 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required 'controller/index.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/public/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /Users/mia/Sites/messageBoard/public/index.php on line 15
+[09-Jan-2023 15:34:39 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/controller/index.php:4
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/index.php on line 4
+[09-Jan-2023 15:35:19 Asia/Taipei] PHP Warning:  Undefined variable $heading in /Users/mia/Sites/messageBoard/view/partials/banner.php on line 3
+[09-Jan-2023 15:41:56 Asia/Taipei] PHP Warning:  Undefined variable $createStatus in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[09-Jan-2023 15:41:56 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[09-Jan-2023 15:43:19 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 38
+[09-Jan-2023 15:46:00 Asia/Taipei] PHP Warning:  Undefined variable $latestMsg in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 10
+[09-Jan-2023 15:46:00 Asia/Taipei] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 10
+[09-Jan-2023 15:48:23 Asia/Taipei] PHP Parse error:  syntax error, unexpected end of file in /Users/mia/Sites/messageBoard/controller/myMessage.php on line 33
+[09-Jan-2023 15:48:31 Asia/Taipei] PHP Warning:  Undefined variable $latestMsg in /Users/mia/Sites/messageBoard/controller/myMessage.php on line 31
+[09-Jan-2023 15:48:31 Asia/Taipei] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 10
+[09-Jan-2023 15:48:43 Asia/Taipei] PHP Warning:  Undefined variable $latestMsg in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 10
+[09-Jan-2023 15:48:43 Asia/Taipei] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 10
+[09-Jan-2023 15:49:16 Asia/Taipei] PHP Warning:  Undefined variable $latestMsg in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 10
+[09-Jan-2023 15:49:16 Asia/Taipei] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 10
+[09-Jan-2023 15:49:22 Asia/Taipei] PHP Warning:  Undefined variable $latestMsg in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 10
+[09-Jan-2023 15:49:22 Asia/Taipei] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 10
+[09-Jan-2023 15:49:54 Asia/Taipei] PHP Warning:  Undefined variable $latestMsg in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 10
+[09-Jan-2023 15:49:54 Asia/Taipei] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 10
+[09-Jan-2023 15:54:08 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard/public/../view/partial/nav.php): Failed to open stream: No such file or directory in /Users/mia/Sites/messageBoard/core/functions.php on line 24
+[09-Jan-2023 15:54:08 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/../view/partial/nav.php' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/core/functions.php:24
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/showMessage.php(3): view_path('partial/nav.php')
+#1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/functions.php on line 24
+[09-Jan-2023 15:57:26 Asia/Taipei] PHP Warning:  Undefined array key "Title" in /Users/mia/Sites/messageBoard/controller/showMessage.php on line 22
+[09-Jan-2023 15:57:26 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/showMessage.php on line 22
+[09-Jan-2023 15:57:26 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
+[09-Jan-2023 15:57:26 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
+[09-Jan-2023 15:57:26 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
+[09-Jan-2023 15:57:28 Asia/Taipei] PHP Warning:  Undefined array key "Title" in /Users/mia/Sites/messageBoard/controller/showMessage.php on line 22
+[09-Jan-2023 15:57:28 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/showMessage.php on line 22
+[09-Jan-2023 15:57:28 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
+[09-Jan-2023 15:57:28 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
+[09-Jan-2023 15:57:28 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
+[09-Jan-2023 15:57:39 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
+[09-Jan-2023 15:57:39 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
+[09-Jan-2023 15:57:39 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8

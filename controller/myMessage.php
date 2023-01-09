@@ -2,11 +2,13 @@
 
 //namespace messageBoard\controller;
 
-require __DIR__ . "/../view/partials/head.php";
-require __DIR__ . "/../view/partials/nav.php";
-$heading = "My Message";
-require __DIR__ . "/../view/partials/banner.php";
-require __DIR__ . "/../core/Dbh.php";
+view_path("partials/head.php");
+view_path("partials/nav.php");
+view_path("partials/banner.php", [
+    'heading' => "My Message"
+]);
+
+require base_path("core/Dbh.php");
 
 $db = new Dbh();
 
@@ -25,5 +27,7 @@ $myMsg = $db->query("SELECT * FROM msgList WHERE memberID =:memberID", [
 
 
 
-require __DIR__ . "/../view/myMessage.view.php";
-require __DIR__ . "/../view/partials/footer.php";
+view_path("myMessage.view.php", [
+    'myMsg' => $myMsg
+]);
+view_path("partials/footer.php");

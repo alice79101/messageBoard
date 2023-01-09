@@ -7,9 +7,7 @@
                 Here are latest messages.
             </p>
             <ul>
-                <?php foreach ($latestMsg
-
-                as $k => $value) : ?>
+                <?php foreach ($latestMsg as $k => $value) : ?>
                 <div class="h-20 rounded-lg border-2 border-dashed border-gray-200">
                     <li class="mt-4">
                         <!--                        --><?php //var_dump($value); ?>

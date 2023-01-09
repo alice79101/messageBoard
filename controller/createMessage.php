@@ -1,10 +1,12 @@
 <?php
+view_path("partials/head.php");
+view_path("partials/nav.php");
+view_path("partials/banner.php", [
+    'heading' => "Create Message"
+]);
 
-require __DIR__ . "/../view/partials/head.php";
-require __DIR__ . "/../view/partials/nav.php";
-$heading = "My Message";
-require __DIR__ . "/../view/partials/banner.php";
-require __DIR__ . "/../core/Dbh.php";
+require base_path("core/Dbh.php");
+
 
 $db = new Dbh();
 $errMsg = "";
@@ -36,5 +38,8 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     }
 }
 
-require __DIR__ . "/../view/createMessage.view.php";
-require __DIR__ . "/../view/partials/footer.php";
+view_path("createMessage.view.php", [
+    'createStatus' => $createStatus,
+    'errMsg' => $errMsg
+]);
+view_path("partials/footer.php");
