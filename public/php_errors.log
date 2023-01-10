@@ -595,3 +595,13 @@ Stack trace:
 [10-Jan-2023 10:40:48 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
 [10-Jan-2023 10:40:48 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
 [10-Jan-2023 10:40:48 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
+[10-Jan-2023 13:41:21 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(17): abort(404)
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[10-Jan-2023 13:41:25 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(17): abort(404)
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6

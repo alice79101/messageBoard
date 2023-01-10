@@ -6,7 +6,8 @@ return [
     '/myMessage' => 'controller/myMessage.php',
     '/createMessage' => 'controller/createMessage.php',
     '/msg' => 'controller/showMessage.php',
-    '/signupOrLogin' => 'controller/signupAndLogin.php'
+    '/signup' => 'controller/signup.php',
+    '/login' => 'controller/login.php',
 ];
 
 
