@@ -13,5 +13,6 @@
         </div>
         <!-- /End replace -->
 
+        <a href="/myMessage" class="text-blue-500 hover:underline">Back...</a>
     </div>
 </main>
