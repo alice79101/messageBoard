@@ -1,11 +1,7 @@
 <?php
 use core\Dbh;
 //require base_path("vendor/autoload.php");
-view_path("partials/head.php");
-view_path("partials/nav.php");
-view_path("partials/banner.php", [
-    'heading' => "What's New?"
-]);
+
 
 
 $db = new Dbh();
@@ -26,4 +22,3 @@ if (count($msgs) > 10 ) {
 view_path("latestMessage.view.php", [
     'latestMsg' => $latestMsg
 ]);
-view_path("partials/footer.php");

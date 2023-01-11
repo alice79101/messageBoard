@@ -1,3 +1,9 @@
+<?php
+
+view_path("partials/head.php");
+view_path("partials/nav.php");
+
+?>
 <!--
   This example requires some changes to your config:
 
@@ -115,3 +121,7 @@
         </form>
     </div>
 </div>
+
+<?php
+view_path("partials/footer.php");
+?>

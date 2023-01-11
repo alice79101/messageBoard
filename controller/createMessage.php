@@ -1,12 +1,6 @@
 <?php
 use core\Dbh;
 
-view_path("partials/head.php");
-view_path("partials/nav.php");
-view_path("partials/banner.php", [
-    'heading' => "Create Message"
-]);
-
 $db = new Dbh();
 $errMsg = "";
 $createStatus = "NO";
@@ -41,4 +35,5 @@ view_path("createMessage.view.php", [
     'createStatus' => $createStatus,
     'errMsg' => $errMsg
 ]);
-view_path("partials/footer.php");
+
+

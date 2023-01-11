@@ -2,9 +2,6 @@
 
 use controller\SignupContr;
 
-view_path("partials/head.php");
-view_path("partials/nav.php");
-
 
 // 索取使用者輸入的資料
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -21,4 +18,3 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 view_path("signup.view.php");
 
-view_path("partials/footer.php");
