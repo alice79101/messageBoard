@@ -1,8 +1,8 @@
 <?php
 
-namespace core;
+namespace controller;
 use core\Dbh as Dbh;
-use core\Signup as Signup;
+use model\Signup as Signup;
 
 class SignupContr extends Signup
 {
@@ -24,24 +24,25 @@ class SignupContr extends Signup
     {
         if($this->emptyInput() === "Denied") {
             echo "empty input";
-            header("location: ../signup?error=emptyinput");
+//            header("location: ../signup?error=emptyinput");
             exit();
         }
         if($this->validateEmail() === "Denied") {
             echo "invalid email";
-            header("location: ../signup?error=validateEmail");
+//            header("location: ../signup?error=validateEmail");
             exit();
         }
         if($this->passwordMatch() === "Denied") {
             echo "password doesn't match";
-            header("location: ../signup?error=passwordMatch");
+//            header("location: ../signup?error=passwordMatch");
             exit();
         }
         if($this->userIdExist() === "Denied") {
             echo "userID already exists.";
-            header("location: ../signup?error=userIdExist");
+//            header("location: ../signup?error=userIdExist");
             exit();
         }
+//        dumpAndDie("通過驗證");
         $this->insertUser($this->userID, $this->userPassword, $this->nickname);
 
 
@@ -50,11 +51,13 @@ class SignupContr extends Signup
 
     private function validateEmail()
     {
+//        dumpAndDie(filter_var($this->userID, FILTER_VALIDATE_EMAIL));
         if (filter_var($this->userID, FILTER_VALIDATE_EMAIL)) {
             $result = "PASS";
         } else {
             $result = "Denied";
         }
+        return $result;
     }
 
     // userID = Email
@@ -78,6 +81,7 @@ class SignupContr extends Signup
         } else {
             $result = "Denied";
         }
+        return $result;
     }
 
     private function userIdExist()
@@ -85,14 +89,11 @@ class SignupContr extends Signup
 
         $result = "";
         $stmt = Dbh::__construct()->checkUserExist($this->userID);
-//        dumpAndDie($stmt);
         if (empty($stmt)) {
             $result = "PASS";
         } else {
             $result = "Denied";
         }
-
-//        dumpAndDie($result);
         return $result;
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace core;
+namespace model;
 
 use core\Dbh as Dbh;
 

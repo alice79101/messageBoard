@@ -1141,3 +1141,120 @@ Stack trace:
 #3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
 #4 {main}
   thrown in /Users/mia/Sites/messageBoard/core/Signup.php on line 29
+[11-Jan-2023 11:26:39 Asia/Taipei] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/mia/Sites/messageBoard/view/partials/nav.php:18) in /Users/mia/Sites/messageBoard/core/SignupContr.php on line 42
+[11-Jan-2023 12:25:46 Asia/Taipei] PHP Warning:  preg_match(): Unknown modifier '+' in /Users/mia/Sites/messageBoard/core/SignupTest.php on line 33
+[11-Jan-2023 12:25:46 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function userIdExist() on string in /Users/mia/Sites/messageBoard/controller/Signup.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/Signup.php on line 23
+[11-Jan-2023 12:26:18 Asia/Taipei] PHP Warning:  preg_match(): Unknown modifier '[' in /Users/mia/Sites/messageBoard/core/SignupTest.php on line 33
+[11-Jan-2023 12:26:18 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function userIdExist() on string in /Users/mia/Sites/messageBoard/controller/Signup.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/Signup.php on line 23
+[11-Jan-2023 12:26:50 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function userIdExist() on string in /Users/mia/Sites/messageBoard/controller/Signup.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/Signup.php on line 23
+[11-Jan-2023 12:27:59 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function userIdExist() on string in /Users/mia/Sites/messageBoard/controller/Signup.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/Signup.php on line 23
+[11-Jan-2023 12:28:40 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function userIdExists() on string in /Users/mia/Sites/messageBoard/controller/Signup.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/Signup.php on line 23
+[11-Jan-2023 13:55:30 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function userIdExists() on string in /Users/mia/Sites/messageBoard/controller/Signup.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/Signup.php on line 23
+[11-Jan-2023 13:59:13 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "SignupContr" not found in /Users/mia/Sites/messageBoard/controller/Signup.php:19
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/Signup.php on line 19
+[11-Jan-2023 13:59:30 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function userIdExists() on string in /Users/mia/Sites/messageBoard/core/SignupTest.php:59
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/Signup.php(23): core\SignupTest->insertUsers()
+#1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/SignupTest.php on line 59
+[11-Jan-2023 14:20:49 Asia/Taipei] PHP Warning:  preg_match(): No ending delimiter '/' found in /Users/mia/Sites/messageBoard/core/SignupTest.php on line 33
+[11-Jan-2023 14:21:08 Asia/Taipei] PHP Warning:  preg_match(): Compilation failed: PCRE2 does not support \F, \L, \l, \N{name}, \U, or \u at offset 20 in /Users/mia/Sites/messageBoard/core/SignupTest.php on line 33
+[11-Jan-2023 14:21:44 Asia/Taipei] PHP Warning:  preg_match(): Unknown modifier '/' in /Users/mia/Sites/messageBoard/core/SignupTest.php on line 33
+[11-Jan-2023 14:40:24 Asia/Taipei] PHP Warning:  Undefined array key "" in /Users/mia/Sites/messageBoard/core/SignupTest.php on line 51
+[11-Jan-2023 14:41:28 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/core/SignupTest.php on line 61
+[11-Jan-2023 14:41:49 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/core/SignupTest.php on line 61
+[11-Jan-2023 14:58:03 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 29
+[11-Jan-2023 14:58:51 Asia/Taipei] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /Users/mia/Sites/messageBoard/controller/Signup.php:29
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/Signup.php on line 29
+[11-Jan-2023 14:59:00 Asia/Taipei] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /Users/mia/Sites/messageBoard/controller/Signup.php:29
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/Signup.php on line 29
+[11-Jan-2023 14:59:08 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 29
+[11-Jan-2023 14:59:10 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 29
+[11-Jan-2023 14:59:11 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 29
+[11-Jan-2023 15:01:11 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 29
+[11-Jan-2023 15:01:12 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 29
+[11-Jan-2023 15:02:45 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/core/SignupTest.php on line 72
+[11-Jan-2023 15:07:57 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 65
+[11-Jan-2023 15:07:59 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 65
+[11-Jan-2023 15:13:58 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 32
+[11-Jan-2023 15:14:44 Asia/Taipei] PHP Warning:  Undefined variable $signupStatus in /Users/mia/Sites/messageBoard/view/signup.view.php on line 114
+[11-Jan-2023 15:14:44 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/signup.view.php on line 114
+[11-Jan-2023 15:16:27 Asia/Taipei] PHP Warning:  Undefined variable $signupStatus in /Users/mia/Sites/messageBoard/controller/Signup.php on line 32
+[11-Jan-2023 15:16:27 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 33
+[11-Jan-2023 15:40:30 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 32
+[11-Jan-2023 15:40:30 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/Signup.php on line 32
+[11-Jan-2023 15:40:30 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 33
+[11-Jan-2023 15:40:30 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/Signup.php on line 33
+[11-Jan-2023 15:40:32 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 32
+[11-Jan-2023 15:40:32 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/Signup.php on line 32
+[11-Jan-2023 15:40:32 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 33
+[11-Jan-2023 15:40:32 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/Signup.php on line 33
+[11-Jan-2023 15:40:55 Asia/Taipei] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /Users/mia/Sites/messageBoard/controller/Signup.php:32
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/Signup.php on line 32
+[11-Jan-2023 15:42:06 Asia/Taipei] PHP Warning:  Undefined variable $signupStatus in /Users/mia/Sites/messageBoard/view/signup.view.php on line 114
+[11-Jan-2023 15:42:06 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/signup.view.php on line 114
+[11-Jan-2023 15:42:46 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 32
+[11-Jan-2023 15:42:46 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/Signup.php on line 32
+[11-Jan-2023 15:42:46 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/Signup.php on line 33
+[11-Jan-2023 15:42:46 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/Signup.php on line 33
+[11-Jan-2023 15:42:46 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/signup.view.php on line 114
+[11-Jan-2023 15:42:46 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/signup.view.php on line 114
+[11-Jan-2023 15:44:57 Asia/Taipei] PHP Fatal error:  Uncaught Error: Cannot use object of type core\SignupTest as array in /Users/mia/Sites/messageBoard/controller/Signup.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/Signup.php on line 25
+[11-Jan-2023 15:45:24 Asia/Taipei] PHP Fatal error:  Uncaught Error: Cannot use object of type core\SignupTest as array in /Users/mia/Sites/messageBoard/controller/Signup.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/Signup.php on line 25
+[11-Jan-2023 15:46:01 Asia/Taipei] PHP Fatal error:  Uncaught Error: Cannot use object of type core\SignupTest as array in /Users/mia/Sites/messageBoard/controller/Signup.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/Signup.php on line 25
+[11-Jan-2023 16:06:20 Asia/Taipei] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/mia/Sites/messageBoard/view/partials/nav.php:18) in /Users/mia/Sites/messageBoard/core/SignupContr.php on line 27
+[11-Jan-2023 16:17:44 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function core\validateEmail() in /Users/mia/Sites/messageBoard/core/SignupContr.php:30
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/Signup.php(20): core\SignupContr->signupUser()
+#1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/SignupContr.php on line 30

@@ -1,12 +1,10 @@
 <?php
-use core\Dbh;
-use core\SignupContr;
-use core\Signup;
+
+use controller\SignupContr;
 
 view_path("partials/head.php");
 view_path("partials/nav.php");
 
-//    dumpAndDie(isset($_POST["submit"]));
 
 // 索取使用者輸入的資料
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -16,10 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $userPassword = $_POST["password"];
     $userPasswordRepeat = $_POST["passwordRepeat"];
 
-    // Instantiate SignupContr class
-//    include base_path("core/SignupContr.php");
-//    include base_path("core/Signup.classes.php");
-//    $signup = new SignupContr($nickname, $userID, $userPassword, $userPasswordRepeat);
     $signup = new SignupContr($nickname, $userID, $userPassword, $userPasswordRepeat);
     $signup->signupUser();
 }
