@@ -10,7 +10,7 @@ view_path("partials/banner.php", [
 
 $db = new Dbh();
 
-$msgs = $db->query("SELECT * FROM msgList ORDER BY msgTime DESC")->getMsgs();
+$msgs = $db->query("SELECT * FROM msgList ORDER BY msgTime DESC")->getAll();
 if (count($msgs) > 10 ) {
     $latestMsg = array_slice($msgs, 0, 10);
 } else {

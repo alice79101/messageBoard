@@ -13,7 +13,7 @@ $db = new Dbh();
 $memberID =1;
 $myMsg = $db->query("SELECT * FROM msgList WHERE memberID =:memberID", [
     'memberID' => $memberID
-])->getMsgs();
+])->getAll();
 //dumpAndDie($myMsg);
 //$myMsg = $db->prepareSQL("SELECT * FROM msgList WHERE memberID =1");
 

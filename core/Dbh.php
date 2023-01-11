@@ -1,21 +1,20 @@
 <?php
+
 namespace core;
-require_once __DIR__ . '/../vendor/autoload.php';
 use Dotenv\Dotenv;
 use PDO;
+
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
+
 class Dbh
 {
+    public $connection;
+    public $statement;
     private $host;
     private $dbuser;
     private $dbpwd;
     private $dbname;
-
-
-    public $connection;
-    public $statement;
-
 
     public function __construct()
     {
@@ -37,7 +36,7 @@ class Dbh
 
     public function viewMsgs()
     {
-        $sql = "SELECT * FROM msgList" ;
+        $sql = "SELECT * FROM msgList";
         $statement = $this->connection->prepare($sql);
         $statement->execute();
         $msgs = $statement->fetchAll();
@@ -56,8 +55,8 @@ class Dbh
         return $msgs;
     }
 
-    //原本使用上面的 vieMsg() 和 myMsg()，但既然有不同情境會更改 $sql ，何不把這個 function 變得更通用？
-    public function query($sql, $conditions=[])
+    //原本使用上面的 vieMsg() 和 myMsg()，但既然有不同情境會更改 $sql ，何不把這個 function 變得更通用
+    public function query($sql, $conditions = [])
     {
         $this->statement = $this->connection->prepare($sql);
         $this->statement->execute($conditions);
@@ -67,7 +66,7 @@ class Dbh
     }
 
 
-    public function getMsgs()
+    public function getAll()
     {
         return $this->statement->fetchAll();
     }
