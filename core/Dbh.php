@@ -71,7 +71,7 @@ class Dbh
         return $this->statement->fetchAll();
     }
 
-    public function findMsg()
+    public function findOne()
     {
         return $this->statement->fetch();
     }

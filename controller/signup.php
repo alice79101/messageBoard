@@ -1,4 +1,6 @@
 <?php
+// 引導頁面動作、連結view畫面
+
 
 use controller\SignupContr;
 

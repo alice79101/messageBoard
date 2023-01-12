@@ -8,7 +8,7 @@ $db = new Dbh();
 //dumpAndDie($_GET);
 $msg = $db->query("SELECT * FROM msgList WHERE msgIndex = :msgIndex", [
     'msgIndex' => $_GET["msgIndex"]
-])->findMsg();
+])->findOne();
 //dumpAndDie($msg);
 
 

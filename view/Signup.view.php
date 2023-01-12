@@ -96,11 +96,7 @@ view_path("partials/nav.php");
             <!--                           class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">-->
             <!--                    <label for="remember-me" class="ml-2 block text-sm text-gray-900">Remember me</label>-->
             <!--                </div>-->
-            <!--忘記密碼功能-->
-            <!--                <div class="text-sm">-->
-            <!--                    <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Forgot your password?</a>-->
-            <!--                </div>-->
-            <!--            </div>-->
+
 
             <div>
                 <button type="submit"

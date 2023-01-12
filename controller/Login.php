@@ -1,14 +1,29 @@
 <?php
+// Login 頁面動作
+// 連結 view
+
 use core\Dbh;
-view_path("partials/head.php");
-view_path("partials/nav.php");
-//view_path("partials/banner.php", [
-//    'heading' => 'Sign Up or Login'
-//]);
-view_path("Login.view.php");
+use controller\LoginContr as LoginContr;
 
 
 
+// 取得表單資料
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+//    dumpAndDie($_POST); //看一下會收到什麼
+    $userID = $_POST["userID"]; //ID為mail
+    $userPassword = $_POST["password"];
 
+    $login = new LoginContr($userID, $userPassword);
+//    dumpAndDie($login->loginUser());
+    $result = $login->loginUser();
+//    $login = (array)$login;
+//    dumpAndDie($result);
+}
 
-view_path("partials/footer.php");
+if (!empty($result)) {
+    view_path("Login.view.php", [
+        'errMsg' => $result
+    ]);
+} else {
+    view_path("Login.view.php");
+}

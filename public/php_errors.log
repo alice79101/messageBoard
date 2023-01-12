@@ -1258,3 +1258,208 @@ Stack trace:
 #1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
 #2 {main}
   thrown in /Users/mia/Sites/messageBoard/core/SignupContr.php on line 30
+[12-Jan-2023 00:33:35 Asia/Taipei] PHP Warning:  Undefined array key "nickname" in /Users/mia/Sites/messageBoard/controller/login.php on line 12
+[12-Jan-2023 00:33:35 Asia/Taipei] PHP Warning:  Undefined array key "userID" in /Users/mia/Sites/messageBoard/controller/login.php on line 13
+[12-Jan-2023 00:33:35 Asia/Taipei] PHP Warning:  Undefined array key "passwordRepeat" in /Users/mia/Sites/messageBoard/controller/login.php on line 15
+[12-Jan-2023 00:33:42 Asia/Taipei] PHP Warning:  Undefined array key "nickname" in /Users/mia/Sites/messageBoard/controller/login.php on line 12
+[12-Jan-2023 00:33:42 Asia/Taipei] PHP Warning:  Undefined array key "userID" in /Users/mia/Sites/messageBoard/controller/login.php on line 13
+[12-Jan-2023 00:33:42 Asia/Taipei] PHP Warning:  Undefined array key "passwordRepeat" in /Users/mia/Sites/messageBoard/controller/login.php on line 15
+[12-Jan-2023 01:20:56 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(16): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(28): model\Login->findUser('alice79101@gmai...', 'qqqq')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:26:07 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "->" in /Users/mia/Sites/messageBoard/model/Login.php on line 20
+[12-Jan-2023 01:26:17 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(16): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('alice79101@gmai...', 'qqqq')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:27:58 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(15): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('alice79101@gmai...', 'qqqq')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:33:00 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(14): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('alice79101@gmai...')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:34:45 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /Users/mia/Sites/messageBoard/model/Login.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('alice79101@gmai...')
+#1 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/model/Login.php on line 13
+[12-Jan-2023 01:35:01 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(14): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('alice79101@gmai...')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:35:36 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(14): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('alice79101@gmai...')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:36:07 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(14): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('alice79101@gmai...')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:36:56 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(14): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('alice79101@gmai...')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:37:50 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(14): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('alice79101@gmai...')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:38:42 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(14): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('alice79101@gmai...')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:39:21 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(14): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('alice79101@gmai...')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:40:18 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(14): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('alice79101@gmai...')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:43:14 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(14): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('alice79101@gmai...')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:43:41 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/mia/Sites/messageBoard/core/Dbh.php:61
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/model/Login.php(14): core\Dbh->query('SELECT * FROM m...', Array)
+#1 /Users/mia/Sites/messageBoard/controller/LoginContr.php(29): model\Login->findUser('fff@ff.ff')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 61
+[12-Jan-2023 01:48:17 Asia/Taipei] PHP Warning:  Undefined property: controller\LoginContr::$Dbh in /Users/mia/Sites/messageBoard/model/Login.php on line 13
+[12-Jan-2023 01:48:17 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /Users/mia/Sites/messageBoard/model/Login.php:13
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/LoginContr.php(30): model\Login->findUser('alice79101@gmai...')
+#1 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/model/Login.php on line 13
+[12-Jan-2023 01:49:50 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method controller\LoginContr::getOne() in /Users/mia/Sites/messageBoard/model/Login.php:16
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/LoginContr.php(30): model\Login->findUser('alice79101@gmai...')
+#1 /Users/mia/Sites/messageBoard/controller/login.php(17): controller\LoginContr->loginUser()
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/model/Login.php on line 16
+[12-Jan-2023 01:55:32 Asia/Taipei] PHP Warning:  Undefined variable $login in /Users/mia/Sites/messageBoard/controller/login.php on line 21
+[12-Jan-2023 01:55:32 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 01:56:08 Asia/Taipei] PHP Warning:  Undefined variable $result in /Users/mia/Sites/messageBoard/controller/login.php on line 21
+[12-Jan-2023 01:56:08 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 01:56:10 Asia/Taipei] PHP Warning:  Undefined variable $result in /Users/mia/Sites/messageBoard/controller/login.php on line 21
+[12-Jan-2023 01:56:10 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 01:56:11 Asia/Taipei] PHP Warning:  Undefined variable $result in /Users/mia/Sites/messageBoard/controller/login.php on line 21
+[12-Jan-2023 01:56:11 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 01:56:26 Asia/Taipei] PHP Warning:  Undefined variable $result in /Users/mia/Sites/messageBoard/controller/login.php on line 22
+[12-Jan-2023 01:56:26 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 01:56:28 Asia/Taipei] PHP Warning:  Undefined variable $result in /Users/mia/Sites/messageBoard/controller/login.php on line 22
+[12-Jan-2023 01:56:28 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 01:56:31 Asia/Taipei] PHP Warning:  Undefined variable $result in /Users/mia/Sites/messageBoard/controller/login.php on line 22
+[12-Jan-2023 01:56:31 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 01:57:45 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 01:58:39 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 01:59:58 Asia/Taipei] PHP Fatal error:  Uncaught Error: Cannot use object of type controller\LoginContr as array in /Users/mia/Sites/messageBoard/controller/login.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 02:03:30 Asia/Taipei] PHP Warning:  Undefined variable $login in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 02:03:30 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 02:08:59 Asia/Taipei] PHP Warning:  Undefined variable $login in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 02:08:59 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 02:09:13 Asia/Taipei] PHP Warning:  Undefined variable $login in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 02:09:13 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 02:09:15 Asia/Taipei] PHP Warning:  Undefined variable $login in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 02:09:15 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 02:11:39 Asia/Taipei] PHP Warning:  Undefined variable $login in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 02:11:39 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 10:43:04 Asia/Taipei] PHP Warning:  Undefined variable $login in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 10:43:04 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 10:43:07 Asia/Taipei] PHP Warning:  Undefined variable $login in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 10:43:07 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 10:44:15 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "(array)", expecting identifier or variable or "{" or "$" in /Users/mia/Sites/messageBoard/controller/login.php on line 17
+[12-Jan-2023 10:44:43 Asia/Taipei] PHP Warning:  Undefined variable $login in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 10:44:43 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 10:44:52 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 10:45:26 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 10:45:45 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 10:45:51 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 10:52:13 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 10:52:26 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 11:09:13 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 11:14:33 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 11:15:19 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 11:18:48 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/view/Login.view.php on line 60
+[12-Jan-2023 11:20:37 Asia/Taipei] PHP Warning:  Undefined variable $login in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 11:20:37 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 11:20:45 Asia/Taipei] PHP Warning:  Undefined variable $login in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 11:20:45 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/login.php on line 23
+[12-Jan-2023 11:32:16 Asia/Taipei] PHP Fatal error:  Uncaught Error: Cannot use object of type controller\LoginContr as array in /Users/mia/Sites/messageBoard/controller/login.php:22
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/login.php on line 22
+[12-Jan-2023 11:35:59 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: get_object_vars(): Argument #1 ($object) must be of type object, string given in /Users/mia/Sites/messageBoard/controller/login.php:17
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/login.php(17): get_object_vars('\xE7\x99\xBB\xE5\x85\xA5\xE6\x88\x90\xE5\x8A\x9F')
+#1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/login.php on line 17
+[12-Jan-2023 11:38:58 Asia/Taipei] PHP Warning:  Undefined variable $result in /Users/mia/Sites/messageBoard/view/Login.view.php on line 61

@@ -1,4 +1,5 @@
 <?php
+// Controller：制定 signup 動作的內容
 
 namespace controller;
 use core\Dbh as Dbh;
