@@ -68,12 +68,15 @@ view_path("partials/nav.php");
                            class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                            placeholder="Nickname / 暱稱">
                 </div>
+                <a class="text-red-500"><?= empty($errMsg['nickname']) ? "" : $errMsg['nickname']; ?></a>
                 <div>
                     <label for="userId" class="sr-only">User ID</label>
                     <input id="userId" name="userID" autocomplete="email"
                            class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                            placeholder="Email / 使用者帳號">
                 </div>
+                <a class="text-red-500"><?= empty($errMsg['email']) ? "" : $errMsg['email']; ?></a>
+                <a class="text-red-500"><?= empty($errMsg['userID']) ? "" : $errMsg['userID']; ?></a>
                 <div>
                     <label for="password" class="sr-only">Password</label>
                     <input id="password" name="password" type="password"
@@ -87,6 +90,7 @@ view_path("partials/nav.php");
                            class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                            placeholder="Repeat Password / 再次輸入密碼">
                 </div>
+                <a class="text-red-500"><?= empty($errMsg['passwordRepeat']) ? "" : $errMsg['passwordRepeat']; ?></a>
             </div>
 
             <!--「記住我」功能-->
@@ -98,6 +102,7 @@ view_path("partials/nav.php");
             <!--                </div>-->
 
 
+            <a class="text-red-500"><?= empty($errMsg['emptyInput']) ? "" : $errMsg['emptyInput']; ?></a>
             <div>
                 <button type="submit"
                         class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
@@ -112,7 +117,8 @@ view_path("partials/nav.php");
                     <!--          </span>-->
                     Sign up
                 </button>
-<!--                <a>--><?php //= $errMsg['status'] === true ? "註冊成功！" : $errMsg['form']; ?><!--<br></a>-->
+                <br>
+                <a class="text-blue-500"><?= empty($errMsg['signupStatus']) ? "" : $errMsg['signupStatus']; ?></a>
             </div>
         </form>
     </div>

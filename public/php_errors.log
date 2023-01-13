@@ -1463,3 +1463,109 @@ Stack trace:
 #2 {main}
   thrown in /Users/mia/Sites/messageBoard/controller/login.php on line 17
 [12-Jan-2023 11:38:58 Asia/Taipei] PHP Warning:  Undefined variable $result in /Users/mia/Sites/messageBoard/view/Login.view.php on line 61
+[12-Jan-2023 14:18:36 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "controller\SignupContr" not found in /Users/mia/Sites/messageBoard/controller/SignupContr.php:17
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/vendor/composer/ClassLoader.php(571): include()
+#1 /Users/mia/Sites/messageBoard/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/controller/SignupContr.php(17): Composer\Autoload\ClassLoader->loadClass('controller\\Sign...')
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 17
+[12-Jan-2023 14:26:18 Asia/Taipei] PHP Fatal error:  Cannot re-assign auto-global variable _POST in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 24
+[12-Jan-2023 14:26:22 Asia/Taipei] PHP Fatal error:  Cannot re-assign auto-global variable _POST in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 24
+[12-Jan-2023 14:27:00 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "controller\SignupContr" not found in /Users/mia/Sites/messageBoard/controller/SignupContr.php:12
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/vendor/composer/ClassLoader.php(571): include()
+#1 /Users/mia/Sites/messageBoard/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/controller/SignupContr.php(12): Composer\Autoload\ClassLoader->loadClass('controller\\Sign...')
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 12
+[12-Jan-2023 14:31:14 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "controller\SignupContr" not found in /Users/mia/Sites/messageBoard/controller/SignupContr.php:9
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/vendor/composer/ClassLoader.php(571): include()
+#1 /Users/mia/Sites/messageBoard/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/controller/SignupContr.php(9): Composer\Autoload\ClassLoader->loadClass('controller\\Sign...')
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 9
+[12-Jan-2023 15:12:15 Asia/Taipei] PHP Warning:  Array to string conversion in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 38
+[12-Jan-2023 15:21:49 Asia/Taipei] PHP Parse error:  syntax error, unexpected token ")" in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 69
+[12-Jan-2023 16:43:05 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 59
+[12-Jan-2023 16:48:00 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email' in /Users/mia/Sites/messageBoard/core/Dbh.php:62
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(62): PDOStatement->execute(Array)
+#1 /Users/mia/Sites/messageBoard/model/Signup.php(32): core\Dbh->query('INSERT INTO `me...', Array)
+#2 /Users/mia/Sites/messageBoard/controller/SignupContr.php(68): model\Signup->insertUser('', '', '')
+#3 /Users/mia/Sites/messageBoard/controller/SignupContr.php(137): controller\SignupContr->signupUser()
+#4 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 62
+[12-Jan-2023 16:52:59 Asia/Taipei] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 40
+[12-Jan-2023 16:53:21 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function controller\signupFormValidate() in /Users/mia/Sites/messageBoard/controller/SignupContr.php:40
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/SignupContr.php(139): controller\SignupContr->signupFormValidate()
+#1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 40
+[12-Jan-2023 16:53:54 Asia/Taipei] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 40
+[12-Jan-2023 16:54:36 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email' in /Users/mia/Sites/messageBoard/core/Dbh.php:62
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(62): PDOStatement->execute(Array)
+#1 /Users/mia/Sites/messageBoard/model/Signup.php(32): core\Dbh->query('INSERT INTO `me...', Array)
+#2 /Users/mia/Sites/messageBoard/controller/SignupContr.php(69): model\Signup->insertUser('', '', '')
+#3 /Users/mia/Sites/messageBoard/controller/SignupContr.php(139): controller\SignupContr->signupUserValidate()
+#4 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 62
+[12-Jan-2023 16:55:57 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email' in /Users/mia/Sites/messageBoard/core/Dbh.php:62
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(62): PDOStatement->execute(Array)
+#1 /Users/mia/Sites/messageBoard/model/Signup.php(32): core\Dbh->query('INSERT INTO `me...', Array)
+#2 /Users/mia/Sites/messageBoard/controller/SignupContr.php(69): model\Signup->insertUser('', '', '')
+#3 /Users/mia/Sites/messageBoard/controller/SignupContr.php(139): controller\SignupContr->signupUserValidate()
+#4 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 62
+[12-Jan-2023 16:56:38 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email' in /Users/mia/Sites/messageBoard/core/Dbh.php:62
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(62): PDOStatement->execute(Array)
+#1 /Users/mia/Sites/messageBoard/model/Signup.php(32): core\Dbh->query('INSERT INTO `me...', Array)
+#2 /Users/mia/Sites/messageBoard/controller/SignupContr.php(69): model\Signup->insertUser('', '', '')
+#3 /Users/mia/Sites/messageBoard/controller/SignupContr.php(139): controller\SignupContr->signupUserValidate()
+#4 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 62
+[12-Jan-2023 16:59:04 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email' in /Users/mia/Sites/messageBoard/core/Dbh.php:62
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(62): PDOStatement->execute(Array)
+#1 /Users/mia/Sites/messageBoard/model/Signup.php(32): core\Dbh->query('INSERT INTO `me...', Array)
+#2 /Users/mia/Sites/messageBoard/controller/SignupContr.php(70): model\Signup->insertUser('', '', '')
+#3 /Users/mia/Sites/messageBoard/controller/SignupContr.php(140): controller\SignupContr->signupUserValidate()
+#4 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 62
+[12-Jan-2023 17:02:24 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 62
+[12-Jan-2023 17:03:04 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'elephant@elephant.elephant' for key 'email' in /Users/mia/Sites/messageBoard/core/Dbh.php:62
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(62): PDOStatement->execute(Array)
+#1 /Users/mia/Sites/messageBoard/model/Signup.php(32): core\Dbh->query('INSERT INTO `me...', Array)
+#2 /Users/mia/Sites/messageBoard/controller/SignupContr.php(71): model\Signup->insertUser('elephant@elepha...', 'elephant', 'elephant')
+#3 /Users/mia/Sites/messageBoard/controller/SignupContr.php(141): controller\SignupContr->signupUserValidate()
+#4 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 62
+[12-Jan-2023 17:05:22 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'elephant@elephant.elephant' for key 'email' in /Users/mia/Sites/messageBoard/core/Dbh.php:62
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(62): PDOStatement->execute(Array)
+#1 /Users/mia/Sites/messageBoard/model/Signup.php(32): core\Dbh->query('INSERT INTO `me...', Array)
+#2 /Users/mia/Sites/messageBoard/controller/SignupContr.php(71): model\Signup->insertUser('elephant@elepha...', 'elephant', 'elephant')
+#3 /Users/mia/Sites/messageBoard/controller/SignupContr.php(141): controller\SignupContr->signupUserValidate()
+#4 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 62
+[12-Jan-2023 17:12:59 Asia/Taipei] PHP Fatal error:  Constant expression contains invalid operations in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 67
+[12-Jan-2023 17:40:32 Asia/Taipei] PHP Warning:  Undefined variable $errMsg in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 42
+[13-Jan-2023 10:38:07 Asia/Taipei] PHP Warning:  Array to string conversion in /Users/mia/Sites/messageBoard/view/signup.view.php on line 115
+[13-Jan-2023 10:47:33 Asia/Taipei] PHP Warning:  Array to string conversion in /Users/mia/Sites/messageBoard/view/signup.view.php on line 115
+[13-Jan-2023 11:07:37 Asia/Taipei] PHP Warning:  Undefined variable $result in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 82

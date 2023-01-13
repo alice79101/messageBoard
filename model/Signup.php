@@ -32,6 +32,7 @@ class Signup extends Dbh
             'nickname' => $nickname
         ]);
 
+//        dumpAndDie("insertUs");
 
     }
 }
