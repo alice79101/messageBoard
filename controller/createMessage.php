@@ -1,5 +1,8 @@
 <?php
 use core\Dbh;
+//require BASE_PATH . "core/functions.php";
+
+
 
 $db = new Dbh();
 $errMsg = "";
@@ -22,9 +25,12 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
 
     // 輸入資料庫
     if (empty($errMsg)) {
+        $content = changeWords($_POST["content"]); // 保留空白跟換行
+//        $content = nl2br($_POST["content"]);
+//        dumpAndDie($content);
         $db->query('INSERT INTO msgList(msgTitle, msgContent, memberID) VALUES (:msgTitle , :msgContent, :memberID)', [
             'msgTitle' => $_POST["Title"],
-            'msgContent' => $_POST["content"],
+            'msgContent' => $content,
             'memberID' => "1"
         ]);
         $createStatus = "YES";
@@ -35,5 +41,3 @@ view_path("createMessage.view.php", [
     'createStatus' => $createStatus,
     'errMsg' => $errMsg
 ]);
-
-

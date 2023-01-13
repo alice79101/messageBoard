@@ -23,3 +23,24 @@ function view_path($path, $attributes = []){
     extract($attributes);
     require BASE_PATH . "view/" . $path;
 }
+
+function changeWords($string) {
+    $keepLine = "\n";
+    $replaceLine = "brbrbr"; //換行被轉換成這個
+    $keepSpace = " ";
+    $replaceSpace = "spacespacespace"; // 空格被轉換成這個
+    $string = str_replace($keepLine, $replaceLine, $string);
+    $string = str_replace($keepSpace, $replaceSpace, $string);
+    return $string;
+}
+
+function changeWordsBack($string) {
+
+    $replaceLine = "brbrbrbr"; //這個要被換回換行
+    $turnLine = "<br>";
+    $replaceSpace = "spacespacespace"; // 這個要被換回空格
+    $turnSpace = "&nbsp;";
+    $string = str_replace($replaceLine, $turnLine, $string);
+    $string = str_replace($replaceSpace, $turnSpace, $string);
+    return $string;
+}

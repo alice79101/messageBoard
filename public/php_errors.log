@@ -1598,3 +1598,21 @@ Stack trace:
 #3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
 #4 {main}
   thrown in /Users/mia/Sites/messageBoard/controller/LoginContr.php on line 8
+[13-Jan-2023 15:15:32 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "echo", expecting "," or ";" in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 12
+[13-Jan-2023 15:16:22 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 14
+[13-Jan-2023 16:36:55 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/core/functions.php:3) in /Users/mia/Sites/messageBoard/core/functions.php on line 3
+[13-Jan-2023 16:56:48 Asia/Taipei] PHP Warning:  Undefined array key "content" in /Users/mia/Sites/messageBoard/controller/showMessage.php on line 12
+[13-Jan-2023 16:56:48 Asia/Taipei] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /Users/mia/Sites/messageBoard/core/functions.php on line 43
+[13-Jan-2023 16:56:59 Asia/Taipei] PHP Warning:  Undefined array key "content" in /Users/mia/Sites/messageBoard/controller/showMessage.php on line 12
+[13-Jan-2023 16:56:59 Asia/Taipei] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /Users/mia/Sites/messageBoard/core/functions.php on line 43
+[13-Jan-2023 16:56:59 Asia/Taipei] PHP Warning:  Undefined array key "msgcontent" in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 16
+[13-Jan-2023 16:57:11 Asia/Taipei] PHP Warning:  Undefined array key "msgcontent" in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 16
+[13-Jan-2023 16:57:13 Asia/Taipei] PHP Warning:  Undefined array key "msgcontent" in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 16
+[13-Jan-2023 17:18:45 Asia/Taipei] PHP Warning:  Undefined array key "msgContent" in /Users/mia/Sites/messageBoard/controller/createMessage.php on line 33
+[13-Jan-2023 17:18:45 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'msgContent' cannot be null in /Users/mia/Sites/messageBoard/core/Dbh.php:46
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(46): PDOStatement->execute(Array)
+#1 /Users/mia/Sites/messageBoard/controller/createMessage.php(34): core\Dbh->query('INSERT INTO msg...', Array)
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 46

@@ -11,11 +11,9 @@ view_path("partials/banner.php", [
 
         <!-- Replace with your content -->
         <div class="px-4 py-6 sm:px-0">
-            <ul>
-                <p class="mt-4 break-words">
-                    <?= htmlspecialchars($msg["msgContent"]); ?>
-                </p>
-            </ul>
+            <p class="mt-4 break-words">
+                <?= changeWordsBack(htmlspecialchars($msg["msgContent"])); ?>
+            </p>
 
 
         </div>

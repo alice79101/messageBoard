@@ -2,13 +2,18 @@
 // 這個頁面是用來顯示每個訊息的內容
 
 use core\Dbh;
+//require BASE_PATH . "core/functions.php";
 
 $db = new Dbh();
 //dumpAndDie($_GET);
 $msg = $db->query("SELECT * FROM msgList WHERE msgIndex = :msgIndex", [
     'msgIndex' => $_GET["msgIndex"]
 ])->findOne();
+//$msg["content"] = changeWordsBack($msg["content"]);
+
 //dumpAndDie($msg);
+
+
 
 
 
@@ -23,6 +28,9 @@ $msg = $db->query("SELECT * FROM msgList WHERE msgIndex = :msgIndex", [
 //dumpAndDie($latestMsg);
 
 // 要可以看到自己跟朋友的訊息 >>>>還沒寫，先拿到所有人的留言
+
+
+
 
 
 view_path("showMessage.view.php", [
