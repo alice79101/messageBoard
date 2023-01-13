@@ -2,8 +2,6 @@
 use core\Dbh;
 //require base_path("vendor/autoload.php");
 
-
-
 $db = new Dbh();
 
 $msgs = $db->query("SELECT * FROM msgList ORDER BY msgTime DESC")->getAll();

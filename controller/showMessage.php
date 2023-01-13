@@ -1,8 +1,7 @@
 <?php
-use core\Dbh;
-
-
 // 這個頁面是用來顯示每個訊息的內容
+
+use core\Dbh;
 
 $db = new Dbh();
 //dumpAndDie($_GET);

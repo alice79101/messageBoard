@@ -11,27 +11,11 @@ class Dbh
 {
     public $connection;
     public $statement;
-    private $host;
-    private $dbuser;
-    private $dbpwd;
-    private $dbname;
+
 
     public function __construct()
     {
-        // 這邊使用 .env 引入敏感值
-        $this->host = $_ENV['host'];
-        $this->dbname = $_ENV['dbname'];
-        $this->dbpwd = $_ENV['dbpwd'];
-        $this->dbuser = $_ENV['dbuser'];
-
-//        $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-        $dsn = "mysql:host=$this->host;port=3306;dbname=$this->dbname;charset=utf8mb4";
-//        dumpAndDie($dsn); 驗證 $dsn 是否正確、有沒有抓到 .env 的資料
-        $this->connection = new PDO($dsn, $this->dbuser, $this->dbpwd, [
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC  //結果以array形式傳回
-        ]);
-        return $this;
-
+        $this->connection = SingletonDb::getInstance()->getConnection();
     }
 
     public function viewMsgs()

@@ -1590,3 +1590,11 @@ Stack trace:
 #1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
 #2 {main}
   thrown in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 58
+[13-Jan-2023 14:46:04 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "model\Login" not found in /Users/mia/Sites/messageBoard/controller/LoginContr.php:8
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/vendor/composer/ClassLoader.php(571): include()
+#1 /Users/mia/Sites/messageBoard/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/controller/login.php(16): Composer\Autoload\ClassLoader->loadClass('controller\\Logi...')
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/LoginContr.php on line 8
