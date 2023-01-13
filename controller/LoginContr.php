@@ -53,11 +53,5 @@ class LoginContr extends Login
         }
         return $result;
     }
-    // 檢查特殊符號輸入
-
-
-
-
-
 
 }

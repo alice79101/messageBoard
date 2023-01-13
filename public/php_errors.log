@@ -1569,3 +1569,24 @@ Stack trace:
 [13-Jan-2023 10:38:07 Asia/Taipei] PHP Warning:  Array to string conversion in /Users/mia/Sites/messageBoard/view/signup.view.php on line 115
 [13-Jan-2023 10:47:33 Asia/Taipei] PHP Warning:  Array to string conversion in /Users/mia/Sites/messageBoard/view/signup.view.php on line 115
 [13-Jan-2023 11:07:37 Asia/Taipei] PHP Warning:  Undefined variable $result in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 82
+[13-Jan-2023 11:30:08 Asia/Taipei] PHP Fatal error:  Uncaught Error: Non-static method core\Dbh::__construct() cannot be called statically in /Users/mia/Sites/messageBoard/controller/SignupContr.php:100
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/SignupContr.php(47): controller\SignupContr->userIdExist()
+#1 /Users/mia/Sites/messageBoard/controller/SignupContr.php(108): controller\SignupContr->signupFormValidate()
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 100
+[13-Jan-2023 11:30:57 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method core\Dbh::checkUserExist() in /Users/mia/Sites/messageBoard/controller/SignupContr.php:101
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/SignupContr.php(47): controller\SignupContr->userIdExist()
+#1 /Users/mia/Sites/messageBoard/controller/SignupContr.php(109): controller\SignupContr->signupFormValidate()
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 101
+[13-Jan-2023 11:31:48 Asia/Taipei] PHP Fatal error:  Cannot use core\Dbh as Dbh because the name is already in use in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 7
+[13-Jan-2023 11:36:00 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method controller\SignupContr::insertUser() in /Users/mia/Sites/messageBoard/controller/SignupContr.php:58
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/SignupContr.php(110): controller\SignupContr->signupUserValidate()
+#1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/SignupContr.php on line 58

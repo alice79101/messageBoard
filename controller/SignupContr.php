@@ -3,10 +3,9 @@
 
 namespace controller;
 
-use core\Dbh as Dbh;
-use model\Signup as Signup;
+use model\User as User;
 
-class SignupContr extends Signup
+class SignupContr
 {
     private $nickname;
     private $userID;
@@ -56,7 +55,8 @@ class SignupContr extends Signup
 //        dumpAndDie(empty($this->errMsg)); // 看一下 $this->errMsg裡面有沒有東西
         if (empty($this->errMsg)) {
             // 如果沒有錯誤訊息，代表通過表單驗證，可讓使用者註冊
-            $this->insertUser($this->userID, $this->userPassword, $this->nickname);
+            $signup = new User();
+            $signup->insertUser($this->userID, $this->userPassword, $this->nickname);
             $this->errMsg['signupStatus'] = "註冊成功囉";
         }
             view_path("signup.view.php", [
@@ -97,8 +97,10 @@ class SignupContr extends Signup
     private function userIdExist()
     {
         $result = "";
-        $stmt = Dbh::__construct()->checkUserExist($this->userID);
-        if (!empty($stmt)) {
+        $stmt = new User();
+        $result = $stmt->findAUser($this->userID);
+//        dumpAndDie($result);
+        if (!empty($result)) {
             $result = "Denied";
         }
         return $result;
