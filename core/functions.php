@@ -26,9 +26,9 @@ function view_path($path, $attributes = []){
 
 function changeWords($string) {
     $keepLine = "\n";
-    $replaceLine = "brbrbr"; //換行被轉換成這個
+    $replaceLine = "%b%r%"; //換行被轉換成這個
     $keepSpace = " ";
-    $replaceSpace = "spacespacespace"; // 空格被轉換成這個
+    $replaceSpace = "%s%p%"; // 空格被轉換成這個
     $string = str_replace($keepLine, $replaceLine, $string);
     $string = str_replace($keepSpace, $replaceSpace, $string);
     return $string;
@@ -36,9 +36,9 @@ function changeWords($string) {
 
 function changeWordsBack($string) {
 
-    $replaceLine = "brbrbrbr"; //這個要被換回換行
+    $replaceLine = "%b%r%"; //這個要被換回換行
     $turnLine = "<br>";
-    $replaceSpace = "spacespacespace"; // 這個要被換回空格
+    $replaceSpace = "%s%p%"; // 這個要被換回空格
     $turnSpace = "&nbsp;";
     $string = str_replace($replaceLine, $turnLine, $string);
     $string = str_replace($replaceSpace, $turnSpace, $string);
