@@ -25,6 +25,7 @@ function view_path($path, $attributes = []){
 }
 
 function changeWords($string) {
+    // 輸入訊息時，為了保留使用者輸入的換行及空白，因此才做這個function
     $keepLine = "\n";
     $replaceLine = "%b%r%"; //換行被轉換成這個
     $keepSpace = " ";
@@ -35,7 +36,7 @@ function changeWords($string) {
 }
 
 function changeWordsBack($string) {
-
+    // 顯示訊息時，為了呈現使用者輸入的換行及空白，因此才做這個function
     $replaceLine = "%b%r%"; //這個要被換回換行
     $turnLine = "<br>";
     $replaceSpace = "%s%p%"; // 這個要被換回空格

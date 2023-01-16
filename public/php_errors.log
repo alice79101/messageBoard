@@ -1625,3 +1625,19 @@ Stack trace:
 [14-Jan-2023 12:02:24 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "if" in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 23
 [14-Jan-2023 12:03:07 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "if" in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 23
 [14-Jan-2023 12:06:15 Asia/Taipei] PHP Parse error:  Unmatched ')' in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 24
+[16-Jan-2023 11:48:50 Asia/Taipei] PHP Fatal error:  Uncaught Error: Undefined constant "createStatus" in /Users/mia/Sites/messageBoard/view/createMessage.view.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/functions.php(24): require()
+#1 /Users/mia/Sites/messageBoard/controller/createMessage.php(63): view_path('createMessage.v...', Array)
+#2 /Users/mia/Sites/messageBoard/controller/createMessage.php(71): controller\CreateMsgContr->insertMsg()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 25
+[16-Jan-2023 11:49:42 Asia/Taipei] PHP Fatal error:  Uncaught Error: Undefined constant "createStatus" in /Users/mia/Sites/messageBoard/view/createMessage.view.php:25
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/functions.php(24): require()
+#1 /Users/mia/Sites/messageBoard/controller/createMessage.php(63): view_path('createMessage.v...', Array)
+#2 /Users/mia/Sites/messageBoard/controller/createMessage.php(71): controller\CreateMsgContr->insertMsg()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 25

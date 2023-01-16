@@ -59,9 +59,10 @@ class SignupContr
             $signup->insertUser($this->userID, $this->userPassword, $this->nickname);
             $this->errMsg['signupStatus'] = "註冊成功囉";
         }
-            view_path("signup.view.php", [
-                'errMsg' => $this->errMsg
-            ]);
+        view_path("signup.view.php", [
+            'errMsg' => $this->errMsg
+        ]);
+
     }
 
     private function emptyInput()
@@ -106,6 +107,7 @@ class SignupContr
         return $result;
     }
 }
+
 $signup = new SignupContr();
 $signup->signupFormValidate();
 $signup->signupUserValidate();

@@ -21,6 +21,7 @@ view_path("partials/banner.php", [
                                             <textarea id="Title" name="Title" rows="1"
                                                       class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                                       placeholder="訊息標題"><?php
+//                                                dumpAndDie($createStatus);
                                                 if (isset($_POST['Title']) && $createStatus === "NO") {
                                                     echo $_POST['Title'];
                                                 }

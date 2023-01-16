@@ -1,43 +1,73 @@
 <?php
-use core\Dbh;
-//require BASE_PATH . "core/functions.php";
 
+namespace controller;
 
+use core\Dbh as Dbh;
 
-$db = new Dbh();
-$errMsg = "";
-$createStatus = "NO";
-// 使用 POST 方法取得資訊的才視同使用者送出表單
-if ($_SERVER["REQUEST_METHOD"] === 'POST') {
+class CreateMessage
+{
+    public $errMsg = "";
+    public $createStatus = "NO";
+    private $msgTitle;
+    private $msgContent;
+    private $memberID = 1;
 
-    // 空白輸入驗證
-    if (empty($_POST["Title"]) || empty($_POST["content"])) {
-        $errMsg = "留言失敗：訊息主旨及內容皆為必填";
+    public function __construct()
+    {
+        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+            // 使用 POST 方法抵達網站，代表使用者有輸入表單，開始驗證表單
+            // dumpAndDie($_POST); //看一下會收到什麼
+            $this->msgTitle = $_POST["Title"];
+            $this->msgContent = $_POST["content"];
+        } else {
+            // 使用 GET 方法抵達網站，直接顯示view
+            view_path("createMessage.view.php", [
+                'createStatus' => $this->createStatus,
+                'errMsg' => $this->errMsg
+            ]);
+            exit();
+        }
     }
 
-    // 內容過多驗證
-    if (strlen($_POST["Title"]) >= 100 || strlen($_POST["content"]) >= 1000) {
-        $errMsg = "留言失敗：訊息主旨至多100字元、內容至多1,000字元";
+    public function createFormValidate()
+    {
+        // 空白輸入驗證
+        if (empty($this->msgTitle) || empty($this->msgContent)) {
+            $this->errMsg = "留言失敗：訊息主旨及內容皆為必填";
+        }
+
+        // 內容過多驗證
+//        dumpAndDie($this->errMsg);
+        if (strlen($this->msgTitle) > 100 || strlen($this->msgContent) > 1000) {
+
+            $this->errMsg = "留言失敗：訊息主旨至多100字元、內容至多1,000字元";
+        }
     }
 
-//    dumpAndDie($_POST); // 驗證表單傳出來的內容是什麼
-//    dumpAndDie($errMsg); // 驗證錯誤訊息有被啟動
-
-    // 輸入資料庫
-    if (empty($errMsg)) {
-        $content = changeWords($_POST["content"]); // 保留空白跟換行
+    public function insertMsg()
+    {
+        // 輸入資料庫
+        if (empty($this->errMsg)) {
+            $changedContent = changeWords($this->msgContent); // 保留空白跟換行
 //        $content = nl2br($_POST["content"]);
-//        dumpAndDie($content);
-        $db->query('INSERT INTO msgList(msgTitle, msgContent, memberID) VALUES (:msgTitle , :msgContent, :memberID)', [
-            'msgTitle' => $_POST["Title"],
-            'msgContent' => $content,
-            'memberID' => "1"
+//        dumpAndDie($changedContent);
+            $db = new Dbh();
+            $db->query('INSERT INTO msgList(msgTitle, msgContent, memberID) VALUES (:msgTitle , :msgContent, :memberID)', [
+                'msgTitle' => $this->msgTitle,
+                'msgContent' => $changedContent,
+                'memberID' => $this->memberID
+            ]);
+            $this->createStatus = "YES";
+        }
+
+        view_path("createMessage.view.php", [
+            'createStatus' => $this->createStatus,
+            'errMsg' => $this->errMsg
         ]);
-        $createStatus = "YES";
     }
+
 }
 
-view_path("createMessage.view.php", [
-    'createStatus' => $createStatus,
-    'errMsg' => $errMsg
-]);
+$createMsg = new CreateMessage();
+$createMsg->createFormValidate();
+$createMsg->insertMsg();
