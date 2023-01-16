@@ -16,13 +16,15 @@ view_path("partials/nav.php");
 
                 <div>
                     <label for="userID" class="sr-only">userID</label>
-                    <input id="euserID" name="userID" type="email" autocomplete="email" required
+<!--                    <input id="euserID" name="userID" type="email" autocomplete="email" required-->
+                    <input id="userID" name="userID"
                            class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                            placeholder="Email address / 電子信箱">
                 </div>
                 <div>
                     <label for="password" class="sr-only">Password</label>
-                    <input id="password" name="password" type="password" autocomplete="current-password" required
+<!--                    <input id="password" name="password" type="password" autocomplete="current-password" required-->
+                    <input id="password" name="password" type="password"
                            class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                            placeholder="Password / 密碼">
                 </div>
@@ -58,7 +60,7 @@ view_path("partials/nav.php");
             </div>
         </form>
         <div>
-        <a><?= empty($result) ? "" : $result ; ?></a>
+        <a><?= empty($errMsg) ? "" : $errMsg; ?></a>
 <!--        <a href="/myMessage" class="text-blue-500 hover:underline">Back...</a>-->
         </div>
     </div>

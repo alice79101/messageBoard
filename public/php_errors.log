@@ -1641,3 +1641,9 @@ Stack trace:
 #3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
 #4 {main}
   thrown in /Users/mia/Sites/messageBoard/view/createMessage.view.php on line 25
+[16-Jan-2023 16:22:21 Asia/Taipei] PHP Warning:  Undefined property: controller\LoginContr::$password in /Users/mia/Sites/messageBoard/controller/LoginContr.php on line 43
+[16-Jan-2023 16:22:21 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #1 ($password) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/LoginContr.php on line 43
+[16-Jan-2023 16:26:13 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type bool in /Users/mia/Sites/messageBoard/controller/LoginContr.php on line 43
+[16-Jan-2023 16:26:13 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/LoginContr.php on line 43
+[16-Jan-2023 16:41:23 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type bool in /Users/mia/Sites/messageBoard/controller/LoginContr.php on line 45
+[16-Jan-2023 16:41:23 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/LoginContr.php on line 45
