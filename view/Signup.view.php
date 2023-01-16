@@ -81,8 +81,9 @@ view_path("partials/nav.php");
                     <label for="password" class="sr-only">Password</label>
                     <input id="password" name="password" type="password"
                            class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                           placeholder="Password / 密碼">
+                           placeholder="Password / 密碼 (6~20字元，禁止特殊符號)">
                 </div>
+                <a class="text-red-500"><?= empty($errMsg['password']) ? "" : $errMsg['password']; ?></a>
 
                 <div>
                     <label for="passwordRepeat" class="sr-only">PasswordRepeat</label>

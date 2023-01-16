@@ -31,14 +31,21 @@ class SignupContr
 
     public function signupFormValidate()
     {
+
         // 表單驗證項目
         if ($this->emptyInput() === "Denied") {
             // 空白輸入驗證
             $this->errMsg['emptyInput'] = "請輸入所有欄位";
         } else {
             // 非空白輸入才驗證其他項目
+            if ($this->userNicknameValidate() === "Denied") {
+                $this->errMsg['nickname'] = "暱稱須介於3~30字元之間，請重新輸入";
+            }
             if ($this->validateEmail() === "Denied") {
                 $this->errMsg['email'] = "Email 格式不正確，請重新確認";
+            }
+            if ($this->userPasswordValidate() === "Denied") {
+                $this->errMsg['password'] = "密碼不可以有特殊符號，且限制於 6~20字元之間";
             }
             if ($this->passwordMatch() === "Denied") {
                 $this->errMsg['passwordRepeat'] = "兩次輸入的密碼不一致，請重新輸入";
@@ -94,7 +101,21 @@ class SignupContr
         }
         return $result;
     }
-
+    private function userNicknameValidate(){
+        $result = "";
+        if (strlen(htmlspecialchars($this->nickname)) < 3 || strlen( htmlspecialchars($this->nickname)) > 30) {
+            $result = "Denied";
+        }
+        return $result;
+    }
+    private function userPasswordValidate(){
+        $result = "";
+//        dumpAndDie($this->userPassword);
+        if (strlen(htmlspecialchars($this->userPassword)) < 6 || strlen(htmlspecialchars($this->userPassword)) > 20 ) {
+            $result = "Denied";
+        }
+        return $result;
+    }
     private function userIdExist()
     {
         $result = "";

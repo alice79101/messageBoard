@@ -28,6 +28,7 @@ class User
         $this->db->query($sql, [
             'userID' => $userID,
             'password' => $hashedPassword,
+//            'password' => $userpassword,
             'nickname' => $nickname
         ]);
 //        dumpAndDie("insertUs");
