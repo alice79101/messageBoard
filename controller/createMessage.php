@@ -4,21 +4,26 @@ namespace controller;
 
 use model\MsgList as MsgList;
 session_start();
+//dumpAndDie(isset($_SESSION["memberID"]));
 class CreateMessage
 {
     public $errMsg = "";
     public $createStatus = "NO";
     private $msgTitle;
     private $msgContent;
-    private $memberID = 1;
+    private $memberID;
 
     public function __construct()
     {
-        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        if (!isset($_SESSION["memberID"])) {
+             //應該要顯示 403
+            exit();
+        } elseif (isset($_SESSION["memberID"]) && $_SERVER["REQUEST_METHOD"] === "POST") {
             // 使用 POST 方法抵達網站，代表使用者有輸入表單，開始驗證表單
             // dumpAndDie($_POST); //看一下會收到什麼
             $this->msgTitle = $_POST["Title"];
             $this->msgContent = $_POST["content"];
+            $this->memberID = $_SESSION["memberID"];
         } else {
             // 使用 GET 方法抵達網站，直接顯示view
             view_path("createMessage.view.php", [
