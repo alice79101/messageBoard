@@ -21,6 +21,14 @@ class MsgList
         ])->findOne();
         return $result;
     }
+    public function getAllMsg($memberID)
+    {
+        $sql = "SELECT * FROM msgList WHERE memberID = :memberID;";
+        $result = $this->db->query($sql, [
+            'memberID' => $memberID
+        ])->getAll();
+        return $result;
+    }
 
     public function createMsg($msgTitle, $msgContent, $memberID)
     {

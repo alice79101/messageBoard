@@ -15,22 +15,30 @@ class CreateMessage
 
     public function __construct()
     {
+        // 使用者到達網頁的方式有三種：
+        //  1. GET方法，但尚未登入->請他登入
+        //  2. GET方法，已登入->顯示訊息框，讓他填寫表單
+        //  3. 已登入且已輸入表單->送出驗證
         if (!isset($_SESSION["memberID"])) {
-             //應該要顯示 403
+            // 請他登入先
+            view_path("createMessage.view.php");
             exit();
-        } elseif (isset($_SESSION["memberID"]) && $_SERVER["REQUEST_METHOD"] === "POST") {
-            // 使用 POST 方法抵達網站，代表使用者有輸入表單，開始驗證表單
-            // dumpAndDie($_POST); //看一下會收到什麼
-            $this->msgTitle = $_POST["Title"];
-            $this->msgContent = $_POST["content"];
-            $this->memberID = $_SESSION["memberID"];
         } else {
-            // 使用 GET 方法抵達網站，直接顯示view
-            view_path("createMessage.view.php", [
-                'createStatus' => $this->createStatus,
-                'errMsg' => $this->errMsg
-            ]);
-            exit();
+
+            if ($_SERVER["REQUEST_METHOD"] === "POST") {
+                // 使用 POST 方法抵達網站，代表使用者有輸入表單，開始驗證表單
+                // dumpAndDie($_POST); //看一下會收到什麼
+                $this->msgTitle = $_POST["Title"];
+                $this->msgContent = $_POST["content"];
+                $this->memberID = $_SESSION["memberID"];
+            }else {
+                // 使用 GET 方法抵達網站，直接顯示view
+                view_path("createMessage.view.php", [
+                    'createStatus' => $this->createStatus,
+                    'errMsg' => $this->errMsg
+                ]);
+                exit();
+            }
         }
     }
 

@@ -4,10 +4,9 @@ namespace controller;
 
 use model\MsgList as MsgList;
 
-//require BASE_PATH . "core/functions.php";
 session_start();
 
-class ShowMsg
+class ShowMsgContr
 {
     public $db;
     private $memberID;
@@ -27,8 +26,9 @@ class ShowMsg
     public function readingAuthority()
     {
         if (empty($this->msg)) {
-            abort(404);
+            abort(404);  // 根本沒有這一則訊息
         } elseif ($this->msg["memberID"] === $this->memberID) {
+            // 驗證訊息的 memberID 與 登入者 memberID 是否相同
             view_path("showMessage.view.php", [
                 'msg' => $this->msg
             ]);
@@ -38,6 +38,6 @@ class ShowMsg
     }
 }
 
-$showmsg = new ShowMsg();
+$showmsg = new ShowMsgContr();
 $showmsg->findingMsg();
 $showmsg->readingAuthority();
