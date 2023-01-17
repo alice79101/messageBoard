@@ -14,7 +14,13 @@ class ShowMsgContr
 
     public function __construct()
     {
-        $this->memberID = $_SESSION["memberID"];
+        if (isset($_SESSION["memberID"])) {
+            $this->memberID = $_SESSION["memberID"];
+        } else {
+            view_path("showMessage.view.php");
+            exit();
+        }
+
     }
 
     public function findingMsg()
