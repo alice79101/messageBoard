@@ -8,6 +8,7 @@ return [
     '/msg' => 'controller/showMessage.php',
     '/signup' => 'controller/SignupContr.php',
     '/login' => 'controller/LoginContr.php',
+    '/logout' => 'controller/LogoutContr.php',
 ];
 
 

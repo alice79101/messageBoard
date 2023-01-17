@@ -3,7 +3,7 @@
 
 use core\Dbh;
 //require BASE_PATH . "core/functions.php";
-
+session_start();
 $db = new Dbh();
 //dumpAndDie($_GET);
 $msg = $db->query("SELECT * FROM msgList WHERE msgIndex = :msgIndex", [

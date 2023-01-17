@@ -12,6 +12,7 @@ view_path("partials/banner.php", [
         <div class="px-4 py-6 sm:px-0">
             <p>
                 Welcome!
+<!--                --><?php //dumpAndDie($_SESSION); ?>
             </p>
         </div>
         <!-- /End replace -->

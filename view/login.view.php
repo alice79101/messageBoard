@@ -61,7 +61,7 @@ view_path("partials/nav.php");
         </form>
         <div>
         <a><?= empty($errMsg) ? "" : $errMsg; ?></a>
-<!--        <a href="/myMessage" class="text-blue-500 hover:underline">Back...</a>-->
+            <!--        <a href="/myMessage" class="text-blue-500 hover:underline">Back...</a>-->
         </div>
     </div>
 </div>

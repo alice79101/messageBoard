@@ -1,7 +1,8 @@
 <?php
+session_start();
 use core\Dbh;
 //require base_path("vendor/autoload.php");
-
+//dumpAndDie(session_status());
 $db = new Dbh();
 
 $msgs = $db->query("SELECT * FROM msgList ORDER BY msgTime DESC")->getAll();

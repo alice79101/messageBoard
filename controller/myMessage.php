@@ -1,6 +1,7 @@
 <?php
 use core\Dbh;
 $db = new Dbh();
+session_start();
 
 // 驗證使用者身份，只能看到自己的訊息
 $memberID =1;

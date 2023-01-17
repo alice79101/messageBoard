@@ -3,7 +3,7 @@
 namespace controller;
 
 use model\MsgList as MsgList;
-
+session_start();
 class CreateMessage
 {
     public $errMsg = "";

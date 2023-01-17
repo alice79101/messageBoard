@@ -53,6 +53,11 @@ class LoginContr
 //        dumpAndDie(password_verify($this->password, $result["password"]));
             if (password_verify($this->userPassword, $this->userData["password"])) {
                 $this->errMsg = "登入成功";
+                session_start();
+//                dumpAndDie($this->userData);
+                $_SESSION["memberID"] = $this->userData["memberID"];
+                $_SESSION["nickname"] = $this->userData["nickname"];
+//                dumpAndDie($_SESSION);
             } else {
                 $this->errMsg = "登入失敗，帳號或密碼不正確";
             }

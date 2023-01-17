@@ -4,6 +4,7 @@
 namespace controller;
 
 use model\User as User;
+session_start();
 
 class SignupContr
 {
@@ -64,7 +65,7 @@ class SignupContr
             // 如果沒有錯誤訊息，代表通過表單驗證，可讓使用者註冊
             $signup = new User();
             $signup->insertUser($this->userID, $this->userPassword, $this->nickname);
-            $this->errMsg['signupStatus'] = "註冊成功囉";
+            $this->errMsg['signupStatus'] = "註冊成功囉，請至登入畫面登入";
         }
         view_path("signup.view.php", [
             'errMsg' => $this->errMsg
