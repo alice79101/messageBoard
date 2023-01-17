@@ -29,7 +29,12 @@ class MsgList
         ])->getAll();
         return $result;
     }
-
+    public function descMsgs($column = "msgTime")
+    {
+        $sql = "SELECT * FROM msgList ORDER BY " . $column . " DESC;";
+        $result = $this->db->query($sql)->getAll();
+        return $result;
+    }
     public function createMsg($msgTitle, $msgContent, $memberID)
     {
         $sql = "INSERT INTO msgList(msgTitle, msgContent, memberID) VALUES (:msgTitle , :msgContent, :memberID);";

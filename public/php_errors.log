@@ -1830,3 +1830,59 @@ Stack trace:
 [17-Jan-2023 14:09:46 Asia/Taipei] PHP Warning:  Undefined variable $myMsg in /Users/mia/Sites/messageBoard/view/myMsg.view.php on line 22
 [17-Jan-2023 14:09:46 Asia/Taipei] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/mia/Sites/messageBoard/view/myMsg.view.php on line 22
 [17-Jan-2023 14:12:46 Asia/Taipei] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /Users/mia/Sites/messageBoard/controller/MyMsgContr.php on line 16
+[17-Jan-2023 14:52:33 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(36): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(43): controller\ShowMsgContr->readingAuthority()
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[17-Jan-2023 14:52:39 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(36): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(43): controller\ShowMsgContr->readingAuthority()
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[17-Jan-2023 15:18:15 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: ksort(): Argument #1 ($array) must be of type array, null given in /Users/mia/Sites/messageBoard/controller/LatestMsgsContr.php:16
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/LatestMsgsContr.php(16): ksort(NULL)
+#1 /Users/mia/Sites/messageBoard/controller/LatestMsgsContr.php(22): LatestMsgsContr->descMsgs()
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/LatestMsgsContr.php on line 16
+[17-Jan-2023 15:20:22 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1 in /Users/mia/Sites/messageBoard/core/Dbh.php:46
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(46): PDOStatement->execute(Array)
+#1 /Users/mia/Sites/messageBoard/model/MsgList.php(35): core\Dbh->query('SELECT * FROM m...')
+#2 /Users/mia/Sites/messageBoard/controller/LatestMsgsContr.php(15): model\MsgList->descTimeMsgs()
+#3 /Users/mia/Sites/messageBoard/controller/LatestMsgsContr.php(21): LatestMsgsContr->getLatestMsgs()
+#4 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 46
+[17-Jan-2023 15:23:05 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, array given in /Users/mia/Sites/messageBoard/controller/LatestMsgsContr.php:16
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/LatestMsgsContr.php(16): htmlspecialchars(Array)
+#1 /Users/mia/Sites/messageBoard/controller/LatestMsgsContr.php(21): LatestMsgsContr->getLatestMsgs()
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/LatestMsgsContr.php on line 16
+[17-Jan-2023 15:23:50 Asia/Taipei] PHP Warning:  Undefined array key "msgIndex" in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 22
+[17-Jan-2023 15:23:50 Asia/Taipei] PHP Warning:  Undefined array key "msgTitle" in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 23
+[17-Jan-2023 15:23:50 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 23
+[17-Jan-2023 15:23:50 Asia/Taipei] PHP Warning:  Undefined array key "msgTime" in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 29
+[17-Jan-2023 15:23:50 Asia/Taipei] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 29
+[17-Jan-2023 15:23:50 Asia/Taipei] PHP Fatal error:  Uncaught Error: Cannot use object of type model\MsgList as array in /Users/mia/Sites/messageBoard/view/latestMessage.view.php:22
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/functions.php(24): require()
+#1 /Users/mia/Sites/messageBoard/controller/LatestMsgsContr.php(42): view_path('latestMessage.v...', Array)
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/view/latestMessage.view.php on line 22
+[17-Jan-2023 15:31:19 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(36): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(43): controller\ShowMsgContr->readingAuthority()
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
