@@ -45,15 +45,13 @@ class MsgList
         ]);
     }
 
-    public function updateMsg($msgIndex,$msgTitle, $msgContent, $memberID, $msgTime)
+    public function updateMsg($msgIndex, $msgTitle, $msgContent)
     {
-        $sql = "UPDATE msgList SET msgTitle = :msgTitle, msgContent = :msgContent, memberID = :memberID, msgTime = :msgTime WHERE msgIndex = :msgIndex;";
+        $sql = "UPDATE msgList SET msgTitle = :msgTitle, msgContent = :msgContent WHERE msgIndex = :msgIndex;";
         $this->db->query($sql, [
             'msgIndex' => $msgIndex,
             'msgTitle' => $msgTitle,
-            'msgContent' => $msgContent,
-            'memberID' => $memberID,
-            'msgTime' => $msgTime
+            'msgContent' => $msgContent
         ]);
     }
 

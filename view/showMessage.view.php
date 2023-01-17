@@ -14,12 +14,21 @@ view_path("partials/banner.php", [
             <p class="mt-4 break-words">
                 <?= changeWordsBack(htmlspecialchars($msg["msgContent"])); ?>
             </p>
+        </div>
 
-
+        <div class="">
+            <a href="/updateMessage?msgIndex=<?= $msg['msgIndex'] ?>"
+               class="text-gray-500 inline-block hover:border-b border-gray-900">
+                修改留言
+            </a>
+            <a href="/deleteMessage?msgIndex=<?= $msg['msgIndex'] ?>"
+               class="text-red-500 inline-block hover:border-b border-gray-900">
+                刪除留言
+            </a>
         </div>
         <!-- /End replace -->
-
-        <a href="/myMessage" class="text-blue-500 hover:underline">Back...</a>
+        <br>
+        <a href="/myMessage" class="px-4 text-blue-500 hover:underline">Back...</a>
     </div>
 </main>
 

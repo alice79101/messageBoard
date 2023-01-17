@@ -5,7 +5,7 @@ namespace controller;
 use model\MsgList as MsgList;
 session_start();
 //dumpAndDie(isset($_SESSION["memberID"]));
-class CreateMessage
+class CreateMsg
 {
     public $errMsg = "";
     public $createStatus = "NO";
@@ -77,6 +77,6 @@ class CreateMessage
 
 }
 
-$createMsg = new CreateMessage();
+$createMsg = new CreateMsg();
 $createMsg->createFormValidate();
 $createMsg->insertMsg();
