@@ -61,7 +61,8 @@ class CreateMsg
     {
         // 輸入資料庫
         if (empty($this->errMsg)) {
-            $changedContent = changeWords($this->msgContent); // 保留空白跟換行
+            $changedContent = $this->msgContent; // 保留空白跟換行
+//            $changedContent = changeWords($this->msgContent); // 保留空白跟換行
 //        $content = nl2br($_POST["content"]); //這可以保留換行，但沒辦法保留空白
 //        dumpAndDie($changedContent);
             $insertMsg = new MsgList();

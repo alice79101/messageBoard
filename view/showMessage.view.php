@@ -19,7 +19,10 @@ view_path("partials/banner.php", [
                 if (!isset($_SESSION["memberID"])) { ?>
                     <a href="/login" class="text-blue-500 inline-block hover:border-b border-blue-900">請先登入</a>
                 <?php } else {
-                echo changeWordsBack(htmlspecialchars($msg["msgContent"])); ?></p>
+                echo "<pre>";
+                echo htmlspecialchars($msg["msgContent"]);
+                echo "</pre>";
+                ?></p>
             <br>
             <div class="">
                 <a href="/updateMessage?msgIndex=<?= $msg['msgIndex'] ?>"

@@ -11,7 +11,10 @@ view_path("partials/banner.php", [
         <!-- Replace with your content -->
         <div class="px-4 py-6 sm:px-0">
             <p>
-                Welcome! 請於登入後使用各項功能。
+                Welcome!<br><br>
+                <li>請於右上角註冊會員並登入，方能享用各項功能。</li>
+                <li>可新增、修改、刪除自身的留言。</li>
+                <li>可於 What's new 看到最新十則的訊息，但僅有權限的人才能看內容。</li>
 <!--                --><?php //dumpAndDie($_SESSION); ?>
             </p>
         </div>

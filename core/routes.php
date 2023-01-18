@@ -10,7 +10,7 @@ return [
     '/login' => 'controller/LoginContr.php',
     '/logout' => 'controller/LogoutContr.php',
     '/updateMessage' => 'controller/UpdateMsgContr.php',
-    '/deleteMessage' => 'controller/DeleteMsg.php'
+    '/deleteMessage' => 'controller/DeleteMsgContr.php'
 ];
 
 

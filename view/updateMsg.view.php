@@ -36,7 +36,9 @@ view_path("partials/banner.php", [
                                                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                                   placeholder="留點話吧～"><?php
                                             if ($updateStatus === "NO") {
-                                                echo changeWordsBack(htmlspecialchars($msg["msgContent"]));
+//                                                echo "<pre>";
+                                                echo htmlspecialchars($msg["msgContent"]);
+//                                                echo "</pre>";
                                             } ?></textarea>
                                             </div>
                                         </div>

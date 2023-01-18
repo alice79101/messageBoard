@@ -55,6 +55,7 @@ class UpdateMsgContr
                 'msg' => $this->msg,
                 'updateStatus' => $this->updateStatus
             ]);
+            exit();
         }
     }
 
@@ -68,7 +69,6 @@ class UpdateMsgContr
         // 內容過多驗證
 //        dumpAndDie($this->errMsg);
         if (strlen($this->newMsgTitle) > 100 || strlen($this->newMsgContent) > 1000) {
-
             $this->errMsg = "留言失敗：訊息主旨至多100字元、內容至多1,000字元";
         }
     }
