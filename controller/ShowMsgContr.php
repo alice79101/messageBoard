@@ -6,21 +6,30 @@ use model\MsgList as MsgList;
 
 session_start();
 
+// 抵達此頁的要件：
+// 1. 使用者有登入
+// 2. 使用者有權限閱讀此訊息
+
+// 可能有幾種情況：
+// 1. 使用者用瀏覽器列試圖查看->沒登入->請先登入 （無 $_SESSION["memberID"] )
+// 2. 使用者已登入試圖查看->403 (有 $_SESSION["memberID"] 比對訊息 ID 後不符合）
+// 3. 使用者有登入&權限正確->正常顯示
+
 class ShowMsgContr
 {
     public $db;
+    private $path = "showMessage.view.php";
     private $memberID;
     private $msg;
 
     public function __construct()
     {
-        if (isset($_SESSION["memberID"])) {
-            $this->memberID = $_SESSION["memberID"];
-        } else {
-            view_path("showMessage.view.php");
+        if (!isset($_SESSION["memberID"])) {
+            view_path($this->path);
             exit();
+        } else {
+            $this->memberID = $_SESSION["memberID"];
         }
-
     }
 
     public function findingMsg()
@@ -44,6 +53,6 @@ class ShowMsgContr
     }
 }
 
-$showmsg = new ShowMsgContr();
-$showmsg->findingMsg();
-$showmsg->readingAuthority();
+$showMsg = new ShowMsgContr();
+$showMsg->findingMsg();
+$showMsg->readingAuthority();

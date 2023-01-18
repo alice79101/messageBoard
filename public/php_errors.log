@@ -2079,3 +2079,79 @@ Stack trace:
 [18-Jan-2023 00:18:11 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 20
 [18-Jan-2023 00:18:11 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 24
 [18-Jan-2023 00:18:11 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 24
+[18-Jan-2023 00:28:14 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 00:28:14 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 00:28:14 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 00:28:14 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 15
+[18-Jan-2023 00:28:14 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 15
+[18-Jan-2023 00:28:14 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 15
+[18-Jan-2023 00:28:14 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 20
+[18-Jan-2023 00:28:14 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 20
+[18-Jan-2023 00:28:14 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 24
+[18-Jan-2023 00:28:14 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 24
+[18-Jan-2023 00:28:15 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 00:28:15 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 00:28:15 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 00:28:15 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 15
+[18-Jan-2023 00:28:15 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 15
+[18-Jan-2023 00:28:15 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 15
+[18-Jan-2023 00:28:15 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 20
+[18-Jan-2023 00:28:15 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 20
+[18-Jan-2023 00:28:15 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 24
+[18-Jan-2023 00:28:15 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 24
+[18-Jan-2023 00:28:40 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 00:28:40 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 00:28:40 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 00:28:40 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 7
+[18-Jan-2023 00:30:54 Asia/Taipei] PHP Parse error:  syntax error, unexpected identifier "view_path" in /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php on line 25
+[18-Jan-2023 00:31:05 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 00:31:05 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 00:31:05 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 00:31:05 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 7
+[18-Jan-2023 10:49:10 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 10:49:10 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 10:49:10 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 10:49:10 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 7
+[18-Jan-2023 10:49:11 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 10:49:11 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 10:49:11 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 10:49:11 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 7
+[18-Jan-2023 10:49:13 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 10:49:13 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 10:49:13 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 5
+[18-Jan-2023 10:49:13 Asia/Taipei] PHP Warning:  Undefined variable $msg in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 7
+[18-Jan-2023 10:51:31 Asia/Taipei] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /Users/mia/Sites/messageBoard/view/showMessage.view.php:8
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/functions.php(24): require()
+#1 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(28): view_path('showMessage.vie...')
+#2 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(56): controller\ShowMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 8
+[18-Jan-2023 11:27:50 Asia/Taipei] PHP Warning:  Undefined array key "msgContent" in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 22
+[18-Jan-2023 11:27:50 Asia/Taipei] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 22
+[18-Jan-2023 11:27:50 Asia/Taipei] PHP Warning:  Undefined array key "msgIndex" in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 25
+[18-Jan-2023 11:27:50 Asia/Taipei] PHP Warning:  Undefined array key "msgIndex" in /Users/mia/Sites/messageBoard/view/showMessage.view.php on line 29
+[18-Jan-2023 11:34:47 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(51): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(58): controller\ShowMsgContr->readingAuthority()
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[18-Jan-2023 11:34:53 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(51): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(58): controller\ShowMsgContr->readingAuthority()
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[18-Jan-2023 11:34:56 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(51): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(58): controller\ShowMsgContr->readingAuthority()
+#2 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[18-Jan-2023 11:35:27 Asia/Taipei] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/UpdateMsgContr.php on line 69
+[18-Jan-2023 11:35:27 Asia/Taipei] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/UpdateMsgContr.php on line 69
