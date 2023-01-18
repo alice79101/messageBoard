@@ -25,7 +25,7 @@ view_path("partials/banner.php", [
 <!--                                            --><?php //dumpAndDie($_GET); ?>
                                                 <textarea id="Title" name="Title" rows="1"
                                                           class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                                          placeholder="訊息標題"><?php if ($_SERVER["REQUEST_METHOD"] === "GET") { echo htmlspecialchars($msg["msgTitle"]); } ?></textarea>
+                                                          placeholder="訊息標題"><?php if ($updateStatus === "NO") { echo htmlspecialchars($msg["msgTitle"]); } ?></textarea>
                                             </div>
                                         </div>
                                         <div>
@@ -35,7 +35,7 @@ view_path("partials/banner.php", [
                                         <textarea id="content" name="content" rows="3"
                                                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                                   placeholder="留點話吧～"><?php
-                                            if ($_SERVER["REQUEST_METHOD"] === "GET") {
+                                            if ($updateStatus === "NO") {
                                                 echo changeWordsBack(htmlspecialchars($msg["msgContent"]));
                                             } ?></textarea>
                                             </div>

@@ -11,7 +11,7 @@ view_path("partials/banner.php", [
         <!-- Replace with your content -->
         <div class="px-4 py-6 sm:px-0">
             <p>
-                Welcome!
+                Welcome! 請於登入後使用各項功能。
 <!--                --><?php //dumpAndDie($_SESSION); ?>
             </p>
         </div>

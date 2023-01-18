@@ -52,7 +52,8 @@ class UpdateMsgContr
 
         } else {
             view_path($this->path, [
-                'msg' => $this->msg
+                'msg' => $this->msg,
+                'updateStatus' => $this->updateStatus
             ]);
         }
     }
