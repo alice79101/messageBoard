@@ -64,4 +64,18 @@ class MsgList
         ]);
 
     }
+    public function findMsgJoinMember($msgIndex)
+    {
+        $sql = "SELECT * FROM msgList, membership WHERE msgList.memberID = membership.memberID;";
+        $result = $this->db->query($sql, [
+            ':msgIndex' => $msgIndex
+        ])->findOne();
+        return $result;
+    }
+    public function allMsgJoinMemberDESC($column = "msgTime")
+    {
+        $sql = "SELECT * FROM msgList, membership WHERE msgList.memberID = membership.memberID ORDER BY " . $column . " DESC;";
+        $result = $this->db->query($sql)->getAll();
+        return $result;
+    }
 }

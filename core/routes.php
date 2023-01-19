@@ -1,16 +1,16 @@
 <?php
 
 return [
-    '/' => 'controller/index.php',
-    '/latest' => 'controller/LatestMsgsContr.php',
-    '/myMessage' => 'controller/MyMsgContr.php',
-    '/createMessage' => 'controller/CreateMsg.php',
-    '/msg' => 'controller/ShowMsgContr.php',
-    '/signup' => 'controller/SignupContr.php',
-    '/login' => 'controller/LoginContr.php',
-    '/logout' => 'controller/LogoutContr.php',
-    '/updateMessage' => 'controller/UpdateMsgContr.php',
-    '/deleteMessage' => 'controller/DeleteMsgContr.php'
+    '/' => 'controller/indexContr.php',
+    '/latest' => 'controller/msgContr/LatestMsgsContr.php',
+    '/myMessage' => 'controller/msgContr/MyMsgContr.php',
+    '/createMessage' => 'controller/msgContr/CreateMsg.php',
+    '/msg' => 'controller/msgContr/ShowMsgContr.php',
+    '/updateMessage' => 'controller/msgContr/UpdateMsgContr.php',
+    '/deleteMessage' => 'controller/msgContr/DeleteMsgContr.php',
+    '/signup' => 'controller/userContr/SignupContr.php',
+    '/login' => 'controller/userContr/LoginContr.php',
+    '/logout' => 'controller/userContr/LogoutContr.php'
 ];
 
 

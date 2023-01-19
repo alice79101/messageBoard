@@ -1,8 +1,6 @@
 <?php
 // 這個頁面是用來顯示每個訊息的內容
-namespace controller;
-
-use model\MsgList as MsgList;
+namespace controller\msgContr;
 
 session_start();
 

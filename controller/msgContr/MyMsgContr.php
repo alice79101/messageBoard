@@ -1,6 +1,6 @@
 <?php
 // 頁面目標：顯示所有自己 create 的 Msg
-namespace controller;
+namespace controller\msgContr;
 use model\MsgList as MsgList;
 
 session_start();

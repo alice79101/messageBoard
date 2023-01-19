@@ -1,8 +1,6 @@
 <?php
 
-namespace controller;
-
-use model\MsgList as MsgList;
+namespace controller\msgContr;
 
 session_start();
 

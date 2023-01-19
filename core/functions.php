@@ -20,6 +20,7 @@ function base_path($rootToPath){
 }
 
 function view_path($path, $attributes = []){
+    //var_dump($path);
     extract($attributes);
     require BASE_PATH . "view/" . $path;
 }

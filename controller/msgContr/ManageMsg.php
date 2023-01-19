@@ -1,5 +1,5 @@
 <?php
-namespace controller;
+namespace controller\msgContr;
 use model\MsgList as MsgList;
 
 class ManageMsg
@@ -35,5 +35,4 @@ class ManageMsg
             exit();
         }
     }
-
 }

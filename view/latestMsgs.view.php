@@ -26,7 +26,7 @@ view_path("partials/banner.php", [
                         </a>
                     </li>
                     <li class="text-right mr-4">
-                        <?= "｜ 發佈於：" . substr($value["msgTime"], 0, 10); ?>
+                        <?= $value["nickname"] . "｜ 發佈於：" . substr($value["msgTime"], 0, 10); ?>
                     </li>
                     <br>
                     <?php endforeach; ?>

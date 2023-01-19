@@ -1,8 +1,9 @@
 <?php
 
-namespace controller;
+namespace controller\msgContr;
 
 use model\MsgList as MsgList;
+
 session_start();
 //dumpAndDie(isset($_SESSION["memberID"]));
 class CreateMsg extends ManageMsg
