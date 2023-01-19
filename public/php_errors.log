@@ -2954,3 +2954,45 @@ Stack trace:
 #3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
 #4 {main}
   thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[19-Jan-2023 16:12:20 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'handsome@gmail.com' for key 'email' in /Users/mia/Sites/messageBoard/core/Dbh.php:46
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(46): PDOStatement->execute(Array)
+#1 /Users/mia/Sites/messageBoard/model/User.php(41): core\Dbh->query('INSERT INTO `me...', Array)
+#2 /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php(67): model\User->insertUser('handsome@gmail....', 'jjjkkk', 'pretty')
+#3 /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php(135): controller\SignupContr->signupUserValidate()
+#4 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 46
+[19-Jan-2023 16:15:58 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type bool in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 54
+[19-Jan-2023 16:15:58 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 54
+[19-Jan-2023 16:20:35 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/msgContr/ManageMsg.php(49): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/ShowMsgContr.php(29): controller\msgContr\ManageMsg->readingAuthority()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/ShowMsgContr.php(37): controller\msgContr\ShowMsgContr->showMsg()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[19-Jan-2023 16:20:43 Asia/Taipei] PHP Warning:  Undefined property: controller\msgContr\DeleteMsgContr::$db in /Users/mia/Sites/messageBoard/controller/msgContr/DeleteMsgContr.php on line 29
+[19-Jan-2023 16:20:43 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function deleteMsg() on null in /Users/mia/Sites/messageBoard/controller/msgContr/DeleteMsgContr.php:29
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/msgContr/DeleteMsgContr.php(42): controller\msgContr\DeleteMsgContr->confirmDelete()
+#1 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/msgContr/DeleteMsgContr.php on line 29
+[19-Jan-2023 16:21:59 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/msgContr/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/ShowMsgContr.php(22): controller\msgContr\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/ShowMsgContr.php(36): controller\msgContr\ShowMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[19-Jan-2023 16:22:11 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/msgContr/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/ShowMsgContr.php(22): controller\msgContr\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/ShowMsgContr.php(36): controller\msgContr\ShowMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10

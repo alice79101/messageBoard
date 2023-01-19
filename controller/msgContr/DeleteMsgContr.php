@@ -26,7 +26,7 @@ class DeleteMsgContr extends ManageMsg
 //        dumpAndDie($_SERVER);
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
 //            $this->db = new MsgList();
-            $this->db->deleteMsg($this->msg["msgIndex"]);
+            $this->dbMsg->deleteMsg($this->msg["msgIndex"]);
             $this->deleteStatus = "YES";
         }
         view_path($this->path, [

@@ -121,7 +121,7 @@ class SignupContr
     {
         $result = "";
         $stmt = new User();
-        $result = $stmt->findAUser("userID", $this->userID);
+        $result = $stmt->findAUser($this->userID);
 //        dumpAndDie($result);
         if (!empty($result)) {
             $result = "Denied";
