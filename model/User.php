@@ -21,6 +21,15 @@ class User
 //        dumpAndDie($result);
         return $result;
     }
+    public function findUserMemberID($memberID)
+    {
+        $sql = "SELECT * FROM membership WHERE memberID =:memberID;";
+        $result = $this->db->query($sql, [
+            'memberID' => $memberID
+        ])->findOne();
+//        dumpAndDie($result);
+        return $result;
+    }
     public function insertUser($userID, $userpassword, $nickname)
     {
         $hashedPassword = password_hash($userpassword, PASSWORD_BCRYPT);

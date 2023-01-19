@@ -20,6 +20,7 @@ class ShowMsgContr extends ManageMsg
     public function __construct()
     {
         $this->loginConfirm();
+//        dumpAndDie($this->user);
         $this->getMsgInformation();
     }
 

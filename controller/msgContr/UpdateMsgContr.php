@@ -65,8 +65,8 @@ class UpdateMsgContr extends ManageMsg
     {
         // 輸入資料庫
         if (empty($this->errMsg)) {
-            $this->db->updateMsg($this->msg["msgIndex"], $this->newMsgTitle, $this->newMsgContent);
-            $this->msg = $this->db->findMsg($this->msg["msgIndex"]);
+            $this->dbMsg->updateMsg($this->msg["msgIndex"], $this->newMsgTitle, $this->newMsgContent);
+            $this->msg = $this->dbMsg->findMsg($this->msg["msgIndex"]);
             $this->updateStatus = "YES";
         }
 //        dumpAndDie($this->updateStatus);

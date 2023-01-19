@@ -92,7 +92,7 @@ class LoginContr
     {
         $result = "";
         $this->login = new User();
-        $this->userData = $this->login->findAUser($this->userID);
+        $this->userData = $this->login->findAUser("userID" ,$this->userID);
 //        dumpAndDie($result);
         if (!empty($result)) {
             $result = "Denied";

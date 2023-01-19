@@ -1,11 +1,16 @@
 <?php
+
 namespace controller\msgContr;
+
 use model\MsgList as MsgList;
+use model\User as User;
 
 class ManageMsg
 {
-    protected $db;
+    protected $dbMsg;
+    protected $dbUser;
     protected $msg;
+    protected $user;
 
 
     protected function loginConfirm()
@@ -16,23 +21,37 @@ class ManageMsg
             exit();
         }
     }
+
     protected function getMsgInformation()
     {
-        $this->db = new MsgList();
-        $this->msg = $this->db->findMsg($_GET["msgIndex"]);
+        $this->dbMsg = new MsgList();
+        $this->msg = $this->dbMsg->findMsg($_GET["msgIndex"]);
 //             dumpAndDie($this->msg);
+    }
+    protected function isAdmin()
+    {
+        $this->dbUser = new User();
+//        dumpAndDie($_SESSION);
+        $this->user = $this->dbUser->findUserMemberID($_SESSION["memberID"]);
+//        dumpAndDie($this->user);
     }
     protected function readingAuthority()
     {
         if (empty($this->msg)) {
-            abort(404);  // 根本沒有這一則訊息
+            abort();
             exit();
-        } elseif ($this->msg["memberID"] === $_SESSION["memberID"]) {
-            // 驗證訊息的 memberID 與 登入者 memberID 是否相同
-
         } else {
-            abort(403);
-            exit();
+            $this->isAdmin();
+            if ($this->user["ADMIN"] === 1
+                || $this->msg["memberID"] === $_SESSION["memberID"]) {
+
+            } else {
+                abort(403);
+                exit();
+            }
         }
+
     }
+
+
 }
