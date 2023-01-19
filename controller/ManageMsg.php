@@ -14,13 +14,15 @@ class ManageMsg
             // 請他登入先
             abort(403);
             exit();
-        } else {
-            $this->db = new MsgList();
-            $this->msg = $this->db->findMsg($_GET["msgIndex"]);
-//             dumpAndDie($this->msg);
         }
     }
-    public function readingAuthority()
+    protected function getMsgInformation()
+    {
+        $this->db = new MsgList();
+        $this->msg = $this->db->findMsg($_GET["msgIndex"]);
+//             dumpAndDie($this->msg);
+    }
+    protected function readingAuthority()
     {
         if (empty($this->msg)) {
             abort(404);  // 根本沒有這一則訊息

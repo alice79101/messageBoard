@@ -27,6 +27,7 @@ class UpdateMsgContr extends ManageMsg
     public function __construct()
     {
       $this->loginConfirm();
+      $this->getMsgInformation();
       $this->readingAuthority();
     }
 

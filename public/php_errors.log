@@ -2418,3 +2418,73 @@ Stack trace:
 #3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
 #4 {main}
   thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[19-Jan-2023 11:40:31 Asia/Taipei] PHP Warning:  Undefined array key "msgIndex" in /Users/mia/Sites/messageBoard/controller/ManageMsg.php on line 19
+[19-Jan-2023 11:49:26 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(15): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/UpdateMsgContr.php(29): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/UpdateMsgContr.php(85): controller\UpdateMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[19-Jan-2023 11:49:34 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(15): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/DeleteMsgContr.php(20): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/DeleteMsgContr.php(43): controller\DeleteMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[19-Jan-2023 11:55:24 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(15): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(24): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(37): controller\ShowMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[19-Jan-2023 11:55:37 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method controller\ShowMsgContr::findingMsg() in /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php:38
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/public/index.php(15): require()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php on line 38
+[19-Jan-2023 11:56:46 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(15): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(24): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(37): controller\ShowMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[19-Jan-2023 11:57:09 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(34): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(30): controller\ManageMsg->readingAuthority()
+#2 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(38): controller\ShowMsgContr->showMsg()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[19-Jan-2023 11:59:04 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(15): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(24): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(37): controller\ShowMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[19-Jan-2023 11:59:11 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(15): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(24): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/ShowMsgContr.php(37): controller\ShowMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
+[19-Jan-2023 11:59:26 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:6
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(15): abort(403)
+#1 /Users/mia/Sites/messageBoard/controller/UpdateMsgContr.php(29): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/UpdateMsgContr.php(85): controller\UpdateMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(15): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 6
