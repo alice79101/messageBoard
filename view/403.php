@@ -12,7 +12,7 @@ view_path("partials/banner.php", [
         <!-- Replace with your content -->
         <div class="px-4 py-6 sm:px-0">
 
-            <p class="mt-4 text-red-500">權限不足，無法查看。</p>
+            <p class="mt-4 text-red-500">權限不足，無法查看。<br>請先登入或確認您的帳號。</p>
         </div>
 
         <a href="/" class="text-blue-500 hover:underline">Go back home...</a>

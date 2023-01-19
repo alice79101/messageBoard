@@ -49,7 +49,8 @@ view_path("partials/banner.php", [
                             </div>
                         </div>
                     </form>
-                <?php } elseif($deleteStatus === "YES") { ?>
+                <?php }
+                if ($deleteStatus === "YES") { ?>
                     <br>
                     <a href="/myMessage" class="px-4 text-blue-500 hover:underline">訊息已刪除，點我回到 My Message</a>
                 <?php } ?>

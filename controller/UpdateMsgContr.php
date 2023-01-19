@@ -16,30 +16,18 @@ session_start();
 // 二、判斷已登入，判斷是否用GET方法抵達，是的話顯示訊息內容
 
 //dumpAndDie($_GET);
-class UpdateMsgContr
+class UpdateMsgContr extends ManageMsg
 {
     public $path = "updateMsg.view.php"; // view 的頁面
-    public $db;
-    public $msg;
     public $updateStatus = "NO";
     public $errMsg;
     public $newMsgTitle;
     public $newMsgContent;
-    private $msgIndex;
 
     public function __construct()
     {
-        // 判斷是否登入
-        if (!isset($_SESSION["memberID"])) {
-            // 請他登入先
-            view_path($this->path);
-            exit();
-        } else {
-            $this->msgIndex = $_GET["msgIndex"];
-            $this->db = new MsgList();
-            $this->msg = $this->db->findMsg($this->msgIndex);
-//             dumpAndDie($this->msg);
-        }
+      $this->loginConfirm();
+      $this->readingAuthority();
     }
 
     public function landingMethod()
@@ -51,6 +39,7 @@ class UpdateMsgContr
 //            dumpAndDie($this->newMsgTitle);
 
         } else {
+            // 如果用 GET 方法抵達，直接顯示訊息
             view_path($this->path, [
                 'msg' => $this->msg,
                 'updateStatus' => $this->updateStatus
@@ -58,6 +47,7 @@ class UpdateMsgContr
             exit();
         }
     }
+
 
     public function updateFormValidate()
     {
@@ -76,16 +66,13 @@ class UpdateMsgContr
     {
         // 輸入資料庫
         if (empty($this->errMsg)) {
-            $changedContent = changeWords($this->newMsgContent); // 保留空白跟換行
-//            dumpAndDie($this->newMsgContent);
-            $this->db->updateMsg($this->msgIndex, $this->newMsgTitle, $changedContent);
+            $this->db->updateMsg($this->msg["msgIndex"], $this->newMsgTitle, $this->newMsgContent);
+            $this->msg = $this->db->findMsg($this->msg["msgIndex"]);
             $this->updateStatus = "YES";
         }
 //        dumpAndDie($this->updateStatus);
         view_path($this->path, [
             'msg' => $this->msg,
-            'newMsgTitle' =>$this->newMsgTitle,
-            'newMsgContent' =>$this->newMsgContent,
             'updateStatus' => $this->updateStatus,
             'errMsg' => $this->errMsg
         ]);
