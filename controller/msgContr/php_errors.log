@@ -1,0 +1,10 @@
+[19-Jan-2023 17:35:59 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "model\MsgList" not found in /Users/mia/Sites/messageBoard/controller/msgContr/LatestMsgsContr.php:15
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/msgContr/LatestMsgsContr.php(35): controller\msgContr\LatestMsgsContr->__construct()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/msgContr/LatestMsgsContr.php on line 15
+[19-Jan-2023 17:36:26 Asia/Taipei] PHP Fatal error:  Uncaught Error: Class "model\MsgList" not found in /Users/mia/Sites/messageBoard/controller/msgContr/LatestMsgsContr.php:15
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/msgContr/LatestMsgsContr.php(35): controller\msgContr\LatestMsgsContr->__construct()
+#1 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/msgContr/LatestMsgsContr.php on line 15
