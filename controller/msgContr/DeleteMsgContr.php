@@ -9,7 +9,7 @@ session_start();
 //dumpAndDie($_GET);
 class DeleteMsgContr extends ManageMsg
 {
-    public $path = "deleteMsg.view.php";
+    public $path = "msgViews/deleteMsg.view.php";
     public $deleteStatus = "NO";
 
 

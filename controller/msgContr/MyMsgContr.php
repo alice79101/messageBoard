@@ -10,6 +10,7 @@ class MyMsgContr
     public $myMsg;
     private $memberID;
     public $db;
+    public $path = "msgViews/myMsg.view.php";
 
     public function __construct()
     {
@@ -18,7 +19,7 @@ class MyMsgContr
             $this->memberID = $_SESSION["memberID"];
         } else {
 //            $this->myMsg = "請先登入";
-            view_path("myMsg.view.php");
+            view_path($this->path);
             exit();
         }
     }
@@ -28,7 +29,7 @@ class MyMsgContr
         $this->db = new MsgList();
         $this->myMsg = $this->db->getAllMsg($this->memberID);
 //        dumpAndDie($this->myMsg);
-        view_path("myMsg.view.php", [
+        view_path($this->path , [
             'myMsg' => $this->myMsg
         ]);
     }

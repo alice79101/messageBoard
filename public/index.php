@@ -1,6 +1,5 @@
 <?php
-const BASE_PATH = __DIR__ . "/";
-//var_dump(BASE_PATH);
+const BASE_PATH = __DIR__ . "/../";
 require BASE_PATH . "core/functions.php";
 require base_path("vendor/autoload.php");
 require base_path("core/router.php");
@@ -14,11 +13,10 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 if (array_key_exists($uri, $routes)) {
     // 使用者輸入的網址若與網站地圖有對應，則回饋對應網頁
     require BASE_PATH . $routes[$uri];
+} else {
+    abort(404);
+    // 若使用者輸入網址無對應到，則回覆錯誤代碼 page
 }
-//} else {
-//    abort(404);
-//    // 若使用者輸入網址無對應到，則回覆錯誤代碼 page
-//}
 
 
 

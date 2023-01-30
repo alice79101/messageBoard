@@ -13,6 +13,7 @@ class SignupContr
     private $userPassword;
     private $userPasswordRepeat;
     public $errMsg = [];
+    public $path = "usrViews/signup.view.php";
 
     public function __construct()
     {
@@ -25,7 +26,7 @@ class SignupContr
             $this->userPasswordRepeat = $_POST["passwordRepeat"];
         } else {
             // 使用 GET 方法抵達網站，直接顯示view
-            view_path("signup.view.php");
+            view_path($this->path);
             exit();
         }
     }
@@ -67,7 +68,7 @@ class SignupContr
             $signup->insertUser($this->userID, $this->userPassword, $this->nickname);
             $this->errMsg['signupStatus'] = "註冊成功囉，請至登入畫面登入";
         }
-        view_path("signup.view.php", [
+        view_path($this->path , [
             'errMsg' => $this->errMsg
         ]);
 

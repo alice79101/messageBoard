@@ -16,7 +16,7 @@ session_start();
 //dumpAndDie($_GET);
 class UpdateMsgContr extends ManageMsg
 {
-    public $path = "updateMsg.view.php"; // view 的頁面
+    public $path = "msgViews/updateMsg.view.php"; // view 的頁面
     public $updateStatus = "NO";
     public $errMsg;
     public $newMsgTitle;

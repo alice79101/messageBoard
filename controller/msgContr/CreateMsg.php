@@ -10,7 +10,7 @@ class CreateMsg extends ManageMsg
 {
     public $errMsg = "";
     public $createStatus = "NO";
-    public $path = "createMessage.view.php";
+    public $path = "msgViews/createMessage.view.php";
     private $msgTitle;
     private $msgContent;
     private $memberID;

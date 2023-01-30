@@ -15,7 +15,7 @@ session_start();
 
 class ShowMsgContr extends ManageMsg
 {
-    private $path = "showMessage.view.php";
+    private $path = "msgViews/showMessage.view.php";
 
     public function __construct()
     {

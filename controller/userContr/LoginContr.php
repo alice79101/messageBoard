@@ -11,6 +11,7 @@ class LoginContr
     private $login;
     private $userData;
     public $errMsg = "";
+    public $path = "usrViews/login.view.php";
 
 
 
@@ -23,7 +24,7 @@ class LoginContr
             $this->userPassword = $_POST["password"];
 //            $this->login = new User();
         } else {
-            view_path("login.view.php",[
+            view_path($this->path ,[
                 'errMsg' => $this->errMsg
             ]);
         }
@@ -62,7 +63,7 @@ class LoginContr
                 $this->errMsg = "登入失敗，帳號或密碼不正確";
             }
         }
-        view_path("login.view.php", [
+        view_path($this->path , [
             'errMsg' => $this->errMsg
         ]);
 

@@ -9,6 +9,7 @@ class LatestMsgsContr
 {
     public $latestMsgs;
     public $db;
+    public $path = "msgViews/latestMsgs.view.php";
 
     public function __construct()
     {
@@ -26,7 +27,7 @@ class LatestMsgsContr
 
     public function showLatestMsgs()
     {
-        view_path("latestMsgs.view.php", [
+        view_path($this->path , [
             'latestMsg' => $this->latestMsgs
         ]);
     }
