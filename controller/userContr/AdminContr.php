@@ -6,23 +6,26 @@ use model\UserModel;
 class AdminContr extends ManageMsg
 {
     public $userList;
+    public $path = "usrViews/adminArea.view.php";
    public function __construct()
    {
        $this->loginConfirm();
-       $this->getAdminValue();
-       if ($this->user["ADMIN"] !== 1) {
-           abort(403);
-           exit();
-       }
+        if ($_SESSION["ADMIN"] !== 1) {
+            abort(403);
+            exit();
+        }
    }
     public function showUserList()
     {
-        $this->dbUser = new UserModel();
-        $this->userList = $this->dbUser->getAllUser();
+        if ($_SESSION["ADMIN"] === 1 ) {
+            $this->dbUser = new UserModel();
+            $this->userList = $this->dbUser->getAllUser();
+            view_path($this->path, [
+                'userList' => $this->userList
+            ]);
+        }
+//        dumpAndDie($this->userList);
     }
-
-
-
 }
 
 $userList = new AdminContr();

@@ -12,11 +12,12 @@ $routes = require base_path("core/routes.php");
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
     // uri 是 server 透過瀏覽器取得的網址，使用者直接輸入網址會在這邊
     //利用 parse_url 解析使用者輸入的網址，避免使用者惡意輸入被當成 html 執行
+if (!isset($_SESSION)) {
+    session_start();
+}
 if (array_key_exists($uri, $routes)) {
     // 使用者輸入的網址若與網站地圖有對應，則回饋對應網頁
-    if (!isset($_SESSION)) {
-        session_start();
-    }
+
     require BASE_PATH . $routes[$uri];
 } else {
     abort(404);
