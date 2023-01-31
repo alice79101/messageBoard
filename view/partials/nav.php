@@ -55,6 +55,9 @@
                             <?php } else { ?>
                                 <a class="block px-4 py-2  text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1" id="user-menu-item-0"><?= "Hi! " . $_SESSION["nickname"] ?></a>
                                 <a href="/logout" class="block px-4 py-2  text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1" id="user-menu-item-0">Logout</a>
+                                <?php
+                                if (!isset($_SESSION["ADMIN"]))
+                                ?>
 
                             <?php } ?>
                         </div>

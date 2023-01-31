@@ -1,14 +1,11 @@
 <?php
 
 namespace controller\msgContr;
-
-//if (!isset($_SESSION)) {
-//    session_start();
-//}
-
-// 功能：刪除
+// 頁面功能：刪除
 
 //dumpAndDie($_GET);
+use controller\ManageMsg;
+
 class DeleteMsgContr extends ManageMsg
 {
     public $path = "msgViews/deleteMsg.view.php";
@@ -17,6 +14,7 @@ class DeleteMsgContr extends ManageMsg
 
     public function __construct()
     {
+        //先確認登入身份、取得訊息內容、判斷有無閱讀權限
         $this->loginConfirm();
         $this->getMsgInformation();
         $this->readingAuthority();

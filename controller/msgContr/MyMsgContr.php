@@ -8,6 +8,8 @@ namespace controller\msgContr;
 //}
 //session_start();
 
+use controller\ManageMsg;
+
 class MyMsgContr extends ManageMsg
 {
     public $path = "msgViews/myMsg.view.php";

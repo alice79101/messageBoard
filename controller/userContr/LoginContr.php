@@ -2,18 +2,19 @@
 // controller: 制定 Login 的動作內容、引導頁面動作、連結到 view
 
 namespace controller;
+
+use controller\FormValidateContr as FormValidateContr;
 use model\UserModel as UserModel;
 
 class LoginContr
 {
+    public $errMsg = "";
+    public $path = "usrViews/login.view.php";
+    public $validate;
     private $userID;
     private $userPassword;
     private $login;
     private $userData;
-    public $errMsg = "";
-    public $path = "usrViews/login.view.php";
-
-
 
     public function __construct()
     {
@@ -22,29 +23,45 @@ class LoginContr
 //             dumpAndDie($_POST); //看一下會收到什麼
             $this->userID = $_POST["userID"];
             $this->userPassword = $_POST["password"];
-//            $this->login = new UserModel();
         } else {
-            view_path($this->path ,[
+            view_path($this->path, [
                 'errMsg' => $this->errMsg
             ]);
         }
     }
+
     public function loginFormValidate()
     {
-        if ($this->emptyInput() === "Denied") {
-            $this->errMsg = "empty input";
+        $this->validate = new FormValidateContr();
+        if ($this->validate->emptyInput($this->userID)
+            || $this->validate->emptyInput($this->userPassword)
+            === "Denied") {
+            $this->errMsg = "請輸入所有欄位";
         } else {
-            if ($this->validateEmail() === "Denied") {
+
+            if ($this->validate->validateEmail($this->userID) === "Denied") {
                 $this->errMsg = "帳號格式不符合 Email 格式，請重新輸入";
+            }
+            if ($this->validate->inputLengthValidate($this->userPassword, 6, 20) === "Denied") {
+                $this->errMsg = "密碼介於6至20位間，且不含特殊數字，請重新輸入";
             }
             if ($this->userIdExist() === "Denied") {
                 $this->errMsg = "此帳號未經註冊，請先註冊";
             }
         }
-//        dumpAndDie($this->errMsg);
+    }
+    private function userIdExist()
+    {
+        $result = "";
+        $this->login = new UserModel();
+        $this->userData = $this->login->findAUser($this->userID);
+//        dumpAndDie($result);
+        if (!empty($result)) {
+            $result = "Denied";
+        }
+        return $result;
     }
 
-    // 登入動作：表單驗證->索取資料庫資料(Model)->比對密碼是否一致
     public function loginUser()
     {
         if (empty($this->errMsg)) {
@@ -58,48 +75,21 @@ class LoginContr
 //                dumpAndDie($this->userData);
                 $_SESSION["memberID"] = $this->userData["memberID"];
                 $_SESSION["nickname"] = $this->userData["nickname"];
+                $_SESSION["ADMIN"] = $this->userData["ADMIN"];
 //                dumpAndDie($_SESSION);
                 require __DIR__ . "/../msgContr/MyMsgContr.php";
             } else {
                 $this->errMsg = "登入失敗，帳號或密碼不正確";
-                view_path($this->path , [
+                view_path($this->path, [
                     'errMsg' => $this->errMsg
                 ]);
             }
+        } else {
+            view_path($this->path, [
+                'errMsg' => $this->errMsg
+            ]);
         }
 
-    }
-
-
-    // 檢查是否有欄位為空白
-    private function emptyInput()
-    {
-        $result = "";
-        if (empty($_POST["userID"]) || empty($_POST["password"])) {
-            $result = "Denied";
-        }
-//        dumpAndDie($result);
-        return $result;
-    }
-    private function validateEmail()
-    {
-//        dumpAndDie(filter_var($this->userID, FILTER_VALIDATE_EMAIL));
-        $result = "";
-        if (!filter_var($this->userID, FILTER_VALIDATE_EMAIL)) {
-            $result = "Denied";
-        }
-        return $result;
-    }
-    private function userIdExist()
-    {
-        $result = "";
-        $this->login = new UserModel();
-        $this->userData = $this->login->findAUser($this->userID);
-//        dumpAndDie($result);
-        if (!empty($result)) {
-            $result = "Denied";
-        }
-        return $result;
     }
 
 }

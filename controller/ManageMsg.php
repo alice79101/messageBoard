@@ -1,6 +1,6 @@
 <?php
 
-namespace controller\msgContr;
+namespace controller;
 
 use model\MsgModel as MsgModel;
 use model\UserModel as UserModel;
@@ -34,20 +34,22 @@ class ManageMsg
         $this->msg = $this->dbMsg->getAllMsg($memberID);
 //        dumpAndDie($this->msg);
     }
-    protected function isAdmin()
+    protected function getAdminValue()
     {
         $this->dbUser = new UserModel();
 //        dumpAndDie($_SESSION);
         $this->user = $this->dbUser->findUserMemberID($_SESSION["memberID"]);
 //        dumpAndDie($this->user);
+
     }
+
     protected function readingAuthority()
     {
         if (empty($this->msg)) {
             abort();
             exit();
         } else {
-            $this->isAdmin();
+            $this->getAdminValue();
             if ($this->user["ADMIN"] === 1
                 || $this->msg["memberID"] === $_SESSION["memberID"]) {
 

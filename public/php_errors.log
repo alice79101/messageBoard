@@ -3758,3 +3758,203 @@ Stack trace:
 #3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
 #4 {main}
   thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[31-Jan-2023 12:07:27 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/msgContr/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/ShowMsgContr.php(24): controller\msgContr\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/ShowMsgContr.php(38): controller\msgContr\ShowMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[31-Jan-2023 12:07:32 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/msgContr/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/ShowMsgContr.php(24): controller\msgContr\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/ShowMsgContr.php(38): controller\msgContr\ShowMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[31-Jan-2023 12:07:41 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/msgContr/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/MyMsgContr.php(18): controller\msgContr\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/MyMsgContr.php(33): controller\msgContr\MyMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[31-Jan-2023 12:07:42 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/msgContr/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsg.php(25): controller\msgContr\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsg.php(77): controller\msgContr\CreateMsg->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[31-Jan-2023 15:05:17 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method controller\LoginContr::emptyInput() in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php:33
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(108): controller\LoginContr->loginFormValidate()
+#1 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 33
+[31-Jan-2023 15:05:29 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method controller\LoginContr::emptyInput() in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php:33
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(108): controller\LoginContr->loginFormValidate()
+#1 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 33
+[31-Jan-2023 15:05:33 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method controller\LoginContr::emptyInput() in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php:33
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(108): controller\LoginContr->loginFormValidate()
+#1 /Users/mia/Sites/messageBoard/controller/userContr/LogoutContr.php(8): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 33
+[31-Jan-2023 15:06:03 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method controller\SignupContr::userPasswordValidate() in /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php:58
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php(171): controller\SignupContr->signupFormValidate()
+#1 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php on line 58
+[31-Jan-2023 15:08:04 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method controller\LoginContr::emptyInput() in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php:33
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(108): controller\LoginContr->loginFormValidate()
+#1 /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php(161): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php(172): controller\SignupContr->signupUserValidate()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 33
+[31-Jan-2023 15:20:18 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/MyMsgContr.php(20): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/MyMsgContr.php(35): controller\msgContr\MyMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[31-Jan-2023 15:20:18 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsg.php(27): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsg.php(79): controller\msgContr\CreateMsg->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[31-Jan-2023 15:21:09 Asia/Taipei] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controller\FormValidateContr::userIdExist(), 0 passed in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 44 and exactly 1 expected in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php:43
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(44): controller\FormValidateContr->userIdExist()
+#1 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(127): controller\LoginContr->loginFormValidate()
+#2 /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php(90): require('/Users/mia/Site...')
+#3 /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php(101): controller\SignupContr->signupUserValidate()
+#4 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php on line 43
+[31-Jan-2023 15:22:25 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Samara@gmail.com' for key 'email' in /Users/mia/Sites/messageBoard/core/Dbh.php:46
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/Dbh.php(46): PDOStatement->execute(Array)
+#1 /Users/mia/Sites/messageBoard/model/UserModel.php(48): core\Dbh->query('INSERT INTO `me...', Array)
+#2 /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php(88): model\UserModel->insertUser('Samara@gmail.co...', 'Samara', 'SamaraSamaraSam...')
+#3 /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php(101): controller\SignupContr->signupUserValidate()
+#4 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/Dbh.php on line 46
+[31-Jan-2023 15:24:06 Asia/Taipei] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controller\FormValidateContr::userIdExist(), 0 passed in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 44 and exactly 1 expected in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php:45
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(44): controller\FormValidateContr->userIdExist()
+#1 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(127): controller\LoginContr->loginFormValidate()
+#2 /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php(90): require('/Users/mia/Site...')
+#3 /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php(101): controller\SignupContr->signupUserValidate()
+#4 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php on line 45
+[31-Jan-2023 15:25:30 Asia/Taipei] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controller\FormValidateContr::userIdExist(), 0 passed in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 44 and exactly 1 expected in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php:45
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(44): controller\FormValidateContr->userIdExist()
+#1 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(127): controller\LoginContr->loginFormValidate()
+#2 /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php(90): require('/Users/mia/Site...')
+#3 /Users/mia/Sites/messageBoard/controller/userContr/SignupContr.php(101): controller\SignupContr->signupUserValidate()
+#4 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php on line 45
+[31-Jan-2023 15:28:51 Asia/Taipei] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controller\FormValidateContr::userIdExist(), 0 passed in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 44 and exactly 1 expected in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php:45
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(44): controller\FormValidateContr->userIdExist()
+#1 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(127): controller\LoginContr->loginFormValidate()
+#2 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php on line 45
+[31-Jan-2023 15:29:38 Asia/Taipei] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controller\FormValidateContr::userIdExist(), 0 passed in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 44 and exactly 1 expected in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php:45
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(44): controller\FormValidateContr->userIdExist()
+#1 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(127): controller\LoginContr->loginFormValidate()
+#2 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php on line 45
+[31-Jan-2023 15:29:51 Asia/Taipei] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function controller\FormValidateContr::userIdExist(), 0 passed in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 44 and exactly 1 expected in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php:45
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(44): controller\FormValidateContr->userIdExist()
+#1 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(127): controller\LoginContr->loginFormValidate()
+#2 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php on line 45
+[31-Jan-2023 15:32:18 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 106
+[31-Jan-2023 15:32:18 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 106
+[31-Jan-2023 15:33:06 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 106
+[31-Jan-2023 15:33:06 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 106
+[31-Jan-2023 15:37:05 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/MyMsgContr.php(20): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/MyMsgContr.php(35): controller\msgContr\MyMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[31-Jan-2023 15:37:06 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsg.php(27): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsg.php(79): controller\msgContr\CreateMsg->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[31-Jan-2023 15:37:10 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/ShowMsgContr.php(26): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/ShowMsgContr.php(40): controller\msgContr\ShowMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[31-Jan-2023 15:37:18 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 109
+[31-Jan-2023 15:37:18 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 109
+[31-Jan-2023 15:40:40 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsg.php(27): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsg.php(79): controller\msgContr\CreateMsg->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[31-Jan-2023 15:40:41 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/MyMsgContr.php(20): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/MyMsgContr.php(35): controller\msgContr\MyMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[31-Jan-2023 15:40:42 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsg.php(27): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsg.php(79): controller\msgContr\CreateMsg->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[31-Jan-2023 15:42:07 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsg.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsg.php(27): controller\ManageMsg->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsg.php(79): controller\msgContr\CreateMsg->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10

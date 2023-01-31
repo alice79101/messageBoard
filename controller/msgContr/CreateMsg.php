@@ -2,7 +2,9 @@
 
 namespace controller\msgContr;
 
+use controller\ManageMsg;
 use model\MsgModel as MsgModel;
+
 //
 //if (!isset($_SESSION)) {
 //    session_start();
