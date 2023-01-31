@@ -1,4 +1,6 @@
 <?php
+//session_start();
+
 const BASE_PATH = __DIR__ . "/../";
 require BASE_PATH . "core/functions.php";
 require base_path("vendor/autoload.php");
@@ -12,6 +14,9 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
     //利用 parse_url 解析使用者輸入的網址，避免使用者惡意輸入被當成 html 執行
 if (array_key_exists($uri, $routes)) {
     // 使用者輸入的網址若與網站地圖有對應，則回饋對應網頁
+    if (!isset($_SESSION)) {
+        session_start();
+    }
     require BASE_PATH . $routes[$uri];
 } else {
     abort(404);

@@ -2,7 +2,9 @@
 
 namespace controller\msgContr;
 
-session_start();
+//if (!isset($_SESSION)) {
+//    session_start();
+//}
 
 // 功能：刪除
 
@@ -25,14 +27,16 @@ class DeleteMsgContr extends ManageMsg
     {
 //        dumpAndDie($_SERVER);
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
-//            $this->db = new MsgList();
+//            $this->db = new MsgModel();
             $this->dbMsg->deleteMsg($this->msg["msgIndex"]);
             $this->deleteStatus = "YES";
+            require "MyMsgContr.php";
+        } else {
+            view_path($this->path, [
+                'deleteStatus' => $this->deleteStatus,
+                'msg' => $this->msg
+            ]);
         }
-        view_path($this->path, [
-            'deleteStatus' => $this->deleteStatus,
-            'msg' => $this->msg
-        ]);
     }
 
 

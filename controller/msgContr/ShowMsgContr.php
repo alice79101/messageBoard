@@ -2,7 +2,9 @@
 // 這個頁面是用來顯示每個訊息的內容
 namespace controller\msgContr;
 
-session_start();
+//if (!isset($_SESSION)) {
+//    session_start();
+//}
 
 // 抵達此頁的要件：
 // 1. 使用者有登入

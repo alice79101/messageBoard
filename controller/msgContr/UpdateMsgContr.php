@@ -1,8 +1,10 @@
 <?php
 
 namespace controller\msgContr;
-
-session_start();
+//
+//if (!isset($_SESSION)) {
+//    session_start();
+//}
 
 // 使用者到達網頁的方式有三種：
 //  1. GET方法，但尚未登入->請他登入

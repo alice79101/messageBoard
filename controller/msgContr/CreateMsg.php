@@ -2,10 +2,11 @@
 
 namespace controller\msgContr;
 
-use model\MsgList as MsgList;
-
-session_start();
-//dumpAndDie(isset($_SESSION["memberID"]));
+use model\MsgModel as MsgModel;
+//
+//if (!isset($_SESSION)) {
+//    session_start();
+//}
 class CreateMsg extends ManageMsg
 {
     public $errMsg = "";
@@ -60,7 +61,7 @@ class CreateMsg extends ManageMsg
     {
         // 輸入資料庫
         if (empty($this->errMsg)) {
-            $insertMsg = new MsgList();
+            $insertMsg = new MsgModel();
             $insertMsg->createMsg($this->msgTitle, $this->msgContent, $this->memberID);
             $this->createStatus = "YES";
         }

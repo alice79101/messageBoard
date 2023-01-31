@@ -4,7 +4,7 @@ namespace model;
 
 use core\Dbh as Dbh;
 
-class MsgList
+class MsgModel
 {
     public $db;
 

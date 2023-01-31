@@ -2,7 +2,7 @@
 namespace model;
 use core\Dbh as Dbh;
 
-class User
+class UserModel
 {
     public $db;
 

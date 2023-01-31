@@ -2,7 +2,7 @@
 // controller: 制定 Login 的動作內容、引導頁面動作、連結到 view
 
 namespace controller;
-use model\User as User;
+use model\UserModel as UserModel;
 
 class LoginContr
 {
@@ -22,7 +22,7 @@ class LoginContr
 //             dumpAndDie($_POST); //看一下會收到什麼
             $this->userID = $_POST["userID"];
             $this->userPassword = $_POST["password"];
-//            $this->login = new User();
+//            $this->login = new UserModel();
         } else {
             view_path($this->path ,[
                 'errMsg' => $this->errMsg
@@ -54,18 +54,19 @@ class LoginContr
 //        dumpAndDie(password_verify($this->password, $result["password"]));
             if (password_verify($this->userPassword, $this->userData["password"])) {
                 $this->errMsg = "登入成功";
-                session_start();
+//                session_start(); //已經在最開始網站router加入了，這邊就不用再次加入
 //                dumpAndDie($this->userData);
                 $_SESSION["memberID"] = $this->userData["memberID"];
                 $_SESSION["nickname"] = $this->userData["nickname"];
 //                dumpAndDie($_SESSION);
+                require __DIR__ . "/../msgContr/MyMsgContr.php";
             } else {
                 $this->errMsg = "登入失敗，帳號或密碼不正確";
+                view_path($this->path , [
+                    'errMsg' => $this->errMsg
+                ]);
             }
         }
-        view_path($this->path , [
-            'errMsg' => $this->errMsg
-        ]);
 
     }
 
@@ -92,7 +93,7 @@ class LoginContr
     private function userIdExist()
     {
         $result = "";
-        $this->login = new User();
+        $this->login = new UserModel();
         $this->userData = $this->login->findAUser($this->userID);
 //        dumpAndDie($result);
         if (!empty($result)) {

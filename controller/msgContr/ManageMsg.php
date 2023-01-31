@@ -2,8 +2,8 @@
 
 namespace controller\msgContr;
 
-use model\MsgList as MsgList;
-use model\User as User;
+use model\MsgModel as MsgModel;
+use model\UserModel as UserModel;
 
 class ManageMsg
 {
@@ -24,13 +24,19 @@ class ManageMsg
 
     protected function getMsgInformation()
     {
-        $this->dbMsg = new MsgList();
+        $this->dbMsg = new MsgModel();
         $this->msg = $this->dbMsg->findMsg($_GET["msgIndex"]);
 //             dumpAndDie($this->msg);
     }
+    protected function findMsgList($memberID)
+    {
+        $this->dbMsg = new MsgModel();
+        $this->msg = $this->dbMsg->getAllMsg($memberID);
+//        dumpAndDie($this->msg);
+    }
     protected function isAdmin()
     {
-        $this->dbUser = new User();
+        $this->dbUser = new UserModel();
 //        dumpAndDie($_SESSION);
         $this->user = $this->dbUser->findUserMemberID($_SESSION["memberID"]);
 //        dumpAndDie($this->user);

@@ -1,9 +1,11 @@
 <?php
 
 namespace controller\msgContr;
-session_start();
+//if (!isset($_SESSION)) {
+//    session_start();
+//}
 
-use model\MsgList as MsgList;
+use model\MsgModel as MsgModel;
 
 class LatestMsgsContr
 {
@@ -13,7 +15,7 @@ class LatestMsgsContr
 
     public function __construct()
     {
-        $this->db = new MsgList();
+        $this->db = new MsgModel();
     }
 
     public function getLatestMsgs()

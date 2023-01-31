@@ -21,4 +21,6 @@ view_path("partials/banner.php", [
     </div>
 </main>
 <?php
+//require "view/partials/footer.php";
 view_path("partials/footer.php");
+?>

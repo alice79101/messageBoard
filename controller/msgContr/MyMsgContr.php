@@ -1,42 +1,36 @@
 <?php
 // 頁面目標：顯示所有自己 create 的 Msg
 namespace controller\msgContr;
-use model\MsgList as MsgList;
 
-session_start();
+//use model\MsgModel as MsgModel;
+//if (!isset($_SESSION)) {
+//    session_start();
+//}
+//session_start();
 
-class MyMsgContr
+class MyMsgContr extends ManageMsg
 {
-    public $myMsg;
-    private $memberID;
-    public $db;
     public $path = "msgViews/myMsg.view.php";
+    private $memberID;
 
     public function __construct()
     {
-//        dumpAndDie(isset($_SESSION["memberID"]));
-        if (isset($_SESSION["memberID"])) {
-            $this->memberID = $_SESSION["memberID"];
-        } else {
-//            $this->myMsg = "請先登入";
-            view_path($this->path);
-            exit();
-        }
+        $this->loginConfirm();
+        $this->memberID = $_SESSION["memberID"];
+
     }
 
-    public function findMyMsg()
+    public function MyMsgList()
     {
-        $this->db = new MsgList();
-        $this->myMsg = $this->db->getAllMsg($this->memberID);
-//        dumpAndDie($this->myMsg);
-        view_path($this->path , [
-            'myMsg' => $this->myMsg
+        $this->findMsgList($this->memberID);
+        view_path($this->path, [
+            'myMsg' => $this->msg
         ]);
     }
 
 }
 
 $myMsg = new MyMsgContr();
-$myMsg->findMyMsg();
+$myMsg->MyMsgList();
 
 

@@ -3,8 +3,10 @@
 
 namespace controller;
 
-use model\User as User;
-session_start();
+use model\UserModel as UserModel;
+//if (!isset($_SESSION)) {
+//    session_start();
+//}
 
 class SignupContr
 {
@@ -64,9 +66,10 @@ class SignupContr
 //        dumpAndDie(empty($this->errMsg)); // 看一下 $this->errMsg裡面有沒有東西
         if (empty($this->errMsg)) {
             // 如果沒有錯誤訊息，代表通過表單驗證，可讓使用者註冊
-            $signup = new User();
+            $signup = new UserModel();
             $signup->insertUser($this->userID, $this->userPassword, $this->nickname);
             $this->errMsg['signupStatus'] = "註冊成功囉，請至登入畫面登入";
+            require "LoginContr.php";
         }
         view_path($this->path , [
             'errMsg' => $this->errMsg
@@ -121,7 +124,7 @@ class SignupContr
     private function userIdExist()
     {
         $result = "";
-        $stmt = new User();
+        $stmt = new UserModel();
         $result = $stmt->findAUser($this->userID);
 //        dumpAndDie($result);
         if (!empty($result)) {
