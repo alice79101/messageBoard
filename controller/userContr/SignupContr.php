@@ -57,23 +57,11 @@ class SignupContr
                 if ($this->validate->passwordMatch($this->userPassword, $this->userPasswordRepeat) === "Denied") {
                     $this->errMsg['passwordRepeat'] = "兩次輸入的密碼不一致，請重新輸入";
                 }
-                if ($this->validate->userIdExist($this->userID) === "Already Exist") {
+                if ($this->validate->userIdExist($this->userID) === "Exist") {
                     $this->errMsg['userID'] = "這個 Email 已經註冊過";
                 }
         }
     }
-
-//    private function userIdExist()
-//    {
-//        $result = "";
-//        $stmt = new UserModel();
-//        $result = $stmt->findAUser($this->userID);
-////        dumpAndDie($result);
-//        if (!empty($result)) {
-//            $result = "Denied";
-//        }
-//        return $result;
-//    }
 
     public function signupUserValidate()
     {

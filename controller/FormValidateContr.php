@@ -7,53 +7,46 @@ use model\UserModel as UserModel;
 class FormValidateContr
 {
     public $dbUser;
-    public $userData;
+    public $user;
 
     public function emptyInput($value)
     {
-        $result = "";
         if (empty($value)) {
-            $result = "Denied";
+            return "Denied";
         }
-        return $result;
     }
 
     public function validateEmail($email)
     {
-        $result = "";
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $result = "Denied";
+            return "Denied";
         }
-        return $result;
     }
     public function passwordMatch($password, $passwordRepeat)
     {
-        $result = "";
         if ($password !== $passwordRepeat) {
-            $result = "Denied";
+            return "Denied";
         }
-        return $result;
     }
     public function inputLengthValidate($value, $min, $max)
     {
-        $result = "";
         if (strlen(htmlspecialchars($value)) < $min || strlen( htmlspecialchars($value)) > $max) {
-            $result = "Denied";
+            return "Denied";
         }
-        return $result;
     }
     public function userIdExist($userID)
     {
 //        dumpAndDie($userID);
         $result = "";
         $this->dbUser = new UserModel();
-        $result = $this->dbUser->findAUser($userID);
-//        dumpAndDie($result);
-        if ($result === false) {
-            $result = "Already Exist";
+        $this->user = $this->dbUser->findAUser($userID);
+        // 有找到使用者的話會是 array
+        // 沒找到使用者的話會是 false
+//        dumpAndDie($this->user);
+        if ($this->user === false) {
+            return "Not Exist";
         } else {
-            $result = "Not Register";
+            return "Exist";
         }
-        return $result;
     }
 }

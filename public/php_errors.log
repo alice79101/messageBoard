@@ -5582,3 +5582,15 @@ Stack trace:
 [02-Feb-2023 16:28:10 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 72
 [02-Feb-2023 16:29:33 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 76
 [02-Feb-2023 16:29:33 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 76
+[02-Feb-2023 16:42:23 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 64
+[02-Feb-2023 16:42:23 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 64
+[02-Feb-2023 16:42:42 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 64
+[02-Feb-2023 16:42:42 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 64
+[02-Feb-2023 16:44:10 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 64
+[02-Feb-2023 16:44:10 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 64
+[02-Feb-2023 16:44:21 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 64
+[02-Feb-2023 16:44:21 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 64
+[02-Feb-2023 16:51:14 Asia/Taipei] PHP Warning:  Undefined property: controller\LoginContr::$user in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 60
+[02-Feb-2023 16:58:31 Asia/Taipei] PHP Warning:  Undefined property: controller\LoginContr::$user in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 63
+[02-Feb-2023 17:00:12 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type bool in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 67
+[02-Feb-2023 17:00:12 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 67

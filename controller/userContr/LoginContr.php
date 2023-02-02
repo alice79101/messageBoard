@@ -13,7 +13,6 @@ class LoginContr
     public $validate;
     private $userID;
     private $userPassword;
-    private $login;
     private $userData;
 
     public function __construct()
@@ -43,9 +42,10 @@ class LoginContr
                 $this->errMsg = "帳號格式不符合 Email 格式，請重新輸入";
             }
             if ($this->validate->inputLengthValidate($this->userPassword, 6, 20) === "Denied") {
-                $this->errMsg = "密碼介於6至20位間，且不含特殊數字，請重新輸入";
+                $this->errMsg = "密碼介於6至20位間，且不含特殊符號，請重新輸入";
             }
-            if ($this->validate->userIdExist($this->userID) === "Already Exist") {
+//            dumpAndDie($this->validate->userIdExist($this->userID));
+            if ($this->validate->userIdExist($this->userID) === "Not Exist") {
                 $this->errMsg = "此帳號未經註冊，請先註冊";
                 view_path($this->path, [
                     'errMsg' => $this->errMsg
@@ -53,13 +53,18 @@ class LoginContr
                 exit();
             }
         }
+//        dumpAndDie($this->errMsg);
+
     }
 
     public function loginUser()
     {
         if (empty($this->errMsg)) {
+            // 通過表單驗證的話取得資料庫裡面 user 的資料
+            $this->dbUser = new UserModel();
+            $this->userData = $this->dbUser->findAUser($this->userID);
 //            dumpAndDie($this->userData);
-//        dumpAndDie($result["password"]); // 從 Database 取得的密碼
+//        dumpAndDie($userData["password"]); // 從 Database 取得的密碼
 //        dumpAndDie($this->password); // 從登入表單取得的密碼
 //        dumpAndDie(password_verify($this->password, $result["password"]));
             if (password_verify($this->userPassword, $this->userData["password"])) {
@@ -73,15 +78,11 @@ class LoginContr
                 require __DIR__ . "/../msgContr/MyMsgContr.php";
             } else {
                 $this->errMsg = "登入失敗，帳號或密碼不正確";
-                view_path($this->path, [
-                    'errMsg' => $this->errMsg
-                ]);
             }
-        } else {
-            view_path($this->path, [
-                'errMsg' => $this->errMsg
-            ]);
         }
+        view_path($this->path, [
+            'errMsg' => $this->errMsg
+        ]);
 
     }
 
