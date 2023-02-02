@@ -7,5 +7,5 @@ function abort($code = 404) {
     //dumpAndDie($code);
     $code = (string)$code;
     //var_dump($code);
-    require view_path($code.".php");
+    view_path($code.".php");
 }
