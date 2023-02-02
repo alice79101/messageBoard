@@ -15,9 +15,9 @@ namespace controller\msgContr;
 // 2. 使用者已登入試圖查看->403 (有 $_SESSION["memberID"] 比對訊息 ID 後不符合）
 // 3. 使用者有登入&權限正確->正常顯示
 
-use controller\ManageMsg;
+use controller\ManageMsgContr;
 
-class ShowMsgContr extends ManageMsg
+class ShowMsgContr extends ManageMsgContr
 {
     private $path = "msgViews/showMessage.view.php";
 

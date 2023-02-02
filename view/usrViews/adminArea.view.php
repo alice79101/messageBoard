@@ -40,50 +40,31 @@ view_path("partials/banner.php", [
                                     <?php
                                     foreach ($userList as $k => $value) { ?>
                                         <tr class="bg-gray-100 border-b">
-                                            <td class="w-1/8 text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"><?= ($k+1); ?></td>
+                                            <td class="w-1/8 text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"><?= ($k + 1); ?></td>
                                             <td class="w-1/8 text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"><?= htmlspecialchars($value["nickname"]); ?></td>
                                             <td class="w-3/8 text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"><?= $value["userID"]; ?></td>
                                             <td class="w-1/8 text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                                                 <?php
-                                                if($value["ADMIN"] === 1 ) { ?>
+                                                if ($value["ADMIN"] === 1) { ?>
                                                     管理者
                                                 <?php }; ?>
                                             </td>
                                             <td class="w-2/8 text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                                                 <a href="/updateMember?memberID=<?= $value['memberID'] ?>"
                                                    class="text-gray-500 inline-block hover:border-b border-gray-900">修改</a>
-                                                <a href="/deleteMember?memberID=<?= $value['memberID'] ?>"
-                                                   class="text-red-500 inline-block hover:border-b border-gray-900">刪除</a>
                                             </td>
                                         </tr>
                                     <?php } ?>
                                     </tbody>
                                 </table>
-                                <!--                                <div class="px-4 py-3 text-right sm:px-6">-->
-                                <!--                                    <button type="submit"-->
-                                <!--                                            class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">-->
-                                <!--                                        確認刪除-->
-                                <!--                                    </button>-->
-                                <!--                                </div>-->
-
-                                <!--                                <a href="/msg?msgIndex=-->
-                                <?php //= $_GET['msgIndex'] ?><!--"-->
-                                <!--                                   class="px-4 text-blue-500 hover:underline">Back...</a>-->
                             </div>
                         </div>
                     </form>
                 <?php } ?>
-                <!--                --><?php //}
-                //                if ($deleteStatus === "YES") { ?>
-                <!--                    <br>-->
-                <!--                    <a href="/myMessage" class="px-4 text-blue-500 hover:underline">訊息已刪除，點我回到 My Message</a>-->
-                <!--                --><?php //} ?>
             </div>
             <br>
         </div>
     </main>
-
-
 <?php
 view_path("partials/footer.php");
 ?>

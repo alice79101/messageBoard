@@ -16,9 +16,9 @@ namespace controller\msgContr;
 // 二、判斷已登入，判斷是否用GET方法抵達，是的話顯示訊息內容
 
 //dumpAndDie($_GET);
-use controller\ManageMsg;
+use controller\ManageMsgContr;
 
-class UpdateMsgContr extends ManageMsg
+class UpdateMsgContr extends ManageMsgContr
 {
     public $path = "msgViews/updateMsg.view.php"; // view 的頁面
     public $updateStatus = "NO";
@@ -37,6 +37,7 @@ class UpdateMsgContr extends ManageMsg
     {
 //        dumpAndDie($_SERVER);
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
+//            dumpAndDie($_POST);
             $this->newMsgTitle = $_POST["Title"];
             $this->newMsgContent = $_POST["content"];
 //            dumpAndDie($this->newMsgTitle);

@@ -21,7 +21,7 @@ class UserModel
 //        dumpAndDie($result);
         return $result;
     }
-    public function findUserMemberID($memberID)
+    public function findUserWithMemberID($memberID)
     {
         $sql = "SELECT * FROM membership WHERE memberID =:memberID;";
         $result = $this->db->query($sql, [
@@ -30,10 +30,19 @@ class UserModel
 //        dumpAndDie($result);
         return $result;
     }
-    public function getAllUser()
+    public function getAllValidUser()
     {
-        $sql = "SELECT * FROM membership;";
+        $sql = "SELECT * FROM membership WHERE (`delete` IS NULL);";
         $result = $this->db->query($sql)->getAll();
+//        dumpAndDie($result);
+        return $result;
+    }
+    public function getSameUserID($userID)
+    {
+        $sql = "SELECT * FROM membership WHERE userID = :userID;";
+        $result = $this->db->query($sql, [
+            'userID' => $userID
+        ])->getAll();
 //        dumpAndDie($result);
         return $result;
     }
@@ -49,24 +58,33 @@ class UserModel
         ]);
 //        dumpAndDie("insertUs");
     }
-    public function updateUser($memberID, $userID, $userpassword, $nickname, $admin, $delete)
+    public function updateUser($memberID, $userID, $userpassword, $nickname, $admin = "")
     {
         $hashedPassword = password_hash($userpassword, PASSWORD_BCRYPT);
-        $sql = "UPDATE memberList SET `userID` = :userID, `password` = :password, `nickname` = :nickname, `ADMIN` = :ADMIN, `delete` = :delete WHERE memberID = :memberID;";
+        $sql = "UPDATE membership SET `userID` = :userID, `password` = :password, `nickname` = :nickname, `ADMIN` = :ADMIN WHERE memberID = :memberID;";
         $this->db->query($sql, [
             'memberID' =>$memberID,
             'userID' => $userID,
             'password' => $hashedPassword,
             'nickname' => $nickname,
             'ADMIN' => $admin,
-            'delete' => $delete
+        ]);
+    }
+    public function updateUserWithoutPassword($memberID, $userID, $nickname, $admin = "")
+    {
+        $sql = "UPDATE membership SET `userID` = :userID, `nickname` = :nickname, `ADMIN` = :ADMIN WHERE memberID = :memberID;";
+        $this->db->query($sql, [
+            'memberID' =>$memberID,
+            'userID' => $userID,
+            'nickname' => $nickname,
+            'ADMIN' => $admin,
         ]);
     }
     public function fakeDeleteUser($memberID)
     {
-        $sql = "UPDATE memberList SET delete = 1 WHERE memberID = :memberID;";
+        $sql = "UPDATE membership SET `delete` = 1 WHERE `memberID` = :memberID;";
         $this->db->query($sql, [
-            'memberID' =>$memberID
+            'memberID' => $memberID
         ]);
     }
 }

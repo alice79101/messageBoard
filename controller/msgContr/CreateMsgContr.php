@@ -2,14 +2,14 @@
 
 namespace controller\msgContr;
 
-use controller\ManageMsg;
+use controller\ManageMsgContr;
 use model\MsgModel as MsgModel;
 
 //
 //if (!isset($_SESSION)) {
 //    session_start();
 //}
-class CreateMsg extends ManageMsg
+class CreateMsgContr extends ManageMsgContr
 {
     public $errMsg = "";
     public $createStatus = "NO";
@@ -76,7 +76,7 @@ class CreateMsg extends ManageMsg
 
 }
 
-$createMsg = new CreateMsg();
+$createMsg = new CreateMsgContr();
 $createMsg->landingMethod();
 $createMsg->createFormValidate();
 $createMsg->insertMsg();

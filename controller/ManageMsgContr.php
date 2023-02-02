@@ -5,7 +5,7 @@ namespace controller;
 use model\MsgModel as MsgModel;
 use model\UserModel as UserModel;
 
-class ManageMsg
+class ManageMsgContr
 {
     protected $dbMsg;
     protected $dbUser;
@@ -38,7 +38,7 @@ class ManageMsg
     {
         $this->dbUser = new UserModel();
 //        dumpAndDie($_SESSION);
-        $this->user = $this->dbUser->findUserMemberID($_SESSION["memberID"]);
+        $this->user = $this->dbUser->findUserWithMemberID($_SESSION["memberID"]);
 //        dumpAndDie($this->user);
 
     }

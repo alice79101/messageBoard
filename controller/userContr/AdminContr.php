@@ -1,9 +1,9 @@
 <?php
 namespace controller\userContr;
-use controller\ManageMsg as ManageMsg;
+use controller\ManageMsgContr as ManageMsgContr;
 use model\UserModel;
 
-class AdminContr extends ManageMsg
+class AdminContr extends ManageMsgContr
 {
     public $userList;
     public $path = "usrViews/adminArea.view.php";
@@ -19,7 +19,7 @@ class AdminContr extends ManageMsg
     {
         if ($_SESSION["ADMIN"] === 1 ) {
             $this->dbUser = new UserModel();
-            $this->userList = $this->dbUser->getAllUser();
+            $this->userList = $this->dbUser->getAllValidUser();
             view_path($this->path, [
                 'userList' => $this->userList
             ]);

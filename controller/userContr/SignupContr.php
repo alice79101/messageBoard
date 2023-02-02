@@ -24,7 +24,7 @@ class SignupContr
     {
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
             // 使用 POST 方法抵達網站，代表使用者有輸入表單，開始驗證表單
-            // dumpAndDie($_POST); //看一下會收到什麼
+//             dumpAndDie($_POST); //看一下會收到什麼
             $this->nickname = $_POST["nickname"];
             $this->userID = $_POST["userID"]; //ID為mail
             $this->userPassword = $_POST["password"];
@@ -86,7 +86,7 @@ class SignupContr
             // 如果沒有錯誤訊息，代表通過表單驗證，可讓使用者註冊
             $signup = new UserModel();
             $signup->insertUser($this->userID, $this->userPassword, $this->nickname);
-            $this->errMsg['signupStatus'] = "註冊成功囉，請至登入畫面登入";
+//            $this->errMsg['signupStatus'] = "註冊成功囉，請至登入畫面登入";
             require "LoginContr.php";
         }
         view_path($this->path, [

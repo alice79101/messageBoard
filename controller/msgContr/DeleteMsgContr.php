@@ -4,9 +4,9 @@ namespace controller\msgContr;
 // 頁面功能：刪除
 
 //dumpAndDie($_GET);
-use controller\ManageMsg;
+use controller\ManageMsgContr;
 
-class DeleteMsgContr extends ManageMsg
+class DeleteMsgContr extends ManageMsgContr
 {
     public $path = "msgViews/deleteMsg.view.php";
     public $deleteStatus = "NO";

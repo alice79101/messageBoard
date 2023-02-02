@@ -30,7 +30,7 @@ view_path("partials/banner.php", [
                         <?php endforeach; ?>
                     </div>
                     <div class="px-4 py-6 sm:px-0">
-                        <a href="/createMessage" class="text-blue-500 hover:underline">Leave a Message...</a>
+                        <a href="/createMessage" class="text-blue-500 hover:underline">留個言吧！</a>
                     </div>
                 </ul>
                 <?php
