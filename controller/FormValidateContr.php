@@ -49,7 +49,7 @@ class FormValidateContr
         $this->dbUser = new UserModel();
         $result = $this->dbUser->findAUser($userID);
 //        dumpAndDie($result);
-        if (!empty($result)) {
+        if ($result === false) {
             $result = "Already Exist";
         } else {
             $result = "Not Register";

@@ -45,21 +45,14 @@ class LoginContr
             if ($this->validate->inputLengthValidate($this->userPassword, 6, 20) === "Denied") {
                 $this->errMsg = "密碼介於6至20位間，且不含特殊數字，請重新輸入";
             }
-            if ($this->userIdExist() === "Denied") {
+            if ($this->validate->userIdExist($this->userID) === "Already Exist") {
                 $this->errMsg = "此帳號未經註冊，請先註冊";
+                view_path($this->path, [
+                    'errMsg' => $this->errMsg
+                ]);
+                exit();
             }
         }
-    }
-    private function userIdExist()
-    {
-        $result = "";
-        $this->login = new UserModel();
-        $this->userData = $this->login->findAUser($this->userID);
-//        dumpAndDie($result);
-        if (!empty($result)) {
-            $result = "Denied";
-        }
-        return $result;
     }
 
     public function loginUser()

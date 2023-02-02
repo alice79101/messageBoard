@@ -6,10 +6,6 @@ namespace controller;
 use controller\FormValidateContr as FormValidateContr;
 use model\UserModel as UserModel;
 
-//if (!isset($_SESSION)) {
-//    session_start();
-//}
-
 class SignupContr
 {
     public $errMsg = [];

@@ -5558,3 +5558,27 @@ Stack trace:
 #3 /Users/mia/Sites/messageBoard/public/index.php(21): require('/Users/mia/Site...')
 #4 {main}
   thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[02-Feb-2023 16:08:37 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsgContr.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/MyMsgContr.php(20): controller\ManageMsgContr->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/MyMsgContr.php(35): controller\msgContr\MyMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(21): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[02-Feb-2023 16:08:38 Asia/Taipei] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /Users/mia/Sites/messageBoard/core/router.php:10
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/ManageMsgContr.php(20): abort('403')
+#1 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsgContr.php(27): controller\ManageMsgContr->loginConfirm()
+#2 /Users/mia/Sites/messageBoard/controller/msgContr/CreateMsgContr.php(79): controller\msgContr\CreateMsgContr->__construct()
+#3 /Users/mia/Sites/messageBoard/public/index.php(21): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[02-Feb-2023 16:27:04 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 72
+[02-Feb-2023 16:27:04 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 72
+[02-Feb-2023 16:28:01 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 72
+[02-Feb-2023 16:28:01 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 72
+[02-Feb-2023 16:28:10 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 72
+[02-Feb-2023 16:28:10 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 72
+[02-Feb-2023 16:29:33 Asia/Taipei] PHP Warning:  Trying to access array offset on value of type null in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 76
+[02-Feb-2023 16:29:33 Asia/Taipei] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 76

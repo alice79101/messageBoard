@@ -19,7 +19,7 @@ class UserModel
             'userID' => $userID
         ])->findOne();
 //        dumpAndDie($result);
-        return $result;
+        return $result;  // 沒有結果的話會是 false
     }
     public function findUserWithMemberID($memberID)
     {
