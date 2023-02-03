@@ -3,7 +3,6 @@
 namespace controller;
 
 use model\MsgModel as MsgModel;
-use model\UserModel as UserModel;
 
 class ManageMsgContr
 {
@@ -22,44 +21,37 @@ class ManageMsgContr
         }
     }
 
-    protected function getMsgInformation()
+    protected function getMsgInformation($msgIndex)
     {
         $this->dbMsg = new MsgModel();
-        $this->msg = $this->dbMsg->findMsg($_GET["msgIndex"]);
+        $this->msg = $this->dbMsg->findAMsgWithColumn("msgIndex", $msgIndex);
 //             dumpAndDie($this->msg);
-    }
-    protected function findMsgList($memberID)
-    {
-        $this->dbMsg = new MsgModel();
-        $this->msg = $this->dbMsg->getAllMsg($memberID);
-//        dumpAndDie($this->msg);
-    }
-    protected function getAdminValue()
-    {
-        $this->dbUser = new UserModel();
-//        dumpAndDie($_SESSION);
-        $this->user = $this->dbUser->findUserWithMemberID($_SESSION["memberID"]);
-//        dumpAndDie($this->user);
-
     }
 
     protected function readingAuthority()
     {
-        if (empty($this->msg)) {
+        $this->loginConfirm();
+//        dumpAndDie($this->msg);
+        if ($_SESSION["ADMIN"] === 1
+            || $this->msg["memberID"] === $_SESSION["memberID"]) {
+
+        } else {
+            abort(403);
+            exit();
+        }
+    }
+    public function landingMethodContr($path, $condition=[])
+    {
+        if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+            view_path($path, $condition);
+            exit();
+        }
+    }
+    protected function isEmptyMsg($message)
+    {
+        if (empty($message)) {
             abort();
             exit();
-        } else {
-            $this->getAdminValue();
-            if ($_SESSION["ADMIN"] === 1
-                || $this->msg["memberID"] === $_SESSION["memberID"]) {
-
-            } else {
-                abort(403);
-                exit();
-            }
         }
-
     }
-
-
 }

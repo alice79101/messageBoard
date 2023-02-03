@@ -2,13 +2,10 @@
 
 namespace controller\msgContr;
 
-use controller\ManageMsgContr;
+use controller\FormValidateContr;
+use controller\ManageMsgContr as ManageMsgContr;
 use model\MsgModel as MsgModel;
 
-//
-//if (!isset($_SESSION)) {
-//    session_start();
-//}
 class CreateMsgContr extends ManageMsgContr
 {
     public $errMsg = "";
@@ -17,6 +14,7 @@ class CreateMsgContr extends ManageMsgContr
     private $msgTitle;
     private $msgContent;
     private $memberID;
+//    private $validate;
 
     public function __construct()
     {
@@ -24,39 +22,30 @@ class CreateMsgContr extends ManageMsgContr
         //  1. GET方法，但尚未登入->請他登入
         //  2. GET方法，已登入->顯示訊息框，讓他填寫表單
         //  3. 已登入且已輸入表單->送出驗證
-        $this->loginConfirm();
-
+        $this->loginConfirm(); //ManageMsgContr
     }
+
     public function landingMethod()
     {
-            if ($_SERVER["REQUEST_METHOD"] === "POST") {
-                // 使用 POST 方法抵達網站，代表使用者有輸入表單，開始驗證表單
-                // dumpAndDie($_POST); //看一下會收到什麼
-                $this->msgTitle = $_POST["Title"];
-                $this->msgContent = $_POST["content"];
-                $this->memberID = $_SESSION["memberID"];
-            }else {
-                // 使用 GET 方法抵達網站，直接顯示view
-                view_path($this->path, [
-                    'createStatus' => $this->createStatus,
-                    'errMsg' => $this->errMsg
-                ]);
-                exit();
-            }
+        $this->landingMethodContr($this->path, [ //ManageMsgContr
+            'createStatus' => $this->createStatus,
+            'errMsg' => $this->errMsg
+        ]);
+        $this->msgTitle = $_POST["Title"];
+        $this->msgContent = $_POST["content"];
+        $this->memberID = $_SESSION["memberID"];
     }
 
     public function createFormValidate()
     {
-        // 空白輸入驗證
-        if (empty($this->msgTitle) || empty($this->msgContent)) {
+        $validate = new FormValidateContr();
+        if ($validate->emptyInput($this->msgTitle) || $validate->emptyInput($this->msgContent)) {
             $this->errMsg = "留言失敗：訊息主旨及內容皆為必填";
         }
-
-        // 內容過多驗證
-//        dumpAndDie($this->errMsg);
-        if (strlen($this->msgTitle) > 100 || strlen($this->msgContent) > 1000) {
-            $this->errMsg = "留言失敗：訊息主旨至多100字元、內容至多1,000字元";
-        }
+       if ($validate->inputLengthValidate($this->msgTitle, 0, 100)
+        || $validate->inputLengthValidate($this->msgContent, 0, 1000)) {
+           $this->errMsg = "留言失敗：訊息主旨至多100字元、內容至多1,000字元";
+       }
     }
 
     public function insertMsg()

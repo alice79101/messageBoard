@@ -9,6 +9,7 @@ namespace controller\msgContr;
 //session_start();
 
 use controller\ManageMsgContr;
+use model\MsgModel;
 
 class MyMsgContr extends ManageMsgContr
 {
@@ -24,7 +25,9 @@ class MyMsgContr extends ManageMsgContr
 
     public function MyMsgList()
     {
-        $this->findMsgList($this->memberID);
+        $dbMsg = new MsgModel();
+        $this->msg = $dbMsg->getAllMsgWithColumn("memberID", $this->memberID);
+//        $this->findMsgList("memberID", $this->memberID);
         view_path($this->path, [
             'myMsg' => $this->msg
         ]);

@@ -16,7 +16,9 @@ namespace controller\msgContr;
 // 二、判斷已登入，判斷是否用GET方法抵達，是的話顯示訊息內容
 
 //dumpAndDie($_GET);
+use controller\FormValidateContr;
 use controller\ManageMsgContr;
+use model\MsgModel;
 
 class UpdateMsgContr extends ManageMsgContr
 {
@@ -28,50 +30,59 @@ class UpdateMsgContr extends ManageMsgContr
 
     public function __construct()
     {
-      $this->loginConfirm();
-      $this->getMsgInformation();
-      $this->readingAuthority();
+        $this->getMsgInformation($_GET["msgIndex"]); //取得 $this->dbMsg連線、$this->msg內容
+        $this->readingAuthority();
+        $this->landingMethodContr($this->path, [
+            'msg' => $this->msg,
+            'updateStatus' => $this->updateStatus,
+            'errMsg' => $this->errMsg
+        ]);
+        $this->isEmptyMsg($this->msg);
     }
 
-    public function landingMethod()
-    {
-//        dumpAndDie($_SERVER);
-        if ($_SERVER["REQUEST_METHOD"] === "POST") {
-//            dumpAndDie($_POST);
-            $this->newMsgTitle = $_POST["Title"];
-            $this->newMsgContent = $_POST["content"];
-//            dumpAndDie($this->newMsgTitle);
+//    public function landingMethod()
+//    {
+////        dumpAndDie($_SERVER);
+//        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+////            dumpAndDie($_POST);
+//            $this->newMsgTitle = $_POST["Title"];
+//            $this->newMsgContent = $_POST["content"];
+////            dumpAndDie($this->newMsgTitle);
+//
+//        } else {
+//            // 如果用 GET 方法抵達，直接顯示訊息
+//            $this->landingMethodContr($this->path, [
+//                'msg' => $this->msg,
+//                'updateStatus' => $this->updateStatus
+//            ]);
+//        }
 
-        } else {
-            // 如果用 GET 方法抵達，直接顯示訊息
-            view_path($this->path, [
-                'msg' => $this->msg,
-                'updateStatus' => $this->updateStatus
-            ]);
-            exit();
-        }
-    }
+//    }
 
 
     public function updateFormValidate()
     {
-        // 空白輸入驗證
-        if (empty($this->newMsgContent) || empty($this->newMsgTitle)) {
+        $this->newMsgTitle = $_POST["Title"];
+        $this->newMsgContent = $_POST["content"];
+
+        $validate = new FormValidateContr();
+        if ($validate->emptyInput($this->newMsgTitle) || $validate->emptyInput($this->newMsgContent)) {
             $this->errMsg = "留言失敗：訊息主旨及內容皆為必填";
         }
-
-        // 內容過多驗證
-//        dumpAndDie($this->errMsg);
-        if (strlen($this->newMsgTitle) > 100 || strlen($this->newMsgContent) > 1000) {
+        if ($validate->inputLengthValidate($this->newMsgTitle, 1, 100)
+            || $validate->inputLengthValidate($this->newMsgContent, 1, 1000)) {
             $this->errMsg = "留言失敗：訊息主旨至多100字元、內容至多1,000字元";
         }
     }
+
     public function updateMsg()
     {
         // 輸入資料庫
         if (empty($this->errMsg)) {
+//             $this->dbMsg = new MsgModel //已在前面取得留言資訊時啟動了
+//             $this->msg = $this->dbMsg->getMsgInformation();
             $this->dbMsg->updateMsg($this->msg["msgIndex"], $this->newMsgTitle, $this->newMsgContent);
-            $this->msg = $this->dbMsg->findMsg($this->msg["msgIndex"]);
+            $this->getMsgInformation($this->msg["msgIndex"]);
             $this->updateStatus = "YES";
         }
 //        dumpAndDie($this->updateStatus);
@@ -86,6 +97,5 @@ class UpdateMsgContr extends ManageMsgContr
 }
 
 $updateMsg = new UpdateMsgContr();
-$updateMsg->landingMethod();
 $updateMsg->updateFormValidate();
 $updateMsg->updateMsg();

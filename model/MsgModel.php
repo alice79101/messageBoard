@@ -12,32 +12,6 @@ class MsgModel
     {
         $this->db = new Dbh();
     }
-
-    public function findMsg($msgIndex)
-    {
-        $sql = "SELECT * FROM msgList WHERE msgIndex = :msgIndex;";
-        $result = $this->db->query($sql, [
-            ':msgIndex' => $msgIndex
-        ])->findOne();
-        return $result;
-    }
-
-    public function getAllMsg($memberID)
-    {
-        $sql = "SELECT * FROM msgList WHERE memberID = :memberID;";
-        $result = $this->db->query($sql, [
-            'memberID' => $memberID
-        ])->getAll();
-        return $result;
-    }
-
-    public function descMsgs($column = "msgTime")
-    {
-        $sql = "SELECT * FROM msgList ORDER BY " . $column . " DESC;";
-        $result = $this->db->query($sql)->getAll();
-        return $result;
-    }
-
     public function createMsg($msgTitle, $msgContent, $memberID)
     {
         $sql = "INSERT INTO msgList(msgTitle, msgContent, memberID) VALUES (:msgTitle , :msgContent, :memberID);";
@@ -48,8 +22,47 @@ class MsgModel
         ]);
     }
 
+    public function findAMsgWithColumn($column, $value)
+    {
+        $sql = "SELECT * FROM msgList WHERE " . $column . " = :column;";
+        $result = $this->db->query($sql, [
+            ':column' => $value
+        ])->findOne();
+        return $result;
+    }
+    public function getAllMsgWithColumn($column, $value)
+    {
+        $sql = "SELECT * FROM msgList WHERE " . $column . " = :column;";
+        $result = $this->db->query($sql, [
+            ':column' => $value
+        ])->getAll();
+//        dumpAndDie($result);
+        return $result;
+    }
+
+    public function getAllMsg($memberID)
+    {
+        // 準備刪除
+        $sql = "SELECT * FROM msgList WHERE memberID = :memberID;";
+        $result = $this->db->query($sql, [
+            'memberID' => $memberID
+        ])->getAll();
+        return $result;
+    }
+
+    public function descMsgs($column = "msgTime")
+    {
+        // 準備刪除
+        $sql = "SELECT * FROM msgList ORDER BY " . $column . " DESC;";
+        $result = $this->db->query($sql)->getAll();
+        return $result;
+    }
+
+
+
     public function updateMsg($msgIndex, $msgTitle, $msgContent)
     {
+        // updateMsg 有用到
         $sql = "UPDATE msgList SET msgTitle = :msgTitle, msgContent = :msgContent WHERE msgIndex = :msgIndex;";
         $this->db->query($sql, [
             'msgIndex' => $msgIndex,
@@ -70,6 +83,7 @@ class MsgModel
 
     public function findMsgJoinMember($msgIndex)
     {
+        // 準備刪除
         $sql = "SELECT * FROM msgList, membership WHERE msgList.memberID = membership.memberID;";
         $result = $this->db->query($sql, [
             ':msgIndex' => $msgIndex

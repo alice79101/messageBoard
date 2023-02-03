@@ -23,14 +23,14 @@ class ShowMsgContr extends ManageMsgContr
 
     public function __construct()
     {
-        $this->loginConfirm();
+        $this->getMsgInformation($_GET["msgIndex"]);
+        $this->readingAuthority();
 //        dumpAndDie($this->user);
-        $this->getMsgInformation();
     }
 
     public function showMsg()
     {
-        $this->readingAuthority();
+        $this->isEmptyMsg($this->msg);
         view_path($this->path, [
             'msg' => $this->msg
         ]);
