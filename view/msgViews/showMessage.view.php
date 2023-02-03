@@ -19,6 +19,7 @@ view_path("partials/banner.php", [
                    class="text-gray-500 inline-block hover:border-b border-gray-900">
                     修改留言
                 </a>
+                &nbsp;
                 <a href="/deleteMessage?msgIndex=<?= $msg['msgIndex'] ?>"
                    class="text-red-500 inline-block hover:border-b border-gray-900">
                     刪除留言

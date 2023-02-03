@@ -50,7 +50,7 @@ class ManageMsgContr
             exit();
         } else {
             $this->getAdminValue();
-            if ($this->user["ADMIN"] === 1
+            if ($_SESSION["ADMIN"] === 1
                 || $this->msg["memberID"] === $_SESSION["memberID"]) {
 
             } else {

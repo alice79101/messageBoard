@@ -5602,3 +5602,4 @@ Stack trace:
 #3 /Users/mia/Sites/messageBoard/public/index.php(21): require('/Users/mia/Site...')
 #4 {main}
   thrown in /Users/mia/Sites/messageBoard/core/router.php on line 10
+[03-Feb-2023 11:47:11 Asia/Taipei] PHP Warning:  Undefined array key "ADMIN" in /Users/mia/Sites/messageBoard/controller/userContr/AdminContr.php on line 13

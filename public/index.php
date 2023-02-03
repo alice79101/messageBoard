@@ -6,7 +6,6 @@ require BASE_PATH . "core/functions.php";
 require base_path("vendor/autoload.php");
 require base_path("core/router.php");
 
-
 $routes = require base_path("core/routes.php");
     // routes 是自己創建的網站地圖
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
