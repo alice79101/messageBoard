@@ -9,7 +9,6 @@ class ManageMsgContr
     protected $dbMsg;
     protected $dbUser;
     protected $msg;
-    protected $user;
 
 
     protected function loginConfirm()

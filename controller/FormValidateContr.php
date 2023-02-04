@@ -6,9 +6,6 @@ use model\UserModel as UserModel;
 
 class FormValidateContr
 {
-    public $dbUser;
-    public $user;
-
     public function emptyInput($value)
     {
         if (empty($value)) {
@@ -38,12 +35,13 @@ class FormValidateContr
     {
 //        dumpAndDie($userID);
         $result = "";
-        $this->dbUser = new UserModel();
-        $this->user = $this->dbUser->findAUser($userID);
+        $dbUser = new UserModel();
+        $user = $dbUser->findUserWithUserID($userID);
+//        dumpAndDie($user);
         // 有找到使用者的話會是 array
         // 沒找到使用者的話會是 false
-//        dumpAndDie($this->user);
-        if ($this->user === false) {
+//        dumpAndDie(empty($user));
+        if (empty($user) === true) {
             return "Not Exist";
         } else {
             return "Exist";

@@ -11,10 +11,10 @@ class UserModel
         $this->db = new Dbh();
 
     }
-    public function findAUser($userID)
+    public function findUserWithUserID($userID)
     {
-
-        $sql = "SELECT * FROM membership WHERE userID =:userID;";
+        // Login有用
+        $sql = "SELECT * FROM membership WHERE userID =:userID AND `delete` IS NULL;";
         $result = $this->db->query($sql, [
             'userID' => $userID
         ])->findOne();
@@ -23,23 +23,25 @@ class UserModel
     }
     public function findUserWithMemberID($memberID)
     {
-        $sql = "SELECT * FROM membership WHERE memberID =:memberID;";
+        // 有用到：updateMember
+        $sql = "SELECT * FROM membership WHERE memberID =:memberID AND `delete` IS NULL;";
         $result = $this->db->query($sql, [
             'memberID' => $memberID
         ])->findOne();
 //        dumpAndDie($result);
-        return $result;
+        return $result;  // 沒有結果的話會是 false
     }
     public function getAllValidUser()
     {
         $sql = "SELECT * FROM membership WHERE (`delete` IS NULL);";
+        // NULL為一般身份、1為管理身份
         $result = $this->db->query($sql)->getAll();
 //        dumpAndDie($result);
         return $result;
     }
     public function getSameUserID($userID)
     {
-        $sql = "SELECT * FROM membership WHERE userID = :userID;";
+        $sql = "SELECT * FROM membership WHERE userID = :userID AND `delete` IS NULL;";
         $result = $this->db->query($sql, [
             'userID' => $userID
         ])->getAll();
@@ -60,6 +62,7 @@ class UserModel
     }
     public function updateUser($memberID, $userID, $userpassword, $nickname, $admin = "")
     {
+        // update有用到
         $hashedPassword = password_hash($userpassword, PASSWORD_BCRYPT);
         $sql = "UPDATE membership SET `userID` = :userID, `password` = :password, `nickname` = :nickname, `ADMIN` = :ADMIN WHERE memberID = :memberID;";
         $this->db->query($sql, [
@@ -72,6 +75,7 @@ class UserModel
     }
     public function updateUserWithoutPassword($memberID, $userID, $nickname, $admin = "")
     {
+        // update有用到
         $sql = "UPDATE membership SET `userID` = :userID, `nickname` = :nickname, `ADMIN` = :ADMIN WHERE memberID = :memberID;";
         $this->db->query($sql, [
             'memberID' =>$memberID,
@@ -82,6 +86,7 @@ class UserModel
     }
     public function fakeDeleteUser($memberID)
     {
+        //delete有用到
         $sql = "UPDATE membership SET `delete` = 1 WHERE `memberID` = :memberID;";
         $this->db->query($sql, [
             'memberID' => $memberID

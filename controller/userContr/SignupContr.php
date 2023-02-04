@@ -6,11 +6,10 @@ namespace controller;
 use controller\FormValidateContr as FormValidateContr;
 use model\UserModel as UserModel;
 
-class SignupContr
+class SignupContr extends ManageUserContr
 {
     public $errMsg = [];
     public $path = "usrViews/signup.view.php";
-    public $validate;
     private $nickname;
     private $userID;
     private $userPassword;
@@ -18,48 +17,43 @@ class SignupContr
 
     public function __construct()
     {
-        if ($_SERVER["REQUEST_METHOD"] === "POST") {
-            // 使用 POST 方法抵達網站，代表使用者有輸入表單，開始驗證表單
+        $this->landingMethodContr($this->path);
+        // 使用 POST 方法抵達網站，代表使用者有輸入表單，開始驗證表單
 //             dumpAndDie($_POST); //看一下會收到什麼
-            $this->nickname = $_POST["nickname"];
-            $this->userID = $_POST["userID"]; //ID為mail
-            $this->userPassword = $_POST["password"];
-            $this->userPasswordRepeat = $_POST["passwordRepeat"];
-        } else {
-            // 使用 GET 方法抵達網站，直接顯示view
-            view_path($this->path);
-            exit();
-        }
+        $this->nickname = $_POST["nickname"];
+        $this->userID = $_POST["userID"]; //ID為mail
+        $this->userPassword = $_POST["password"];
+        $this->userPasswordRepeat = $_POST["passwordRepeat"];
     }
 
     public function signupFormValidate()
     {
         // 表單驗證項目
-        $this->validate = new FormValidateContr();
+        $validate = new FormValidateContr();
         // 空白輸入驗證
-        if ($this->validate->emptyInput($this->nickname)
-            || $this->validate->emptyInput($this->userID)
-            || $this->validate->emptyInput($this->userPassword)
-            || $this->validate->emptyInput($this->userPasswordRepeat)
+        if ($validate->emptyInput($this->nickname)
+            || $validate->emptyInput($this->userID)
+            || $validate->emptyInput($this->userPassword)
+            || $validate->emptyInput($this->userPasswordRepeat)
             === "Denied") {
             $this->errMsg['emptyInput'] = "請輸入所有欄位";
         } else {
             // 非空白輸入才驗證其他項目
-            if ($this->validate->inputLengthValidate($this->nickname, 3, 30) === "Denied") {
+            if ($validate->inputLengthValidate($this->nickname, 3, 30) === "Denied") {
                 $this->errMsg['nickname'] = "暱稱須介於3~30字元之間，請重新輸入";
             }
-            if ($this->validate->validateEmail($this->userID) === "Denied") {
+            if ($validate->validateEmail($this->userID) === "Denied") {
                 $this->errMsg['email'] = "Email 格式不正確，請重新確認";
             }
-                if ($this->validate->inputLengthValidate($this->userPassword, 6, 20) === "Denied") {
-                    $this->errMsg['password'] = "密碼不可以有特殊符號，且限制於 6~20字元之間";
-                }
-                if ($this->validate->passwordMatch($this->userPassword, $this->userPasswordRepeat) === "Denied") {
-                    $this->errMsg['passwordRepeat'] = "兩次輸入的密碼不一致，請重新輸入";
-                }
-                if ($this->validate->userIdExist($this->userID) === "Exist") {
-                    $this->errMsg['userID'] = "這個 Email 已經註冊過";
-                }
+            if ($validate->inputLengthValidate($this->userPassword, 6, 20) === "Denied") {
+                $this->errMsg['password'] = "密碼不可以有特殊符號，且限制於 6~20字元之間";
+            }
+            if ($validate->passwordMatch($this->userPassword, $this->userPasswordRepeat) === "Denied") {
+                $this->errMsg['passwordRepeat'] = "兩次輸入的密碼不一致，請重新輸入";
+            }
+            if ($validate->userIdExist($this->userID) === "Exist") {
+                $this->errMsg['userID'] = "這個 Email 已經註冊過";
+            }
         }
     }
 
@@ -72,6 +66,7 @@ class SignupContr
             $signup->insertUser($this->userID, $this->userPassword, $this->nickname);
 //            $this->errMsg['signupStatus'] = "註冊成功囉，請至登入畫面登入";
             require "LoginContr.php";
+            exit();
         }
         view_path($this->path, [
             'errMsg' => $this->errMsg

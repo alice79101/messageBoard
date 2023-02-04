@@ -22,23 +22,28 @@ class UpdateMemberContr extends ManageUserContr
     protected $newPassword;
     protected $newPasswordRepeat;
     protected $newAdmin = NULL;
-    protected $validate;
     protected $delete = 0;
     protected $userModel; //new Model使用
     protected $user;
-    protected $existUser;
-
 
 
     public function __construct()
     {
-//        dumpAndDie($_SESSION);
-        $this->adminConfirm();
-//        dumpAndDie($_POST);
+//        dumpAndDie($_GET);
+        $this->manageAuthority();
+        $this->userModel = new UserModel();
+        $this->user = $this->userModel->findUserWithMemberID($_GET["memberID"]);
+//        dumpAndDie($this->user);
+        $this->isEmptyUser($this->user);
     }
 
     public function landingMethod()
     {
+        $this->landingMethodContr($this->path, [
+            'user' => $this->user,
+            'updateStatus' => $this->updateStatus,
+            'errMsg' => $this->errMsg
+        ]);
         if (isset($_POST["update"])) {
             // 管理者選擇修改會員資料的情況
             $this->memberID = $_POST["memberID"];
@@ -46,48 +51,28 @@ class UpdateMemberContr extends ManageUserContr
             $this->newNickname = $_POST["nickname"]; //雖然密碼可能為空，先放入
             $this->newPassword = $_POST["password"];
             $this->newPasswordRepeat = $_POST["passwordRepeat"];
-            if ($_POST["admin"] === "管理員") {
+            if (isset($_POST["admin"]) && $_POST["admin"] === "管理員") {
                 // 如果被指定為管理員，才指定為 1
                 $this->newAdmin = 1;
             }
 
         } elseif (isset($_POST["delete"])) {
             // 管理者點選刪除會員的情況
-            $this->userModel = new UserModel();
-            $this->userModel->fakeDeleteUser($_POST["memberID"]);
-            require "AdminContr.php";
+            require "DeleteMemberContr.php";
             exit();
-
-        } else {
-            // 使用 GET 方法抵達頁面
-            $this->userModel = new UserModel();
-            $this->user = $this->userModel->findUserWithMemberID($_GET["memberID"]);
-//            dumpAndDie($this->user);
-            if (empty($this->user)) {
-                abort();
-                exit();
-            } else {
-                view_path($this->path, [
-                    'user' => $this->user,
-                    'updateStatus' => $this->updateStatus,
-                    'errMsg' => $this->errMsg
-                ]);
-                exit();
-            }
         }
     }
+
     public function compareExistUserInfo()
     {
 //         如果資料都相同，就不需後續動作，直接 view
         //似乎不需要？
-        $this->userModel = new UserModel();
-        $this->existUser = $this->userModel->findUserWithMemberID($this->memberID);
-        if (($this->existUser["userID"] === $this->newUserID)
-         && ($this->existUser["nickname"] === $this->newNickname)
-         && ($this->existUser["password"] === $this->newPassword)
-         && ($this->existUser["ADMIN"] === $this->newAdmin)) {
+        if (($this->user["userID"] === $this->newUserID)
+            && ($this->user["nickname"] === $this->newNickname)
+            && ($this->user["password"] === $this->newPassword)
+            && ($this->user["ADMIN"] === $this->newAdmin)) {
             view_path($this->path, [
-                'user' => $this->existUser,
+                'user' => $this->user,
                 'updateStatus' => $this->updateStatus,
                 'errMsg' => $this->errMsg
             ]);
@@ -97,15 +82,15 @@ class UpdateMemberContr extends ManageUserContr
 
     public function updateFormValidate()
     {
-        $this->validate = new FormValidateContr();
-        if ($this->validate->emptyInput($this->newUserID)
-            || $this->validate->emptyInput($this->newNickname) === "Denied") {
+        $validate = new FormValidateContr();
+        if ($validate->emptyInput($this->newUserID)
+            || $validate->emptyInput($this->newNickname) === "Denied") {
             $this->errMsg['emptyInput'] = "會員帳號與暱稱為必填項目，請再次確認";
         }
-        if ($this->validate->validateEmail($this->newUserID) === "Denied") {
+        if ($validate->validateEmail($this->newUserID) === "Denied") {
             $this->errMsg['userID'] = "會員帳號非有效email格式，請再次確認";
         }
-        if ($this->validate->inputLengthValidate($this->newNickname, 3, 30) === "Denied") {
+        if ($validate->inputLengthValidate($this->newNickname, 3, 30) === "Denied") {
             $this->errMsg['nickname'] = "暱稱須介於3~30字元之間，請重新輸入";
         }
 
@@ -120,10 +105,10 @@ class UpdateMemberContr extends ManageUserContr
                 $this->errMsg["password"] = "如要修改密碼，兩個密碼欄位皆需輸入";
             } else {
                 // 兩者皆不為空
-                if ($this->validate->passwordMatch($this->newPassword, $this->newPasswordRepeat) === "Denied") {
+                if ($validate->passwordMatch($this->newPassword, $this->newPasswordRepeat) === "Denied") {
                     $this->errMsg["password"] = "兩次輸入密碼不相同，請重新確認";
                 }
-                if ($this->validate->inputLengthValidate($this->newPassword, 6, 20)) {
+                if ($validate->inputLengthValidate($this->newPassword, 6, 20)) {
                     $this->errMsg["password"] = "密碼不可以有特殊符號，且限制於 6~20字元之間";
                 }
             }
@@ -133,14 +118,12 @@ class UpdateMemberContr extends ManageUserContr
     public function userIdExist()
     {
         // 如果使用者沒有更改 userID ，則資料庫會有自己的 userID
-        $this->userModel = new UserModel();
-        $existUser = $this->userModel->findUserWithMemberID($this->memberID);
-        if ($this->newUserID === $existUser["userID"]) {
+        if ($this->newUserID === $this->user["userID"]) {
             // 使用者沒有更改 userID ，不用進行後續驗證
         } else {
-            $this->user = $this->userModel->getSameUserID($this->newUserID);
+            $existuser = $this->userModel->getSameUserID($this->newUserID);
             // 如果使用者有更改 userID ， 則需判斷是否跟別人的 userID 相同
-            if (count($this->user) > 1) {
+            if (count($existuser) > 1) {
                 $this->errMsg['userID'] = "這個 Email 已經註冊過";
                 view_path($this->path, [
                     'user' => $this->user,
@@ -156,8 +139,9 @@ class UpdateMemberContr extends ManageUserContr
     {
 //        dumpAndDie($this->errMsg);
         // 輸入資料庫
+        // 雖然使用者無法看到＆編輯自己的管理權限，但實際上送出表單時仍有送出管理權限的選項
         if (empty($this->errMsg) && empty($this->newPassword)) {
-            // 在確認 userID 時已經有new UserModel()，已啟動 DB 連線，故直接使用 $this->user
+            // 在最前面已經有new UserModel()，已啟動 DB 連線，故直接使用 $this->user
 //            $this->userModel = new UserModel();
             $this->userModel->updateUserWithoutPassword($this->memberID, $this->newUserID, $this->newNickname, $this->newAdmin);
             $this->updateStatus = "YES";

@@ -5745,3 +5745,75 @@ Stack trace:
 #1 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
 #2 {main}
   thrown in /Users/mia/Sites/messageBoard/controller/msgContr/UpdateMsgContr.php on line 85
+[04-Feb-2023 14:30:48 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method controller\LoginContr::landingMethodContr() in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php:19
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(87): controller\LoginContr->__construct()
+#1 /Users/mia/Sites/messageBoard/controller/userContr/LogoutContr.php(8): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 19
+[04-Feb-2023 14:48:51 Asia/Taipei] PHP Warning:  Undefined array key "ADMIN" in /Users/mia/Sites/messageBoard/view/usrViews/updateMember.view.php on line 71
+[04-Feb-2023 14:49:07 Asia/Taipei] PHP Warning:  Undefined array key "ADMIN" in /Users/mia/Sites/messageBoard/view/usrViews/updateMember.view.php on line 71
+[04-Feb-2023 14:49:37 Asia/Taipei] PHP Warning:  Undefined array key "ADMIN" in /Users/mia/Sites/messageBoard/view/usrViews/updateMember.view.php on line 71
+[04-Feb-2023 16:47:22 Asia/Taipei] PHP Warning:  Undefined array key "memberID" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 40
+[04-Feb-2023 16:47:25 Asia/Taipei] PHP Warning:  Undefined array key "memberID" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 40
+[04-Feb-2023 16:47:28 Asia/Taipei] PHP Warning:  Undefined array key "memberID" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 40
+[04-Feb-2023 16:48:03 Asia/Taipei] PHP Warning:  Undefined array key "memberID" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 40
+[04-Feb-2023 16:48:23 Asia/Taipei] PHP Warning:  Undefined array key "memberID" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 41
+[04-Feb-2023 16:48:46 Asia/Taipei] PHP Warning:  Undefined array key "memberID" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 40
+[04-Feb-2023 16:49:06 Asia/Taipei] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 40
+[04-Feb-2023 16:49:31 Asia/Taipei] PHP Warning:  Undefined array key "memberID" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 40
+[04-Feb-2023 16:49:40 Asia/Taipei] PHP Warning:  Undefined array key "memberID" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 40
+[04-Feb-2023 17:42:22 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method model\UserModel::findAUserWithColumn() in /Users/mia/Sites/messageBoard/controller/userContr/updateMemberContr.php:37
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/updateMemberContr.php(170): controller\userContr\UpdateMemberContr->__construct()
+#1 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/userContr/updateMemberContr.php on line 37
+[04-Feb-2023 17:54:53 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function emptyInput() on null in /Users/mia/Sites/messageBoard/controller/userContr/updateMemberContr.php:88
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/updateMemberContr.php(171): controller\userContr\UpdateMemberContr->updateFormValidate()
+#1 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#2 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/userContr/updateMemberContr.php on line 88
+[04-Feb-2023 17:55:35 Asia/Taipei] PHP Warning:  Undefined array key "memberID" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 42
+[04-Feb-2023 17:56:00 Asia/Taipei] PHP Warning:  Undefined array key "memberID" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 42
+[04-Feb-2023 18:00:35 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method model\UserModel::findAUser() in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php:42
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(44): controller\FormValidateContr->userIdExist('mia1001@gmail.c...')
+#1 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(88): controller\LoginContr->loginFormValidate()
+#2 /Users/mia/Sites/messageBoard/controller/userContr/LogoutContr.php(8): require('/Users/mia/Site...')
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/FormValidateContr.php on line 42
+[04-Feb-2023 18:06:40 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined method model\UserModel::findAUserWithUserID() in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php:63
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php(91): controller\LoginContr->loginUser()
+#1 /Users/mia/Sites/messageBoard/controller/userContr/LogoutContr.php(8): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#3 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/userContr/LoginContr.php on line 63
+[04-Feb-2023 18:14:19 Asia/Taipei] PHP Warning:  Undefined array key "admin" in /Users/mia/Sites/messageBoard/controller/userContr/updateMemberContr.php on line 55
+[04-Feb-2023 18:27:20 Asia/Taipei] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function base_path(), 0 passed in /Users/mia/Sites/messageBoard/controller/userContr/DeleteMemberContr.php on line 23 and exactly 1 expected in /Users/mia/Sites/messageBoard/core/functions.php:18
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/DeleteMemberContr.php(23): base_path()
+#1 /Users/mia/Sites/messageBoard/controller/userContr/DeleteMemberContr.php(28): controller\userContr\DeleteMemberContr->__construct()
+#2 /Users/mia/Sites/messageBoard/controller/userContr/updateMemberContr.php(62): require('/Users/mia/Site...')
+#3 /Users/mia/Sites/messageBoard/controller/userContr/updateMemberContr.php(171): controller\userContr\UpdateMemberContr->landingMethod()
+#4 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#5 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/functions.php on line 18
+[04-Feb-2023 18:31:01 Asia/Taipei] PHP Warning:  require(/Users/mia/Sites/messageBoard): Failed to open stream: Undefined error: 0 in /Users/mia/Sites/messageBoard/controller/userContr/DeleteMemberContr.php on line 23
+[04-Feb-2023 18:31:01 Asia/Taipei] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/mia/Sites/messageBoard/public/..//' (include_path='.:/usr/local/Cellar/php@8.1/8.1.13/share/php@8.1/pear') in /Users/mia/Sites/messageBoard/controller/userContr/DeleteMemberContr.php:23
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/controller/userContr/DeleteMemberContr.php(28): controller\userContr\DeleteMemberContr->__construct()
+#1 /Users/mia/Sites/messageBoard/controller/userContr/updateMemberContr.php(62): require('/Users/mia/Site...')
+#2 /Users/mia/Sites/messageBoard/controller/userContr/updateMemberContr.php(171): controller\userContr\UpdateMemberContr->landingMethod()
+#3 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#4 {main}
+  thrown in /Users/mia/Sites/messageBoard/controller/userContr/DeleteMemberContr.php on line 23
+[04-Feb-2023 18:32:34 Asia/Taipei] PHP Warning:  Constant BASE_PATH already defined in /Users/mia/Sites/messageBoard/public/index.php on line 4
+[04-Feb-2023 18:32:34 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/core/functions.php:3) in /Users/mia/Sites/messageBoard/core/functions.php on line 3
+[04-Feb-2023 18:33:38 Asia/Taipei] PHP Warning:  Constant BASE_PATH already defined in /Users/mia/Sites/messageBoard/public/index.php on line 4
+[04-Feb-2023 18:33:38 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/core/functions.php:3) in /Users/mia/Sites/messageBoard/core/functions.php on line 3
+[04-Feb-2023 19:51:54 Asia/Taipei] PHP Warning:  Undefined array key "memberID" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 42

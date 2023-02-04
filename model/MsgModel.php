@@ -39,27 +39,6 @@ class MsgModel
 //        dumpAndDie($result);
         return $result;
     }
-
-    public function getAllMsg($memberID)
-    {
-        // 準備刪除
-        $sql = "SELECT * FROM msgList WHERE memberID = :memberID;";
-        $result = $this->db->query($sql, [
-            'memberID' => $memberID
-        ])->getAll();
-        return $result;
-    }
-
-    public function descMsgs($column = "msgTime")
-    {
-        // 準備刪除
-        $sql = "SELECT * FROM msgList ORDER BY " . $column . " DESC;";
-        $result = $this->db->query($sql)->getAll();
-        return $result;
-    }
-
-
-
     public function updateMsg($msgIndex, $msgTitle, $msgContent)
     {
         // updateMsg 有用到
@@ -80,17 +59,6 @@ class MsgModel
         ]);
 
     }
-
-    public function findMsgJoinMember($msgIndex)
-    {
-        // 準備刪除
-        $sql = "SELECT * FROM msgList, membership WHERE msgList.memberID = membership.memberID;";
-        $result = $this->db->query($sql, [
-            ':msgIndex' => $msgIndex
-        ])->findOne();
-        return $result;
-    }
-
     public function allMsgJoinMemberDESC($column = "msgTime")
     {
         $sql = "SELECT * FROM msgList, membership WHERE msgList.memberID = membership.memberID ORDER BY " . $column . " DESC;";
