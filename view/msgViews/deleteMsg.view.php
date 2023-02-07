@@ -52,7 +52,7 @@ view_path("partials/banner.php", [
                 <?php }
                 if ($deleteStatus === "YES") { ?>
                     <br>
-                    <a href="/myMessage" class="px-4 text-blue-500 hover:underline">訊息已刪除，點我回到 My Message</a>
+                    <a href="/myMessage" class="px-4 text-blue-500 hover:underline">訊息已刪除，將自動跳轉回 My Message</a>
                 <?php } ?>
             </div>
             <br>

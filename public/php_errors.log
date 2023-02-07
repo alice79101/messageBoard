@@ -5817,3 +5817,4 @@ Stack trace:
 [04-Feb-2023 18:33:38 Asia/Taipei] PHP Warning:  Constant BASE_PATH already defined in /Users/mia/Sites/messageBoard/public/index.php on line 4
 [04-Feb-2023 18:33:38 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/core/functions.php:3) in /Users/mia/Sites/messageBoard/core/functions.php on line 3
 [04-Feb-2023 19:51:54 Asia/Taipei] PHP Warning:  Undefined array key "memberID" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 42
+[07-Feb-2023 13:41:09 Asia/Taipei] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/mia/Sites/messageBoard/view/partials/nav.php:56) in /Users/mia/Sites/messageBoard/controller/msgContr/DeleteMsgContr.php on line 37

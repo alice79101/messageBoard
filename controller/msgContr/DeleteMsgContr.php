@@ -29,7 +29,12 @@ class DeleteMsgContr extends ManageMsgContr
         $deleteMsg = new MsgModel();
         $deleteMsg->deleteMsg($this->msg["msgIndex"]);
         $this->deleteStatus = "YES";
-        require "MyMsgContr.php";
+//        require "MyMsgContr.php";
+        header('Refresh: 1; url=/myMessage'); // 一秒後自動跳轉回 myMsg
+        view_path($this->path, [
+            'deleteStatus' => $this->deleteStatus,
+            'msg' => $this->msg
+        ]);
     }
 
 }

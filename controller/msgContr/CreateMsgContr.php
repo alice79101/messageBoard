@@ -57,6 +57,7 @@ class CreateMsgContr extends ManageMsgContr
             $this->createStatus = "YES";
         }
 
+        header('Refresh: 1; url=/myMessage'); // 1 秒後自動跳轉回 myMsg
         view_path($this->path, [
             'createStatus' => $this->createStatus,
             'errMsg' => $this->errMsg
