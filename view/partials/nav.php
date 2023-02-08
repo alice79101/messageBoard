@@ -16,6 +16,10 @@
                         <a href="/latest" class="<?= isUrl("/latest") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">What's new</a>
                         <a href="/myMessage" class="<?= isUrl("/myMessage") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">My Message</a>
                         <a href="/createMessage" class="<?= isUrl("/createMessage") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">Create Message</a>
+                        <?php
+                        if (isset($_SESSION["ADMIN"])) { ?>
+                        <a href="/msgs" class="<?= isUrl("/msgs") ? $thisPage : $thatPage ; ?> px-3 py-2 rounded-md text-sm font-medium">All Message</a>
+                        <?php } ?>
 
                     </div>
                 </div>
@@ -59,6 +63,7 @@
                                 <?php
                                 if (isset($_SESSION["ADMIN"])) { ?>
                                     <a href="/admin" class="block px-4 py-2  text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1" id="user-menu-item-0">Admin Area</a>
+<!--                                    <a href="/msgs" class="block px-4 py-2  text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1" id="user-menu-item-0">Show All Messages</a>-->
                             <?php }
                             }?>
                         </div>

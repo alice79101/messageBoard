@@ -3,6 +3,7 @@
 return [
     '/' => 'controller/indexContr.php',
     '/latest' => 'controller/msgContr/LatestMsgsContr.php',
+    '/msgs' => 'controller/msgContr/allMsgsContr.php',
     '/myMessage' => 'controller/msgContr/MyMsgContr.php',
     '/createMessage' => 'controller/msgContr/CreateMsgContr.php',
     '/msg' => 'controller/msgContr/ShowMsgContr.php',

@@ -5818,3 +5818,15 @@ Stack trace:
 [04-Feb-2023 18:33:38 Asia/Taipei] PHP Fatal error:  Cannot redeclare dumpAndDie() (previously declared in /Users/mia/Sites/messageBoard/core/functions.php:3) in /Users/mia/Sites/messageBoard/core/functions.php on line 3
 [04-Feb-2023 19:51:54 Asia/Taipei] PHP Warning:  Undefined array key "memberID" in /Users/mia/Sites/messageBoard/controller/ManageUserContr.php on line 42
 [07-Feb-2023 13:41:09 Asia/Taipei] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/mia/Sites/messageBoard/view/partials/nav.php:56) in /Users/mia/Sites/messageBoard/controller/msgContr/DeleteMsgContr.php on line 37
+[08-Feb-2023 14:22:51 Asia/Taipei] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'mia'@'localhost' (using password: NO) in /Users/mia/Sites/messageBoard/core/SingletonDb.php:32
+Stack trace:
+#0 /Users/mia/Sites/messageBoard/core/SingletonDb.php(32): PDO->__construct('mysql:host=loca...', 'mia', '', Array)
+#1 /Users/mia/Sites/messageBoard/core/SingletonDb.php(40): core\SingletonDb->__construct()
+#2 /Users/mia/Sites/messageBoard/core/Dbh.php(18): core\SingletonDb::getInstance()
+#3 /Users/mia/Sites/messageBoard/model/UserModel.php(11): core\Dbh->__construct()
+#4 /Users/mia/Sites/messageBoard/controller/userContr/AdminContr.php(20): model\UserModel->__construct()
+#5 /Users/mia/Sites/messageBoard/controller/userContr/AdminContr.php(30): controller\userContr\AdminContr->showUserList()
+#6 /Users/mia/Sites/messageBoard/public/index.php(20): require('/Users/mia/Site...')
+#7 {main}
+  thrown in /Users/mia/Sites/messageBoard/core/SingletonDb.php on line 32
+[08-Feb-2023 14:40:01 Asia/Taipei] PHP Parse error:  syntax error, unexpected token "use", expecting "," or ";" in /Users/mia/Sites/messageBoard/controller/msgContr/allMsgsContr.php on line 10

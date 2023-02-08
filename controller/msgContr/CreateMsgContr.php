@@ -55,9 +55,9 @@ class CreateMsgContr extends ManageMsgContr
             $insertMsg = new MsgModel();
             $insertMsg->createMsg($this->msgTitle, $this->msgContent, $this->memberID);
             $this->createStatus = "YES";
+            header('Refresh: 1; url=/myMessage'); // 1 秒後自動跳轉回 myMsg
         }
 
-        header('Refresh: 1; url=/myMessage'); // 1 秒後自動跳轉回 myMsg
         view_path($this->path, [
             'createStatus' => $this->createStatus,
             'errMsg' => $this->errMsg

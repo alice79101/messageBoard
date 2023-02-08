@@ -13,7 +13,7 @@ class ManageUserContr
         }
     }
 
-    protected function adminConfirm()
+    public function adminConfirm()
     {
         // 如果沒登入、或有登入但 admin 欄位不為 1
         $this->loginConfirm();
