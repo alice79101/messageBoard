@@ -14,16 +14,19 @@ view_path("partials/banner.php", [
         <div class="px-4 py-6 sm:px-0">
             <pre><p class="mt-4 break-words"><?= htmlspecialchars($msg["msgContent"]); ?></p></pre>
             <br>
-            <div class="">
+            <div class="mt-6">
                 <a href="/updateMessage?msgIndex=<?= $msg['msgIndex'] ?>"
                    class="text-gray-500 inline-block hover:border-b border-gray-900">
                     修改留言
                 </a>
-                &nbsp;
-                <a href="/deleteMessage?msgIndex=<?= $msg['msgIndex'] ?>"
-                   class="text-red-500 inline-block hover:border-b border-gray-900">
-                    刪除留言
-                </a>
+                <form method="post">
+                    <input type="hidden" name="msgIndex" value="<?= $msg['msgIndex'] ?>">
+                    <button class="text-red-500 inline-block hover:border-b border-gray-900">危險：刪除留言</button>
+                </form>
+<!--                <a href="/deleteMessage?msgIndex=--><?php //= $msg['msgIndex'] ?><!--"-->
+<!--                   class="text-red-500 inline-block hover:border-b border-gray-900">-->
+<!--                    刪除留言-->
+<!--                </a>-->
             </div>
         </div>
         <!-- /End replace -->

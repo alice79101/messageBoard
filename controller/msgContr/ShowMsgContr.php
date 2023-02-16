@@ -24,16 +24,18 @@ class ShowMsgContr extends ManageMsgContr
     public function __construct()
     {
         $this->getMsgInformation($_GET["msgIndex"]);
+        $this->isEmptyMsg($this->msg);
         $this->readingAuthority();
 //        dumpAndDie($this->user);
+        $this->landingMethodContr($this->path, [
+            'msg' => $this->msg
+        ]);
     }
 
     public function showMsg()
     {
-        $this->isEmptyMsg($this->msg);
-        view_path($this->path, [
-            'msg' => $this->msg
-        ]);
+        dumpAndDie($_POST);
+//        require 'DeleteMsgContr.php';
     }
 }
 
